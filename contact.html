@@ -1,29 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Team: Eggs | Group: SE-2507 -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact page for the Steam Game Hub student project.">
-    <title>Steam Game Hub - Contact</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171d25'/%3E%3Ctext x='18' y='44' fill='%2366c0f4' font-size='38' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header id="main-header"><nav class="navbar" aria-label="Main navigation"><a class="logo" href="index.html">STEAM GAME HUB</a><ul class="nav-menu"><li><a href="index.html">Home</a></li><li><a href="featured.html">Featured Games</a></li><li><a href="games.html">Games</a></li><li><a href="categories.html">Categories</a></li><li><a href="news.html">News</a></li><li><a href="community.html">Community</a></li><li><a href="about.html">About</a></li><li><a class="active" href="contact.html">Contact</a></li></ul></nav></header>
-    <main>
-        <section class="page-banner"><p class="subtitle">GET IN TOUCH</p><h1>Contact Steam Game Hub</h1><p>Have a question or want to share your favourite game? Leave a message.</p></section>
-        <section class="content-section"><div class="contact-container">
-            <div class="contact-info"><h2>Contact Us</h2><p>Fill out the form and tell us what you think about Steam Game Hub.</p><p>We would also like to know which game genres you enjoy most.</p><p>This is an HTML/CSS demonstration form, so it does not send information to a server.</p></div>
-            <form class="contact-form">
-                <div class="form-group"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Enter your name" required></div>
-                <div class="form-group"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="Enter your email" required></div>
-                <div class="form-group"><label for="genre">Favourite Genre</label><select id="genre" name="genre"><option value="shooter">Shooter</option><option value="rpg">RPG</option><option value="action">Action</option><option value="adventure">Adventure</option><option value="strategy">Strategy</option></select></div>
-                <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea></div>
-                <button class="main-button" type="submit">Send Message</button>
-            </form>
-        </div></section>
+<html data-bs-theme="dark" lang="en">
+ <head>
+  <!-- Team: Eggs | Group: SE-2507 -->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Contact page for the Steam Game Hub student project." name="description"/>
+  <title>
+   Steam Game Hub - Contact
+  </title>
+  <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171d25'/%3E%3Ctext x='18' y='44' fill='%2366c0f4' font-size='38' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+  <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+  <link href="css/theme.css" rel="stylesheet"/>
+  <script defer="" src="vendor/bootstrap/bootstrap.bundle.min.js">
+  </script>
+  <script defer="" src="js/site.js">
+  </script>
+ </head>
+ <body class="d-flex flex-column min-vh-100">
+  <a class="visually-hidden-focusable btn btn-light position-absolute top-0 start-0 m-2 skip-link" href="#main-content">
+   Skip to main content
+  </a>
+  <header id="main-header">
+   <nav aria-label="Main navigation" class="navbar navbar-expand-xl bg-dark border-bottom py-3">
+    <!-- Tasks 4-5: Bootstrap spacing and Collapse navbar. -->
+    <div class="container-fluid px-3 px-sm-4">
+     <a class="navbar-brand fw-bold text-info me-2" href="index.html">
+      STEAM GAME HUB
+     </a>
+     <button aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#main-nav" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse" id="main-nav">
+      <ul class="navbar-nav ms-auto mb-0 mt-3 mt-xl-0">
+       <li class="nav-item">
+        <a class="nav-link px-2" href="index.html">
+         Home
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="featured.html">
+         Featured
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="games.html">
+         Games
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="categories.html">
+         Categories
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="news.html">
+         News
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="community.html">
+         Community
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="about.html">
+         About
+        </a>
+       </li>
+       <li class="nav-item">
+        <a aria-current="page" class="nav-link px-2 active" href="contact.html">
+         Contact
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <div class="container-fluid px-3 px-sm-4 py-4 flex-grow-1">
+   <div class="row g-4">
+    <aside aria-labelledby="sidebar-title" class="page-sidebar col-12 col-xl-2">
+     <div class="sidebar-panel rounded-3 p-3">
+      <h2 class="h6 text-info mb-3" id="sidebar-title">
+       Get in touch
+      </h2>
+      <nav aria-label="Page sections">
+       <ul class="sidebar-links nav flex-row flex-xl-column gap-1">
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="#contact-info">
+          Contact information
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="#contact-form">
+          Message form
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="about.html">
+          Meet our team
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="responsive.html">
+          Responsive showcase
+         </a>
+        </li>
+       </ul>
+      </nav>
+      <div class="sidebar-note border-top mt-3 pt-3 d-none d-xl-block">
+       <p class="subtitle mb-2 small">
+        TEAM EGGS
+       </p>
+       <p class="mb-2 small">
+        Web Technologies I
+        <br/>
+        SE-2507
+       </p>
+      </div>
+     </div>
+    </aside>
+    <main class="page-main col-12 col-xl-10" id="main-content" tabindex="-1">
+     <section class="page-banner text-center rounded-3 px-3 px-sm-4 py-5 mb-2">
+      <p class="subtitle mb-3 small text-info text-uppercase fw-bold mb-2">
+       GET IN TOUCH
+      </p>
+      <h1 class="mb-3 fw-bold">
+       Contact Steam Game Hub
+      </h1>
+      <p class="mb-3">
+       Have a question or want to share your favourite game? Leave a message.
+      </p>
+     </section>
+     <section class="content-section container-fluid px-0 py-4 py-lg-5">
+      <div class="contact-container row g-4">
+       <div class="contact-info col-12 col-lg-6" id="contact-info">
+        <h2 class="mb-4 fw-bold">
+         Contact Us
+        </h2>
+        <p class="mb-3">
+         Fill out the form and tell us what you think about Steam Game Hub.
+        </p>
+        <p class="mb-3">
+         We would also like to know which game genres you enjoy most.
+        </p>
+        <p class="mb-3" id="form-note">
+         This demonstration checks your input locally. No information is sent or stored.
+        </p>
+       </div>
+       <form aria-describedby="form-note" class="contact-form col-12 col-lg-6" data-demo-form="" id="contact-form">
+        <div class="form-group mb-3">
+         <label class="form-label" for="name">
+          Name
+         </label>
+         <input autocomplete="name" class="form-control" id="name" name="name" placeholder="Enter your name" required="" type="text"/>
+        </div>
+        <div class="form-group mb-3">
+         <label class="form-label" for="email">
+          Email
+         </label>
+         <div class="input-group">
+          <span aria-hidden="true" class="input-group-text">
+           @
+          </span>
+          <input autocomplete="email" class="form-control" id="email" name="email" placeholder="Enter your email" required="" type="email"/>
+         </div>
+        </div>
+        <div class="form-group mb-3">
+         <label class="form-label" for="genre">
+          Favourite Genre
+         </label>
+         <select class="form-select" id="genre" name="genre">
+          <option value="shooter">
+           Shooter
+          </option>
+          <option value="rpg">
+           RPG
+          </option>
+          <option value="action">
+           Action
+          </option>
+          <option value="adventure">
+           Adventure
+          </option>
+          <option value="strategy">
+           Strategy
+          </option>
+         </select>
+        </div>
+        <div class="form-group mb-3">
+         <label class="form-label" for="message">
+          Message
+         </label>
+         <textarea class="form-control" id="message" name="message" placeholder="Write your message here..." required="" rows="6"></textarea>
+        </div>
+        <fieldset class="mb-3">
+         <legend class="fs-6 fw-semibold">
+          Preferred platform
+         </legend>
+         <div class="form-check form-check-inline">
+          <input checked="" class="form-check-input" id="platform-pc" name="platform" type="radio" value="pc"/>
+          <label class="form-check-label" for="platform-pc">
+           PC
+          </label>
+         </div>
+         <div class="form-check form-check-inline">
+          <input class="form-check-input" id="platform-console" name="platform" type="radio" value="console"/>
+          <label class="form-check-label" for="platform-console">
+           Console
+          </label>
+         </div>
+        </fieldset>
+        <div class="form-check mb-4">
+         <input class="form-check-input" id="demo-check" name="demo-check" required="" type="checkbox"/>
+         <label class="form-check-label" for="demo-check">
+          I understand this is a local demonstration.
+         </label>
+        </div>
+        <button aria-describedby="form-note" class="btn btn-primary" type="submit">
+         Preview message
+        </button>
+        <p aria-live="polite" class="form-status mb-3 text-info mt-3 mb-0" role="status">
+        </p>
+       </form>
+      </div>
+     </section>
     </main>
-    <footer><p>Steam Game Hub — Web Technologies I</p><p>Team Eggs | SE-2507</p><p>Team Members: Ташкенбаев Нурсултан, Бигали Абулхаир, Султанкулов Шынгыс, Лопаткин Артем</p></footer>
-</body>
+   </div>
+  </div>
+  <footer class="text-center border-top px-3 py-4 mt-4">
+   <p class="small mb-2">
+    Steam Game Hub — Web Technologies I
+   </p>
+   <p class="small mb-2">
+    Team Eggs | SE-2507
+   </p>
+   <p class="small mb-2">
+    Team Members: Ташкенбаев Нурсултан, Бигали Абулхаир, Султанкулов Шынгыс, Лопаткин Артем
+   </p>
+   <p class="small mb-0">
+    <a class="link-info" href="responsive.html">
+     Responsive showcase
+    </a>
+    · Academic demo; prices and news are sample content.
+   </p>
+  </footer>
+ </body>
 </html>

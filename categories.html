@@ -1,34 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Team: Eggs | Group: SE-2507 -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Steam Game Hub categories: action, RPG, shooter, strategy and more.">
-    <title>Steam Game Hub - Categories</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171d25'/%3E%3Ctext x='18' y='44' fill='%2366c0f4' font-size='38' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header id="main-header"><nav class="navbar" aria-label="Main navigation"><a class="logo" href="index.html">STEAM GAME HUB</a><ul class="nav-menu"><li><a href="index.html">Home</a></li><li><a href="featured.html">Featured Games</a></li><li><a href="games.html">Games</a></li><li><a class="active" href="categories.html">Categories</a></li><li><a href="news.html">News</a></li><li><a href="community.html">Community</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
-    <main>
-        <section class="page-banner"><p class="subtitle">FIND YOUR PLAY STYLE</p><h1>Game Categories</h1><p>Every genre offers a different kind of challenge, story, and shared experience.</p></section>
-        <section class="content-section">
-            <h2>Explore by Genre</h2>
-            <div class="categories-grid">
-                <article class="genre-card"><h3>Action</h3><p>Fast movement, memorable set pieces, and challenges that keep players on their toes.</p><a href="games.html">View action games →</a></article>
-                <article class="genre-card"><h3>RPG</h3><p>Build a character, make choices, and explore worlds shaped by stories and quests.</p><a href="games.html">View RPG games →</a></article>
-                <article class="genre-card"><h3>Shooter</h3><p>Test accuracy, teamwork, tactical thinking, and lightning-fast reactions.</p><a href="games.html">View shooter games →</a></article>
-                <article class="genre-card"><h3>Strategy</h3><p>Plan ahead, manage resources, and win through clever decisions rather than speed alone.</p><a href="games.html">View strategy games →</a></article>
-                <article class="genre-card"><h3>Adventure</h3><p>Travel through new settings, solve problems, and follow a compelling journey.</p><a href="games.html">View adventure games →</a></article>
-                <article class="genre-card"><h3>Simulation</h3><p>Experience realistic systems, detailed worlds, and goals that unfold at your own pace.</p><a href="games.html">View simulation games →</a></article>
-            </div>
-        </section>
-        <section class="content-section boxed-section">
-            <h2>How to Choose a Genre</h2>
-            <ol class="genre-list"><li>Decide whether you prefer solo stories or playing with friends.</li><li>Choose a pace: relaxed exploration, thoughtful planning, or fast competition.</li><li>Try a game with a setting that interests you.</li><li>Read the description and rating before adding it to your list.</li></ol>
-        </section>
+<html data-bs-theme="dark" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Steam Game Hub categories: action, RPG, shooter, strategy and more." name="description"/>
+  <title>
+   Steam Game Hub - Categories
+  </title>
+  <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171d25'/%3E%3Ctext x='18' y='44' fill='%2366c0f4' font-size='38' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+  <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+  <link href="css/theme.css" rel="stylesheet"/>
+  <script defer="" src="vendor/bootstrap/bootstrap.bundle.min.js">
+  </script>
+  <script defer="" src="js/site.js">
+  </script>
+ </head>
+ <body class="d-flex flex-column min-vh-100">
+  <a class="visually-hidden-focusable btn btn-light position-absolute top-0 start-0 m-2 skip-link" href="#main-content">
+   Skip to main content
+  </a>
+  <header id="main-header">
+   <nav aria-label="Main navigation" class="navbar navbar-expand-xl bg-dark border-bottom py-3">
+    <!-- Tasks 4-5: Bootstrap spacing and Collapse navbar. -->
+    <div class="container-fluid px-3 px-sm-4">
+     <a class="navbar-brand fw-bold text-info me-2" href="index.html">
+      STEAM GAME HUB
+     </a>
+     <button aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#main-nav" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse" id="main-nav">
+      <ul class="navbar-nav ms-auto mb-0 mt-3 mt-xl-0">
+       <li class="nav-item">
+        <a class="nav-link px-2" href="index.html">
+         Home
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="featured.html">
+         Featured
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="games.html">
+         Games
+        </a>
+       </li>
+       <li class="nav-item">
+        <a aria-current="page" class="nav-link px-2 active" href="categories.html">
+         Categories
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="news.html">
+         News
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="community.html">
+         Community
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="about.html">
+         About
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="contact.html">
+         Contact
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <div class="container-fluid px-3 px-sm-4 py-4 flex-grow-1">
+   <div class="row g-4">
+    <aside aria-labelledby="sidebar-title" class="page-sidebar col-12 col-xl-2">
+     <div class="sidebar-panel rounded-3 p-3">
+      <h2 class="h6 text-info mb-3" id="sidebar-title">
+       Find your genre
+      </h2>
+      <nav aria-label="Page sections">
+       <ul class="sidebar-links nav flex-row flex-xl-column gap-1">
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="#genres">
+          Explore genres
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="#choose-genre">
+          Choosing a genre
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="about.html#game-gallery">
+          Discover the gallery
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="responsive.html">
+          Responsive showcase
+         </a>
+        </li>
+       </ul>
+      </nav>
+      <div class="sidebar-note border-top mt-3 pt-3 d-none d-xl-block">
+       <p class="subtitle mb-2 small">
+        TEAM EGGS
+       </p>
+       <p class="mb-2 small">
+        Web Technologies I
+        <br/>
+        SE-2507
+       </p>
+      </div>
+     </div>
+    </aside>
+    <main class="page-main col-12 col-xl-10" id="main-content" tabindex="-1">
+     <section class="page-banner text-center rounded-3 px-3 px-sm-4 py-5 mb-2">
+      <p class="subtitle mb-3 small text-info text-uppercase fw-bold mb-2">
+       FIND YOUR PLAY STYLE
+      </p>
+      <h1 class="mb-3 fw-bold">
+       Game Categories
+      </h1>
+      <p class="mb-3">
+       Every genre offers a different kind of
+                    challenge, story, and shared experience.
+      </p>
+     </section>
+     <section class="content-section container-fluid px-0 py-4 py-lg-5" id="genres">
+      <h2 class="mb-4 fw-bold">
+       Explore by Genre
+      </h2>
+      <div class="categories-grid row g-4">
+       <div class="col-12 col-md-6 col-lg-4">
+        <article class="genre-card card h-100 p-4">
+         <h3 class="h5 mb-3 fw-bold">
+          Action
+         </h3>
+         <p class="mb-3 flex-grow-1">
+          Fast movement, memorable set pieces,
+                            and challenges that keep players
+                            on their toes.
+         </p>
+         <a class="btn btn-outline-info btn-sm align-self-start mt-auto" href="games.html">
+          View action games →
+         </a>
+        </article>
+       </div>
+       <div class="col-12 col-md-6 col-lg-4">
+        <article class="genre-card card h-100 p-4">
+         <h3 class="h5 mb-3 fw-bold">
+          RPG
+         </h3>
+         <p class="mb-3 flex-grow-1">
+          Build a character, make choices,
+                            and explore worlds shaped by stories
+                            and quests.
+         </p>
+         <a class="btn btn-outline-info btn-sm align-self-start mt-auto" href="games.html">
+          View RPG games →
+         </a>
+        </article>
+       </div>
+       <div class="col-12 col-md-6 col-lg-4">
+        <article class="genre-card card h-100 p-4">
+         <h3 class="h5 mb-3 fw-bold">
+          Shooter
+         </h3>
+         <p class="mb-3 flex-grow-1">
+          Test accuracy, teamwork, tactical
+                            thinking, and lightning-fast reactions.
+         </p>
+         <a class="btn btn-outline-info btn-sm align-self-start mt-auto" href="games.html">
+          View shooter games →
+         </a>
+        </article>
+       </div>
+       <div class="col-12 col-md-6 col-lg-4">
+        <article class="genre-card card h-100 p-4">
+         <h3 class="h5 mb-3 fw-bold">
+          Strategy
+         </h3>
+         <p class="mb-3 flex-grow-1">
+          Plan ahead, manage resources,
+                            and win through clever decisions
+                            rather than speed alone.
+         </p>
+         <a class="btn btn-outline-info btn-sm align-self-start mt-auto" href="games.html">
+          View strategy games →
+         </a>
+        </article>
+       </div>
+       <div class="col-12 col-md-6 col-lg-4">
+        <article class="genre-card card h-100 p-4">
+         <h3 class="h5 mb-3 fw-bold">
+          Adventure
+         </h3>
+         <p class="mb-3 flex-grow-1">
+          Travel through new settings,
+                            solve problems, and follow
+                            a compelling journey.
+         </p>
+         <a class="btn btn-outline-info btn-sm align-self-start mt-auto" href="games.html">
+          View adventure games →
+         </a>
+        </article>
+       </div>
+       <div class="col-12 col-md-6 col-lg-4">
+        <article class="genre-card card h-100 p-4">
+         <h3 class="h5 mb-3 fw-bold">
+          Simulation
+         </h3>
+         <p class="mb-3 flex-grow-1">
+          Experience realistic systems,
+                            detailed worlds, and goals that
+                            unfold at your own pace.
+         </p>
+         <a class="btn btn-outline-info btn-sm align-self-start mt-auto" href="games.html">
+          View simulation games →
+         </a>
+        </article>
+       </div>
+      </div>
+     </section>
+     <section class="content-section boxed-section rounded-3 p-3 p-md-4 my-4" id="choose-genre">
+      <h2 class="mb-4 fw-bold">
+       How to Choose a Genre
+      </h2>
+      <ol class="genre-list ps-4 mb-0">
+       <li class="mb-2">
+        Decide whether you prefer solo stories
+                        or playing with friends.
+       </li>
+       <li class="mb-2">
+        Choose a pace: relaxed exploration,
+                        thoughtful planning, or fast competition.
+       </li>
+       <li class="mb-2">
+        Try a game with a setting that interests you.
+       </li>
+       <li class="mb-2">
+        Read the description and rating before
+                        adding it to your list.
+       </li>
+      </ol>
+     </section>
     </main>
-    <footer><p>Steam Game Hub — Web Technologies I</p><p>Team Eggs | SE-2507</p><p>Team Members: Ташкенбаев Нурсултан, Бигали Абулхаир, Султанкулов Шынгыс, Лопаткин Артем</p></footer>
-</body>
+   </div>
+  </div>
+  <footer class="text-center border-top px-3 py-4 mt-4">
+   <p class="small mb-2">
+    Steam Game Hub — Web Technologies I
+   </p>
+   <p class="small mb-2">
+    Team Eggs | SE-2507
+   </p>
+   <p class="small mb-2">
+    Team Members:
+                Ташкенбаев Нурсултан,
+                Бигали Абулхаир,
+                Султанкулов Шынгыс,
+                Лопаткин Артем
+   </p>
+   <p class="small mb-0">
+    <a class="link-info" href="responsive.html">
+     Responsive showcase
+    </a>
+    · Academic demo; prices and news are sample content.
+   </p>
+  </footer>
+ </body>
 </html>

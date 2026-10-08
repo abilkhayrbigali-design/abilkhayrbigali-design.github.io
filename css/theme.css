@@ -1,0 +1,83 @@
+/* Assignment 3: Bootstrap supplies layouts, components and spacing.
+   This file only supplies the existing Steam-inspired theme and image treatment.
+   Tasks 1-2 live in responsive.css, without Bootstrap. */
+:root, [data-bs-theme="dark"] {
+  --bs-body-bg: #101820;
+  --bs-body-color: #e6edf3;
+  --bs-secondary-color: #b4c2ce;
+  --bs-border-color: #36536b;
+  --bs-info-rgb: 102, 192, 244;
+  --bs-link-color: #83d0fc;
+  --bs-link-hover-color: #c3e9ff;
+  --bs-tertiary-bg: #1b2838;
+  --bs-body-font-family: Arial, Helvetica, sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { line-height: 1.6; }
+main, .row > *, .card, .input-group { min-width: 0; }
+main { overflow-wrap: anywhere; }
+h1, h2, h3 { line-height: 1.2; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+.hero h1 { font-size: 2.35rem; }
+.navbar-brand { font-size: 1.1rem; letter-spacing: .03em; }
+.navbar { --bs-navbar-color: #c7d5e0; --bs-navbar-active-color: #83d0fc; --bs-navbar-hover-color: #83d0fc; }
+.nav-link[aria-current="page"] { text-decoration: underline; text-underline-offset: 7px; }
+.page-sidebar .nav-link { color: #c7d5e0; font-size: .875rem; }
+.page-sidebar .nav-link:hover { color: #83d0fc; background: #22374a; }
+.sidebar-panel, .surface-panel, .boxed-section, footer { background: #171d25; }
+.subtitle { letter-spacing: .1em; }
+.hero {
+  min-height: 440px;
+  background: linear-gradient(90deg,rgba(16,24,32,.9),rgba(16,24,32,.62)),url('../images/games/elden-ring-screenshot.jpg') center/cover;
+}
+.hero-content { max-width: 650px; }
+.page-banner { background: linear-gradient(135deg,#21394d,#171d25); }
+.card { --bs-card-bg: #1b2838; --bs-card-border-color: #36536b; }
+.game-card, .news-card, .genre-card, .team-card { transition: border-color .2s ease, box-shadow .2s ease; }
+.game-card:hover, .game-card:focus-within, .news-card:hover, .genre-card:hover, .team-card:hover { border-color: #66c0f4; box-shadow: 0 8px 24px #0004; }
+.game-card:target { border-color: #66c0f4; }
+.game-card > img, .game-cover { width: 100%; height: 180px; object-fit: contain; background: #101820; }
+.game-card > .original-dota-art { object-fit: cover; }
+.news-card-img { height: 190px; object-fit: cover; }
+.news-hero-image img { width: 100%; height: 100%; min-height: 260px; object-fit: cover; }
+.profile-img { width: 140px; height: 140px; object-fit: cover; border: 3px solid #36536b; }
+.card-text, .card-content p, .genre-card p { color: #c2cfda; }
+.btn-primary { --bs-btn-bg: #66c0f4; --bs-btn-color: #071d2c; --bs-btn-border-color: #66c0f4; --bs-btn-hover-bg: #91d5fc; --bs-btn-hover-color: #071d2c; --bs-btn-hover-border-color: #91d5fc; --bs-btn-active-bg: #b2e1fd; --bs-btn-active-color: #071d2c; --bs-btn-active-border-color: #b2e1fd; }
+.btn-outline-info { --bs-btn-color: #83d0fc; --bs-btn-border-color: #66c0f4; --bs-btn-hover-bg: #83d0fc; --bs-btn-hover-color: #071d2c; --bs-btn-hover-border-color: #83d0fc; }
+.badge.text-bg-primary { background: #145ca6 !important; }
+.discussion-item { color: #e6edf3; background: #171d25; }
+.discussion-item:hover { background: #1b2838; }
+.discussion-meta span, .custom-ul a { color: #83d0fc; }
+.sidebar-box, .newsletter-box, .news-hero-card { background: #171d25; }
+.news-quote { background: #1b2838; color: #c7d5e0; }
+.community-cta { background: linear-gradient(#171d25e8,#1b2838ed),url('../images/games/elden-ring-screenshot.jpg') center/cover; }
+.form-control, .form-select { background-color: #101820; border-color: #56718a; }
+.form-control::placeholder { color: #a5b3c0; opacity: 1; }
+.form-control:focus, .form-select:focus { border-color: #83d0fc; }
+.form-status:empty { display: none; }
+.games-table { min-width: 620px; }
+.carousel { background: #0b1118; }
+.carousel-art { height: clamp(190px,38vw,440px); object-fit: contain; }
+.carousel-caption { background: #171d25; color: #e6edf3; }
+.carousel-control-prev, .carousel-control-next { width: 12%; opacity: 1; }
+.carousel-control-prev-icon, .carousel-control-next-icon { background-color: #101820; border: 6px solid #101820; border-radius: 50%; width: 2.6rem; height: 2.6rem; }
+.carousel-indicators [data-bs-target] { opacity: .6; }
+.carousel-indicators .active { opacity: 1; }
+.skip-link { z-index: 1100; }
+:focus-visible { outline: 3px solid #a5dfff; outline-offset: 3px; }
+.btn:focus-visible, .navbar-toggler:focus-visible { outline: 3px solid #a5dfff; outline-offset: 3px; }
+@media (min-width: 768px) {
+  h1 { font-size: 2.6rem; }
+  h2 { font-size: 1.8rem; }
+  .hero h1 { font-size: 3rem; }
+}
+@media (min-width: 1200px) {
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2rem; }
+  .hero h1 { font-size: 3.6rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}

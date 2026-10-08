@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Three gaming picks in a responsive layout built with CSS media queries.">
+  <title>Steam Game Hub - Responsive Showcase</title>
+  <!-- Tasks 1-2 intentionally use no Bootstrap stylesheet or script. -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171d25'/%3E%3Ctext x='18' y='44' fill='%2366c0f4' font-size='38'%3ES%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header>
+    <nav class="shell navigation" aria-label="Main navigation">
+      <a class="brand" href="index.html">STEAM GAME HUB</a>
+      <a class="back-link" href="index.html">Back to home <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main-content" class="shell" tabindex="-1">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">THREE WORLDS. YOUR NEXT ADVENTURE.</p>
+      <h1 id="page-title">Great games.<br>Any screen.</h1>
+      <p class="lead">Whether you play at your desk or discover new games on the go, there's a world here for you. Explore three of our favourites.</p>
+    </section>
+    <!-- Task 2: one column on mobile, two on tablet, three on desktop. -->
+    <section class="picks" aria-labelledby="picks-title">
+      <div class="section-heading"><h2 id="picks-title">Choose your adventure</h2><p>Handpicked by Team Eggs</p></div>
+      <div class="mq-cards">
+        <article class="mq-card">
+          <img src="images/games/elden-ring.jpg" alt="Elden Ring official Steam cover artwork" width="460" height="215">
+          <div class="card-copy"><p class="eyebrow">FANTASY / RPG</p><h3>Elden Ring</h3><p>Journey through the Lands Between, uncover hidden paths and take on unforgettable challenges.</p><a href="featured.html#elden-ring">Explore Elden Ring <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="mq-card">
+          <img src="images/games/cyberpunk-2077.jpg" alt="Cyberpunk 2077 official Steam cover artwork" width="460" height="215">
+          <div class="card-copy"><p class="eyebrow">OPEN WORLD / RPG</p><h3>Cyberpunk 2077</h3><p>Make your own way through Night City, a futuristic world of neon streets and unexpected stories.</p><a href="featured.html#cyberpunk-2077">Explore Cyberpunk 2077 <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="mq-card">
+          <img src="images/games/red-dead-redemption-2.jpg" alt="Red Dead Redemption 2 official Steam cover artwork" width="460" height="215">
+          <div class="card-copy"><p class="eyebrow">ADVENTURE / OPEN WORLD</p><h3>Red Dead Redemption 2</h3><p>Ride across vast landscapes and follow a memorable story set at the end of the American frontier.</p><a href="featured.html#red-dead-redemption-2">Explore Red Dead Redemption 2 <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="shell"><p>Steam Game Hub · Web Technologies I</p><p>Team Eggs | SE-2507</p><p>Team Members: Ташкенбаев Нурсултан, Бигали Абулхаир, Султанкулов Шынгыс, Лопаткин Артем</p></div>
+  </footer>
+</body>
+</html>

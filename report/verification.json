@@ -1,0 +1,1176 @@
+{
+  "browser": "154.0.4258.37",
+  "pageChecks": 81,
+  "checks": [
+    {
+      "page": "about.html",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - About Us",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "about.html",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - About Us",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "about.html",
+      "width": 576,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - About Us",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "about.html",
+      "width": 767,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - About Us",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "about.html",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - About Us",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "about.html",
+      "width": 992,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - About Us",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "about.html",
+      "width": 1199,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - About Us",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "about.html",
+      "width": 1200,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - About Us",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "48px"
+    },
+    {
+      "page": "about.html",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - About Us",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "48px"
+    },
+    {
+      "page": "categories.html",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Categories",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "categories.html",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Categories",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "categories.html",
+      "width": 576,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Categories",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "categories.html",
+      "width": 767,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Categories",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "categories.html",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Categories",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "categories.html",
+      "width": 992,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Categories",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "categories.html",
+      "width": 1199,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Categories",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "categories.html",
+      "width": 1200,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Categories",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "48px"
+    },
+    {
+      "page": "categories.html",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Categories",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "48px"
+    },
+    {
+      "page": "community.html",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Community",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "community.html",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Community",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "community.html",
+      "width": 576,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Community",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "community.html",
+      "width": 767,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Community",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "community.html",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Community",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "community.html",
+      "width": 992,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Community",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "community.html",
+      "width": 1199,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Community",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "community.html",
+      "width": 1200,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Community",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "48px"
+    },
+    {
+      "page": "community.html",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Community",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "48px"
+    },
+    {
+      "page": "contact.html",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Contact",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "contact.html",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Contact",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "contact.html",
+      "width": 576,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Contact",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "contact.html",
+      "width": 767,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Contact",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "contact.html",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Contact",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "contact.html",
+      "width": 992,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Contact",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "contact.html",
+      "width": 1199,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Contact",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "contact.html",
+      "width": 1200,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Contact",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "48px"
+    },
+    {
+      "page": "contact.html",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Contact",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "48px"
+    },
+    {
+      "page": "featured.html",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Featured Games",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "featured.html",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Featured Games",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "featured.html",
+      "width": 576,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Featured Games",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "featured.html",
+      "width": 767,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Featured Games",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "featured.html",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Featured Games",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "featured.html",
+      "width": 992,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Featured Games",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "featured.html",
+      "width": 1199,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Featured Games",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "featured.html",
+      "width": 1200,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Featured Games",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "48px"
+    },
+    {
+      "page": "featured.html",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Featured Games",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "48px"
+    },
+    {
+      "page": "games.html",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Games",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "games.html",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Games",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "games.html",
+      "width": 576,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Games",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "games.html",
+      "width": 767,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Games",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "games.html",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Games",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "games.html",
+      "width": 992,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Games",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "games.html",
+      "width": 1199,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Games",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "games.html",
+      "width": 1200,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Games",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "48px"
+    },
+    {
+      "page": "games.html",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Games",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "48px"
+    },
+    {
+      "page": "index.html",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Home",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "37.6px"
+    },
+    {
+      "page": "index.html",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Home",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "37.6px"
+    },
+    {
+      "page": "index.html",
+      "width": 576,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Home",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "37.6px"
+    },
+    {
+      "page": "index.html",
+      "width": 767,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Home",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "37.6px"
+    },
+    {
+      "page": "index.html",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Home",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "48px"
+    },
+    {
+      "page": "index.html",
+      "width": 992,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Home",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "48px"
+    },
+    {
+      "page": "index.html",
+      "width": 1199,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Home",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "48px"
+    },
+    {
+      "page": "index.html",
+      "width": 1200,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Home",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "57.6px"
+    },
+    {
+      "page": "index.html",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Home",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "57.6px"
+    },
+    {
+      "page": "news.html",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Gaming News",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "news.html",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Gaming News",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "news.html",
+      "width": 576,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Gaming News",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "news.html",
+      "width": 767,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Gaming News",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "32px"
+    },
+    {
+      "page": "news.html",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Gaming News",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "news.html",
+      "width": 992,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Gaming News",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "news.html",
+      "width": 1199,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Gaming News",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "41.6px"
+    },
+    {
+      "page": "news.html",
+      "width": 1200,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Gaming News",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "48px"
+    },
+    {
+      "page": "news.html",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Gaming News",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": null,
+      "h1Size": "48px"
+    },
+    {
+      "page": "responsive.html",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Responsive Showcase",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": 1,
+      "h1Size": "36px"
+    },
+    {
+      "page": "responsive.html",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Responsive Showcase",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": 1,
+      "h1Size": "36px"
+    },
+    {
+      "page": "responsive.html",
+      "width": 576,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Responsive Showcase",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": 1,
+      "h1Size": "36px"
+    },
+    {
+      "page": "responsive.html",
+      "width": 767,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Responsive Showcase",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": 1,
+      "h1Size": "36px"
+    },
+    {
+      "page": "responsive.html",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Responsive Showcase",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": 2,
+      "h1Size": "52px"
+    },
+    {
+      "page": "responsive.html",
+      "width": 992,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Responsive Showcase",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": 2,
+      "h1Size": "52px"
+    },
+    {
+      "page": "responsive.html",
+      "width": 1199,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Responsive Showcase",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": 2,
+      "h1Size": "52px"
+    },
+    {
+      "page": "responsive.html",
+      "width": 1200,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Responsive Showcase",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": 3,
+      "h1Size": "68px"
+    },
+    {
+      "page": "responsive.html",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "title": "Steam Game Hub - Responsive Showcase",
+      "h1Count": 1,
+      "unlabelled": [],
+      "duplicateIds": [],
+      "mqColumns": 3,
+      "h1Size": "68px"
+    }
+  ],
+  "interactions": [
+    {
+      "test": "navbar",
+      "page": "about.html",
+      "expanded": true,
+      "navigation": true,
+      "closed": true
+    },
+    {
+      "test": "navbar",
+      "page": "categories.html",
+      "expanded": true,
+      "navigation": true,
+      "closed": true
+    },
+    {
+      "test": "navbar",
+      "page": "community.html",
+      "expanded": true,
+      "navigation": true,
+      "closed": true
+    },
+    {
+      "test": "navbar",
+      "page": "contact.html",
+      "expanded": true,
+      "navigation": true,
+      "closed": true
+    },
+    {
+      "test": "navbar",
+      "page": "featured.html",
+      "expanded": true,
+      "navigation": true,
+      "closed": true
+    },
+    {
+      "test": "navbar",
+      "page": "games.html",
+      "expanded": true,
+      "navigation": true,
+      "closed": true
+    },
+    {
+      "test": "navbar",
+      "page": "index.html",
+      "expanded": true,
+      "navigation": true,
+      "closed": true
+    },
+    {
+      "test": "navbar",
+      "page": "news.html",
+      "expanded": true,
+      "navigation": true,
+      "closed": true
+    },
+    {
+      "test": "carousel",
+      "page": "about.html",
+      "uniqueSlides": 9,
+      "indicators": true,
+      "previous": true,
+      "keyboard": true,
+      "status": "Image 7 of 9: Fishing Simulator"
+    },
+    {
+      "test": "carousel",
+      "page": "community.html",
+      "uniqueSlides": 9,
+      "indicators": true,
+      "previous": true,
+      "keyboard": true,
+      "status": "Image 7 of 9: Fishing Simulator"
+    },
+    {
+      "test": "contact form",
+      "emptyBlocked": true,
+      "validAcknowledged": true
+    },
+    {
+      "test": "newsletter",
+      "validAcknowledged": true
+    },
+    {
+      "test": "skip link",
+      "focused": true
+    },
+    {
+      "test": "skip destination",
+      "focused": true
+    },
+    {
+      "test": "mobile table keyboard scrolling",
+      "focused": true,
+      "scrolls": true
+    }
+  ],
+  "errors": [],
+  "failures": [],
+  "staticChecks": {
+    "localReferences": 271,
+    "preservedImages": 24,
+    "bootstrapIntegrity": "verified",
+    "issues": []
+  },
+  "accessibility": [
+    {
+      "page": "about.html",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "page": "about.html",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "page": "categories.html",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "page": "categories.html",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "page": "community.html",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "page": "community.html",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "page": "contact.html",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "page": "contact.html",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "page": "featured.html",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "page": "featured.html",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "page": "games.html",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "page": "games.html",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "page": "index.html",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "page": "index.html",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "page": "news.html",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "page": "news.html",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "page": "responsive.html",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "page": "responsive.html",
+      "width": 1440,
+      "violations": []
+    }
+  ]
+}

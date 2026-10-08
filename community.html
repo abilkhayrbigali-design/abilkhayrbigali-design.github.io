@@ -1,33 +1,623 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Team: Eggs | Group: SE-2507 -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Steam Game Hub community, discussions, guides and gaming events.">
-    <title>Steam Game Hub - Community</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171d25'/%3E%3Ctext x='18' y='44' fill='%2366c0f4' font-size='38' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header id="main-header"><nav class="navbar" aria-label="Main navigation"><a class="logo" href="index.html">STEAM GAME HUB</a><ul class="nav-menu"><li><a href="index.html">Home</a></li><li><a href="featured.html">Featured Games</a></li><li><a href="games.html">Games</a></li><li><a href="categories.html">Categories</a></li><li><a href="news.html">News</a></li><li><a class="active" href="community.html">Community</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
-    <main>
-        <section class="page-banner"><p class="subtitle">CONNECT • SHARE • DISCUSS</p><h1>Steam Game Hub Community</h1><p>Exchange tactical guides, discuss upcoming releases, and team up for multiplayer battles.</p></section>
-        <section class="content-section">
-            <div class="stats-grid"><article class="stat-card"><p class="stat-number">320,000+</p><p class="stat-label">Players Online</p></article><article class="stat-card"><p class="stat-number">18,450</p><p class="stat-label">Active Discussions</p></article><article class="stat-card"><p class="stat-number">4,120</p><p class="stat-label">Community Guides</p></article><article class="stat-card"><p class="stat-number">950</p><p class="stat-label">Verified Clans</p></article></div>
-            <div class="community-layout">
-                <section class="discussions-column"><h2>Trending Discussions</h2><p>Participate in active conversations with community members and game developers.</p><div class="discussion-list">
-                    <a class="discussion-item" href="contact.html"><div class="discussion-main"><div class="discussion-header"><span class="disc-tag pinned">Pinned</span><span class="disc-tag general">Announcement</span></div><h3>Official Guidelines &amp; Forum Code of Conduct</h3><div class="discussion-meta">Started by <span>AdminSteam</span> • 2 hours ago in <span>Platform News</span></div></div><div class="reply-badge"><span class="reply-count">248</span><span class="reply-label">Replies</span></div></a>
-                    <a class="discussion-item" href="contact.html"><div class="discussion-main"><div class="discussion-header"><span class="disc-tag hot">Hot</span></div><h3>Best RPG game of 2026: What are your top three picks?</h3><div class="discussion-meta">Started by <span>CyberWanderer</span> • 15 minutes ago in <span>Role-Playing Games</span></div></div><div class="reply-badge"><span class="reply-count">184</span><span class="reply-label">Replies</span></div></a>
-                    <a class="discussion-item" href="contact.html"><div class="discussion-main"><div class="discussion-header"><span class="disc-tag guide">Guide</span></div><h3>CS2 Smoke &amp; Flash Utility Placement for Competitive Season 3</h3><div class="discussion-meta">Started by <span>TacticalPro</span> • 1 hour ago in <span>Competitive Guides</span></div></div><div class="reply-badge"><span class="reply-count">92</span><span class="reply-label">Replies</span></div></a>
-                    <a class="discussion-item" href="contact.html"><div class="discussion-main"><div class="discussion-header"><span class="disc-tag general">Hardware</span></div><h3>Steam Deck vs Gaming Laptop for University Dorm Life</h3><div class="discussion-meta">Started by <span>CampusGamer</span> • 3 hours ago in <span>Hardware &amp; Tech</span></div></div><div class="reply-badge"><span class="reply-count">117</span><span class="reply-label">Replies</span></div></a>
-                    <a class="discussion-item" href="contact.html"><div class="discussion-main"><div class="discussion-header"><span class="disc-tag hot">Hot</span></div><h3>Which autumn game release are you most excited to play?</h3><div class="discussion-meta">Started by <span>PixelKnight</span> • 4 hours ago in <span>General Gaming</span></div></div><div class="reply-badge"><span class="reply-count">76</span><span class="reply-label">Replies</span></div></a>
-                </div></section>
-                <aside class="community-sidebar"><div class="sidebar-box"><h3>Community Rules</h3><ol class="custom-ol"><li><strong>Be Respectful:</strong> Toxic conduct is not tolerated.</li><li><strong>No Spam:</strong> Keep links helpful and avoid advertising.</li><li><strong>Stay on Topic:</strong> Use the correct category and tags.</li><li><strong>Security First:</strong> Never share passwords or API keys.</li><li><strong>Report Violations:</strong> Help keep the community welcoming.</li></ol></div><div class="sidebar-box"><h3>Community Channels</h3><ul class="custom-ul"><li><a href="contact.html">→ Official Discord Community</a></li><li><a href="contact.html">→ Steam Community Group</a></li><li><a href="contact.html">→ Reddit r/SteamGameHub</a></li><li><a href="contact.html">→ Workshop &amp; Guides</a></li><li><a href="contact.html">→ Weekend Tournaments</a></li></ul></div></aside>
-            </div>
-            <section class="community-cta"><h2>Join the Global Gaming Community</h2><p>Participate in seasonal tournaments, share your clips, and build squads with other players.</p><div class="cta-buttons"><a class="main-button" href="contact.html">Join Official Discord</a><a class="secondary-button" href="contact.html">Start New Discussion</a></div></section>
-        </section>
+<html data-bs-theme="dark" lang="en">
+ <head>
+  <!-- Team: Eggs | Group: SE-2507 -->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Steam Game Hub community, discussions, guides and gaming events." name="description"/>
+  <title>
+   Steam Game Hub - Community
+  </title>
+  <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171d25'/%3E%3Ctext x='18' y='44' fill='%2366c0f4' font-size='38' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+  <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+  <link href="css/theme.css" rel="stylesheet"/>
+  <script defer="" src="vendor/bootstrap/bootstrap.bundle.min.js">
+  </script>
+  <script defer="" src="js/site.js">
+  </script>
+ </head>
+ <body class="d-flex flex-column min-vh-100">
+  <a class="visually-hidden-focusable btn btn-light position-absolute top-0 start-0 m-2 skip-link" href="#main-content">
+   Skip to main content
+  </a>
+  <header id="main-header">
+   <nav aria-label="Main navigation" class="navbar navbar-expand-xl bg-dark border-bottom py-3">
+    <!-- Tasks 4-5: Bootstrap spacing and Collapse navbar. -->
+    <div class="container-fluid px-3 px-sm-4">
+     <a class="navbar-brand fw-bold text-info me-2" href="index.html">
+      STEAM GAME HUB
+     </a>
+     <button aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#main-nav" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse" id="main-nav">
+      <ul class="navbar-nav ms-auto mb-0 mt-3 mt-xl-0">
+       <li class="nav-item">
+        <a class="nav-link px-2" href="index.html">
+         Home
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="featured.html">
+         Featured
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="games.html">
+         Games
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="categories.html">
+         Categories
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="news.html">
+         News
+        </a>
+       </li>
+       <li class="nav-item">
+        <a aria-current="page" class="nav-link px-2 active" href="community.html">
+         Community
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="about.html">
+         About
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="contact.html">
+         Contact
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <div class="container-fluid px-3 px-sm-4 py-4 flex-grow-1">
+   <div class="row g-4">
+    <aside aria-labelledby="sidebar-title" class="page-sidebar col-12 col-xl-2">
+     <div class="sidebar-panel rounded-3 p-3">
+      <h2 class="h6 text-info mb-3" id="sidebar-title">
+       Community
+      </h2>
+      <nav aria-label="Page sections">
+       <ul class="sidebar-links nav flex-row flex-xl-column gap-1">
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="#community-stats">
+          Community snapshot
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="#discussions">
+          Discussions
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="#community-gallery">
+          Game gallery
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="#join-community">
+          Get involved
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="about.html#game-gallery">
+          Discover the gallery
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="responsive.html">
+          Responsive showcase
+         </a>
+        </li>
+       </ul>
+      </nav>
+      <div class="sidebar-note border-top mt-3 pt-3 d-none d-xl-block">
+       <p class="subtitle mb-2 small">
+        TEAM EGGS
+       </p>
+       <p class="mb-2 small">
+        Web Technologies I
+        <br/>
+        SE-2507
+       </p>
+      </div>
+     </div>
+    </aside>
+    <main class="page-main col-12 col-xl-10" id="main-content" tabindex="-1">
+     <section class="page-banner text-center rounded-3 px-3 px-sm-4 py-5 mb-2">
+      <p class="subtitle mb-3 small text-info text-uppercase fw-bold mb-2">
+       CONNECT • SHARE • DISCUSS
+      </p>
+      <h1 class="mb-3 fw-bold">
+       Steam Game Hub Community
+      </h1>
+      <p class="mb-3">
+       Exchange tactical guides, discuss upcoming releases, and team up for multiplayer battles.
+      </p>
+      <p class="demo-note mb-3 small mt-3 mb-0 text-body-secondary">
+       A student community concept with illustrative discussions and statistics.
+      </p>
+     </section>
+     <section class="content-section container-fluid px-0 py-4 py-lg-5">
+      <div class="stats-grid row g-4 mb-5" id="community-stats">
+       <div class="col-12 col-sm-6 col-lg-3">
+        <article class="stat-card card h-100 p-3 text-center">
+         <p class="stat-number mb-3 h3 text-info fw-bold mb-1">
+          320,000+
+         </p>
+         <p class="stat-label mb-3 small mb-0">
+          Players Online
+         </p>
+        </article>
+       </div>
+       <div class="col-12 col-sm-6 col-lg-3">
+        <article class="stat-card card h-100 p-3 text-center">
+         <p class="stat-number mb-3 h3 text-info fw-bold mb-1">
+          18,450
+         </p>
+         <p class="stat-label mb-3 small mb-0">
+          Active Discussions
+         </p>
+        </article>
+       </div>
+       <div class="col-12 col-sm-6 col-lg-3">
+        <article class="stat-card card h-100 p-3 text-center">
+         <p class="stat-number mb-3 h3 text-info fw-bold mb-1">
+          4,120
+         </p>
+         <p class="stat-label mb-3 small mb-0">
+          Community Guides
+         </p>
+        </article>
+       </div>
+       <div class="col-12 col-sm-6 col-lg-3">
+        <article class="stat-card card h-100 p-3 text-center">
+         <p class="stat-number mb-3 h3 text-info fw-bold mb-1">
+          950
+         </p>
+         <p class="stat-label mb-3 small mb-0">
+          Verified Clans
+         </p>
+        </article>
+       </div>
+      </div>
+      <div class="community-layout row g-4 mb-5">
+       <section class="discussions-column col-12 col-lg-6" id="discussions">
+        <h2 class="mb-4 fw-bold">
+         Trending Discussions
+        </h2>
+        <p class="mb-3">
+         Participate in active conversations with community members and game developers.
+        </p>
+        <div class="discussion-list d-flex flex-column gap-3">
+         <a class="discussion-item d-flex flex-column flex-sm-row justify-content-between align-items-start gap-3 border rounded-3 p-3 text-decoration-none" href="contact.html">
+          <div class="discussion-main">
+           <div class="discussion-header d-flex flex-wrap align-items-center gap-2 mb-3">
+            <span class="disc-tag pinned badge text-bg-primary">
+             Pinned
+            </span>
+            <span class="disc-tag general badge text-bg-primary">
+             Announcement
+            </span>
+           </div>
+           <h3 class="h5 mb-3 fw-bold">
+            Official Guidelines &amp; Forum Code of Conduct
+           </h3>
+           <div class="discussion-meta small text-body-secondary">
+            Started by
+            <span>
+             AdminSteam
+            </span>
+            • 2 hours ago in
+            <span>
+             Platform News
+            </span>
+           </div>
+          </div>
+          <div class="reply-badge border rounded-2 px-3 py-2 text-center flex-shrink-0">
+           <span class="reply-count d-block text-info fw-bold">
+            248
+           </span>
+           <span class="reply-label small">
+            Replies
+           </span>
+          </div>
+         </a>
+         <a class="discussion-item d-flex flex-column flex-sm-row justify-content-between align-items-start gap-3 border rounded-3 p-3 text-decoration-none" href="contact.html">
+          <div class="discussion-main">
+           <div class="discussion-header d-flex flex-wrap align-items-center gap-2 mb-3">
+            <span class="disc-tag hot badge text-bg-primary">
+             Hot
+            </span>
+           </div>
+           <h3 class="h5 mb-3 fw-bold">
+            Best RPG game of 2026: What are your top three picks?
+           </h3>
+           <div class="discussion-meta small text-body-secondary">
+            Started by
+            <span>
+             CyberWanderer
+            </span>
+            • 15 minutes ago in
+            <span>
+             Role-Playing Games
+            </span>
+           </div>
+          </div>
+          <div class="reply-badge border rounded-2 px-3 py-2 text-center flex-shrink-0">
+           <span class="reply-count d-block text-info fw-bold">
+            184
+           </span>
+           <span class="reply-label small">
+            Replies
+           </span>
+          </div>
+         </a>
+         <a class="discussion-item d-flex flex-column flex-sm-row justify-content-between align-items-start gap-3 border rounded-3 p-3 text-decoration-none" href="contact.html">
+          <div class="discussion-main">
+           <div class="discussion-header d-flex flex-wrap align-items-center gap-2 mb-3">
+            <span class="disc-tag guide badge text-bg-primary">
+             Guide
+            </span>
+           </div>
+           <h3 class="h5 mb-3 fw-bold">
+            CS2 Smoke &amp; Flash Utility Placement for Competitive Season 3
+           </h3>
+           <div class="discussion-meta small text-body-secondary">
+            Started by
+            <span>
+             TacticalPro
+            </span>
+            • 1 hour ago in
+            <span>
+             Competitive Guides
+            </span>
+           </div>
+          </div>
+          <div class="reply-badge border rounded-2 px-3 py-2 text-center flex-shrink-0">
+           <span class="reply-count d-block text-info fw-bold">
+            92
+           </span>
+           <span class="reply-label small">
+            Replies
+           </span>
+          </div>
+         </a>
+         <a class="discussion-item d-flex flex-column flex-sm-row justify-content-between align-items-start gap-3 border rounded-3 p-3 text-decoration-none" href="contact.html">
+          <div class="discussion-main">
+           <div class="discussion-header d-flex flex-wrap align-items-center gap-2 mb-3">
+            <span class="disc-tag general badge text-bg-primary">
+             Hardware
+            </span>
+           </div>
+           <h3 class="h5 mb-3 fw-bold">
+            Steam Deck vs Gaming Laptop for University Dorm Life
+           </h3>
+           <div class="discussion-meta small text-body-secondary">
+            Started by
+            <span>
+             CampusGamer
+            </span>
+            • 3 hours ago in
+            <span>
+             Hardware &amp; Tech
+            </span>
+           </div>
+          </div>
+          <div class="reply-badge border rounded-2 px-3 py-2 text-center flex-shrink-0">
+           <span class="reply-count d-block text-info fw-bold">
+            117
+           </span>
+           <span class="reply-label small">
+            Replies
+           </span>
+          </div>
+         </a>
+         <a class="discussion-item d-flex flex-column flex-sm-row justify-content-between align-items-start gap-3 border rounded-3 p-3 text-decoration-none" href="contact.html">
+          <div class="discussion-main">
+           <div class="discussion-header d-flex flex-wrap align-items-center gap-2 mb-3">
+            <span class="disc-tag hot badge text-bg-primary">
+             Hot
+            </span>
+           </div>
+           <h3 class="h5 mb-3 fw-bold">
+            Which autumn game release are you most excited to play?
+           </h3>
+           <div class="discussion-meta small text-body-secondary">
+            Started by
+            <span>
+             PixelKnight
+            </span>
+            • 4 hours ago in
+            <span>
+             General Gaming
+            </span>
+           </div>
+          </div>
+          <div class="reply-badge border rounded-2 px-3 py-2 text-center flex-shrink-0">
+           <span class="reply-count d-block text-info fw-bold">
+            76
+           </span>
+           <span class="reply-label small">
+            Replies
+           </span>
+          </div>
+         </a>
+        </div>
+       </section>
+       <aside class="community-sidebar col-12 col-lg-6 d-flex flex-column gap-3">
+        <div class="sidebar-box rounded-3 border p-4">
+         <h3 class="h5 mb-3 fw-bold border-bottom pb-3 text-info">
+          Community Rules
+         </h3>
+         <ol class="custom-ol ps-4 mb-0">
+          <li class="mb-2">
+           <strong>
+            Be Respectful:
+           </strong>
+           Toxic conduct is not tolerated.
+          </li>
+          <li class="mb-2">
+           <strong>
+            No Spam:
+           </strong>
+           Keep links helpful and avoid advertising.
+          </li>
+          <li class="mb-2">
+           <strong>
+            Stay on Topic:
+           </strong>
+           Use the correct category and tags.
+          </li>
+          <li class="mb-2">
+           <strong>
+            Security First:
+           </strong>
+           Never share passwords or API keys.
+          </li>
+          <li class="mb-2">
+           <strong>
+            Report Violations:
+           </strong>
+           Help keep the community welcoming.
+          </li>
+         </ol>
+        </div>
+        <div class="sidebar-box rounded-3 border p-4">
+         <h3 class="h5 mb-3 fw-bold border-bottom pb-3 text-info">
+          Community Channels
+         </h3>
+         <ul class="custom-ul list-unstyled mb-0">
+          <li class="mb-2">
+           <a href="contact.html">
+            → Official Discord Community
+           </a>
+          </li>
+          <li class="mb-2">
+           <a href="contact.html">
+            → Steam Community Group
+           </a>
+          </li>
+          <li class="mb-2">
+           <a href="contact.html">
+            → Reddit r/SteamGameHub
+           </a>
+          </li>
+          <li class="mb-2">
+           <a href="contact.html">
+            → Workshop &amp; Guides
+           </a>
+          </li>
+          <li class="mb-2">
+           <a href="contact.html">
+            → Weekend Tournaments
+           </a>
+          </li>
+         </ul>
+        </div>
+       </aside>
+      </div>
+      <section class="community-cta text-center rounded-3 border p-4 p-md-5" id="join-community">
+       <h2 class="mb-4 fw-bold">
+        Join the Global Gaming Community
+       </h2>
+       <p class="mb-3">
+        Participate in seasonal tournaments, share your clips, and build squads with other players.
+       </p>
+       <div class="cta-buttons d-flex flex-wrap justify-content-center gap-3">
+        <a class="btn btn-primary btn-lg" href="contact.html">
+         Join Official Discord
+        </a>
+        <a class="btn btn-outline-info btn-lg" href="contact.html">
+         Start New Discussion
+        </a>
+       </div>
+      </section>
+     </section>
+     <section aria-labelledby="community-gallery-title" class="content-section container-fluid px-0 py-4 py-lg-5" id="community-gallery">
+      <p class="subtitle mb-3 small text-info text-uppercase fw-bold mb-2">
+       OUR GAMING PICKS
+      </p>
+      <h2 class="mb-4 fw-bold" id="community-gallery-title">
+       Community Game Gallery
+      </h2>
+      <p class="mb-3">
+       From familiar favourites to unusual simulators, these games show the variety of worlds we enjoy exploring.
+      </p>
+      <div class="row justify-content-center">
+       <div class="col-12 col-lg-10">
+        <div aria-label="Game gallery" aria-roledescription="carousel" class="carousel slide rounded-3 overflow-hidden border" data-bs-interval="false" id="games-carousel" role="region" tabindex="0">
+         <div class="carousel-indicators mb-2">
+          <button aria-current="true" aria-label="Slide 1: Minecraft" class="active" data-bs-slide-to="0" data-bs-target="#games-carousel" type="button">
+          </button>
+          <button aria-label="Slide 2: Dota 2" class="" data-bs-slide-to="1" data-bs-target="#games-carousel" type="button">
+          </button>
+          <button aria-label="Slide 3: Roblox" class="" data-bs-slide-to="2" data-bs-target="#games-carousel" type="button">
+          </button>
+          <button aria-label="Slide 4: Brawl Stars" class="" data-bs-slide-to="3" data-bs-target="#games-carousel" type="button">
+          </button>
+          <button aria-label="Slide 5: Angry Birds" class="" data-bs-slide-to="4" data-bs-target="#games-carousel" type="button">
+          </button>
+          <button aria-label="Slide 6: Rust" class="" data-bs-slide-to="5" data-bs-target="#games-carousel" type="button">
+          </button>
+          <button aria-label="Slide 7: Fishing Simulator" class="" data-bs-slide-to="6" data-bs-target="#games-carousel" type="button">
+          </button>
+          <button aria-label="Slide 8: I Am Bear" class="" data-bs-slide-to="7" data-bs-target="#games-carousel" type="button">
+          </button>
+          <button aria-label="Slide 9: Librarian Simulator" class="" data-bs-slide-to="8" data-bs-target="#games-carousel" type="button">
+          </button>
+         </div>
+         <div class="carousel-inner">
+          <div aria-label="1 of 9" aria-roledescription="slide" class="carousel-item active" role="group">
+           <img alt="Colourful Minecraft logo" class="d-block w-100 carousel-art" height="540" src="images/about-gallery/minecraft.jpg" width="960"/>
+           <div class="carousel-caption position-static px-3 pt-3 pb-5">
+            <h3 class="h5 mb-2">
+             Minecraft
+            </h3>
+            <p class="small mb-0">
+             1 / 9 · Our gaming picks
+            </p>
+           </div>
+          </div>
+          <div aria-label="2 of 9" aria-roledescription="slide" class="carousel-item" role="group">
+           <img alt="Red and black Dota 2 character artwork" class="d-block w-100 carousel-art" height="540" src="images/about-gallery/dota2.jpg" width="960"/>
+           <div class="carousel-caption position-static px-3 pt-3 pb-5">
+            <h3 class="h5 mb-2">
+             Dota 2
+            </h3>
+            <p class="small mb-0">
+             2 / 9 · Our gaming picks
+            </p>
+           </div>
+          </div>
+          <div aria-label="3 of 9" aria-roledescription="slide" class="carousel-item" role="group">
+           <img alt="Roblox character beside a car at night" class="d-block w-100 carousel-art" height="540" src="images/about-gallery/roblox.png" width="960"/>
+           <div class="carousel-caption position-static px-3 pt-3 pb-5">
+            <h3 class="h5 mb-2">
+             Roblox
+            </h3>
+            <p class="small mb-0">
+             3 / 9 · Our gaming picks
+            </p>
+           </div>
+          </div>
+          <div aria-label="4 of 9" aria-roledescription="slide" class="carousel-item" role="group">
+           <img alt="Brawl Stars character comparison" class="d-block w-100 carousel-art" height="540" src="images/about-gallery/brawlstars.jpg" width="960"/>
+           <div class="carousel-caption position-static px-3 pt-3 pb-5">
+            <h3 class="h5 mb-2">
+             Brawl Stars
+            </h3>
+            <p class="small mb-0">
+             4 / 9 · Our gaming picks
+            </p>
+           </div>
+          </div>
+          <div aria-label="5 of 9" aria-roledescription="slide" class="carousel-item" role="group">
+           <img alt="Red Angry Birds character with a bow" class="d-block w-100 carousel-art" height="540" src="images/about-gallery/angrybirds.jpg" width="960"/>
+           <div class="carousel-caption position-static px-3 pt-3 pb-5">
+            <h3 class="h5 mb-2">
+             Angry Birds
+            </h3>
+            <p class="small mb-0">
+             5 / 9 · Our gaming picks
+            </p>
+           </div>
+          </div>
+          <div aria-label="6 of 9" aria-roledescription="slide" class="carousel-item" role="group">
+           <img alt="Cartoon character in a Rust landscape" class="d-block w-100 carousel-art" height="540" src="images/about-gallery/rust.jpeg" width="960"/>
+           <div class="carousel-caption position-static px-3 pt-3 pb-5">
+            <h3 class="h5 mb-2">
+             Rust
+            </h3>
+            <p class="small mb-0">
+             6 / 9 · Our gaming picks
+            </p>
+           </div>
+          </div>
+          <div aria-label="7 of 9" aria-roledescription="slide" class="carousel-item" role="group">
+           <img alt="Fishing gameplay showing a caught fish" class="d-block w-100 carousel-art" height="540" src="images/about-gallery/fishingsim.avif" width="960"/>
+           <div class="carousel-caption position-static px-3 pt-3 pb-5">
+            <h3 class="h5 mb-2">
+             Fishing Simulator
+            </h3>
+            <p class="small mb-0">
+             7 / 9 · Our gaming picks
+            </p>
+           </div>
+          </div>
+          <div aria-label="8 of 9" aria-roledescription="slide" class="carousel-item" role="group">
+           <img alt="I Am Bear cover artwork" class="d-block w-100 carousel-art" height="540" src="images/about-gallery/iambear.webp" width="960"/>
+           <div class="carousel-caption position-static px-3 pt-3 pb-5">
+            <h3 class="h5 mb-2">
+             I Am Bear
+            </h3>
+            <p class="small mb-0">
+             8 / 9 · Our gaming picks
+            </p>
+           </div>
+          </div>
+          <div aria-label="9 of 9" aria-roledescription="slide" class="carousel-item" role="group">
+           <img alt="First-person view of books in a library" class="d-block w-100 carousel-art" height="540" src="images/about-gallery/librariansimulator.webp" width="960"/>
+           <div class="carousel-caption position-static px-3 pt-3 pb-5">
+            <h3 class="h5 mb-2">
+             Librarian Simulator
+            </h3>
+            <p class="small mb-0">
+             9 / 9 · Our gaming picks
+            </p>
+           </div>
+          </div>
+         </div>
+         <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#games-carousel" type="button">
+          <span aria-hidden="true" class="carousel-control-prev-icon">
+          </span>
+          <span class="visually-hidden">
+           Previous image
+          </span>
+         </button>
+         <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#games-carousel" type="button">
+          <span aria-hidden="true" class="carousel-control-next-icon">
+          </span>
+          <span class="visually-hidden">
+           Next image
+          </span>
+         </button>
+        </div>
+        <p class="small text-body-secondary mt-3 mb-0">
+         Use the arrows, indicators or your keyboard to explore all nine images. Slides advance only when you choose.
+        </p>
+        <p aria-live="polite" class="visually-hidden carousel-status" role="status">
+        </p>
+       </div>
+      </div>
+     </section>
     </main>
-    <footer><p>Steam Game Hub — Web Technologies I</p><p>Team Eggs | SE-2507</p><p>Team Members: Ташкенбаев Нурсултан, Бигали Абулхаир, Султанкулов Шынгыс, Лопаткин Артем</p></footer>
-</body>
+   </div>
+  </div>
+  <footer class="text-center border-top px-3 py-4 mt-4">
+   <p class="small mb-2">
+    Steam Game Hub — Web Technologies I
+   </p>
+   <p class="small mb-2">
+    Team Eggs | SE-2507
+   </p>
+   <p class="small mb-2">
+    Team Members: Ташкенбаев Нурсултан, Бигали Абулхаир, Султанкулов Шынгыс, Лопаткин Артем
+   </p>
+   <p class="small mb-0">
+    <a class="link-info" href="responsive.html">
+     Responsive showcase
+    </a>
+    · Academic demo; prices and news are sample content.
+   </p>
+  </footer>
+ </body>
 </html>

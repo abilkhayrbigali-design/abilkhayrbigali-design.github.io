@@ -1,40 +1,376 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Team: Eggs | Group: SE-2507 -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Steam Game Hub featured games selection.">
-    <title>Steam Game Hub - Featured Games</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171d25'/%3E%3Ctext x='18' y='44' fill='%2366c0f4' font-size='38' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header id="main-header">
-        <nav class="navbar" aria-label="Main navigation">
-            <a class="logo" href="index.html">STEAM GAME HUB</a>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li><li><a class="active" href="featured.html">Featured Games</a></li><li><a href="games.html">Games</a></li><li><a href="categories.html">Categories</a></li><li><a href="news.html">News</a></li><li><a href="community.html">Community</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="page-banner"><p class="subtitle">EXPLORE OUR COLLECTION</p><h1>Featured Games</h1><p>Check out some of the games selected by Steam Game Hub.</p></section>
-        <section class="content-section">
-            <h2>Popular Games</h2>
-            <div class="game-grid">
-                <article class="game-card"><img src="images/news_cs2.jpg" alt="Counter-Strike 2 game artwork"><div class="card-content"><h3>Counter-Strike 2</h3><p class="game-genre">Shooter</p><p>A competitive tactical shooter based on teamwork and strategy.</p><span class="price">Free</span></div></article>
-                <article class="game-card"><img src="images/news_cyberpunk.jpg" alt="Grand Theft Auto V game artwork"><div class="card-content"><h3>Grand Theft Auto V</h3><p class="game-genre">Action</p><p>An open-world action game with missions and exploration.</p><span class="price">$29.99</span></div></article>
-                <article class="game-card"><img src="images/banner.jpg" alt="Dota 2 game artwork"><div class="card-content"><h3>Dota 2</h3><p class="game-genre">MOBA</p><p>A multiplayer strategy game featuring team-based battles.</p><span class="price">Free</span></div></article>
-                <article class="game-card"><img src="images/news_cyberpunk.jpg" alt="Cyberpunk 2077 game artwork"><div class="card-content"><h3>Cyberpunk 2077</h3><p class="game-genre">RPG</p><p>A futuristic open-world RPG set in Night City.</p><span class="price">$59.99</span></div></article>
-                <article class="game-card"><img src="images/banner.jpg" alt="Elden Ring game artwork"><div class="card-content"><h3>Elden Ring</h3><p class="game-genre">Action RPG</p><p>Explore a vast fantasy world, defeat enemies, and discover secrets.</p><span class="price">$59.99</span></div></article>
-                <article class="game-card"><img src="images/news_cs2.jpg" alt="Red Dead Redemption 2 game artwork"><div class="card-content"><h3>Red Dead Redemption 2</h3><p class="game-genre">Adventure</p><p>Experience an open-world western adventure with a detailed story.</p><span class="price">$59.99</span></div></article>
-                <article class="game-card"><img src="images/news_cyberpunk.jpg" alt="Hogwarts Legacy game artwork"><div class="card-content"><h3>Hogwarts Legacy</h3><p class="game-genre">Adventure RPG</p><p>Explore a magical world and experience life as a student wizard.</p><span class="price">$49.99</span></div></article>
-                <article class="game-card"><img src="images/banner.jpg" alt="Baldur's Gate 3 game artwork"><div class="card-content"><h3>Baldur's Gate 3</h3><p class="game-genre">RPG</p><p>Build your character and explore an adventure-driven fantasy world.</p><span class="price">$59.99</span></div></article>
-            </div>
-        </section>
-        <section class="content-section boxed-section"><h2>Popular Genres</h2><ol class="genre-list"><li>Action</li><li>RPG</li><li>Shooter</li><li>Adventure</li><li>Strategy</li></ol></section>
+<html data-bs-theme="dark" lang="en">
+ <head>
+  <!-- Team: Eggs | Group: SE-2507 -->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Steam Game Hub featured games selection." name="description"/>
+  <title>
+   Steam Game Hub - Featured Games
+  </title>
+  <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171d25'/%3E%3Ctext x='18' y='44' fill='%2366c0f4' font-size='38' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+  <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+  <link href="css/theme.css" rel="stylesheet"/>
+  <script defer="" src="vendor/bootstrap/bootstrap.bundle.min.js">
+  </script>
+  <script defer="" src="js/site.js">
+  </script>
+ </head>
+ <body class="d-flex flex-column min-vh-100">
+  <a class="visually-hidden-focusable btn btn-light position-absolute top-0 start-0 m-2 skip-link" href="#main-content">
+   Skip to main content
+  </a>
+  <header id="main-header">
+   <nav aria-label="Main navigation" class="navbar navbar-expand-xl bg-dark border-bottom py-3">
+    <!-- Tasks 4-5: Bootstrap spacing and Collapse navbar. -->
+    <div class="container-fluid px-3 px-sm-4">
+     <a class="navbar-brand fw-bold text-info me-2" href="index.html">
+      STEAM GAME HUB
+     </a>
+     <button aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#main-nav" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse" id="main-nav">
+      <ul class="navbar-nav ms-auto mb-0 mt-3 mt-xl-0">
+       <li class="nav-item">
+        <a class="nav-link px-2" href="index.html">
+         Home
+        </a>
+       </li>
+       <li class="nav-item">
+        <a aria-current="page" class="nav-link px-2 active" href="featured.html">
+         Featured
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="games.html">
+         Games
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="categories.html">
+         Categories
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="news.html">
+         News
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="community.html">
+         Community
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="about.html">
+         About
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="contact.html">
+         Contact
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <div class="container-fluid px-3 px-sm-4 py-4 flex-grow-1">
+   <div class="row g-4">
+    <aside aria-labelledby="sidebar-title" class="page-sidebar col-12 col-xl-2">
+     <div class="sidebar-panel rounded-3 p-3">
+      <h2 class="h6 text-info mb-3" id="sidebar-title">
+       Featured games
+      </h2>
+      <nav aria-label="Page sections">
+       <ul class="sidebar-links nav flex-row flex-xl-column gap-1">
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="#popular-games">
+          Popular games
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="#popular-genres">
+          Popular genres
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="about.html#game-gallery">
+          Discover the gallery
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="responsive.html">
+          Responsive showcase
+         </a>
+        </li>
+       </ul>
+      </nav>
+      <div class="sidebar-note border-top mt-3 pt-3 d-none d-xl-block">
+       <p class="subtitle mb-2 small">
+        TEAM EGGS
+       </p>
+       <p class="mb-2 small">
+        Web Technologies I
+        <br/>
+        SE-2507
+       </p>
+      </div>
+     </div>
+    </aside>
+    <main class="page-main col-12 col-xl-10" id="main-content" tabindex="-1">
+     <section class="page-banner text-center rounded-3 px-3 px-sm-4 py-5 mb-2">
+      <p class="subtitle mb-3 small text-info text-uppercase fw-bold mb-2">
+       EXPLORE OUR COLLECTION
+      </p>
+      <h1 class="mb-3 fw-bold">
+       Featured Games
+      </h1>
+      <p class="mb-3">
+       Check out some of the games selected by Steam Game Hub.
+      </p>
+     </section>
+     <section class="content-section container-fluid px-0 py-4 py-lg-5" id="popular-games">
+      <h2 class="mb-4 fw-bold">
+       Popular Games
+      </h2>
+      <div class="card-row row g-4">
+       <div class="col-12 col-md-6 col-lg-4">
+        <article class="game-card card h-100" id="counter-strike-2">
+         <img alt="Counter-Strike 2 - official Steam cover artwork" class="card-img-top" height="215" src="images/games/counter-strike-2.jpg" width="460"/>
+         <div class="card-content card-body d-flex flex-column p-3 p-lg-4">
+          <h3 class="h5 mb-3 fw-bold card-title">
+           Counter-Strike 2
+          </h3>
+          <p class="game-genre mb-3 card-text text-info fw-semibold">
+           Shooter
+          </p>
+          <p class="mb-3 card-text">
+           A competitive tactical shooter based on teamwork and strategy.
+          </p>
+          <span class="price fw-bold text-info mb-3 d-block">
+           Free
+          </span>
+          <a aria-label="Browse the game catalogue after Counter-Strike 2" class="card-action btn btn-outline-info btn-sm mt-auto align-self-start" href="games.html">
+           View catalogue
+          </a>
+         </div>
+        </article>
+       </div>
+       <div class="col-12 col-md-6 col-lg-4">
+        <article class="game-card card h-100" id="grand-theft-auto-v">
+         <img alt="Grand Theft Auto V - official Steam cover artwork" class="card-img-top" height="215" src="images/games/grand-theft-auto-v.jpg" width="460"/>
+         <div class="card-content card-body d-flex flex-column p-3 p-lg-4">
+          <h3 class="h5 mb-3 fw-bold card-title">
+           Grand Theft Auto V
+          </h3>
+          <p class="game-genre mb-3 card-text text-info fw-semibold">
+           Action
+          </p>
+          <p class="mb-3 card-text">
+           An open-world action game with missions and exploration.
+          </p>
+          <span class="price fw-bold text-info mb-3 d-block">
+           $29.99
+          </span>
+          <a aria-label="Browse the game catalogue after Grand Theft Auto V" class="card-action btn btn-outline-info btn-sm mt-auto align-self-start" href="games.html">
+           View catalogue
+          </a>
+         </div>
+        </article>
+       </div>
+       <div class="col-12 col-md-6 col-lg-4">
+        <article class="game-card card h-100" id="dota-2">
+         <img alt="Dota 2 game artwork" class="original-dota-art card-img-top" height="500" src="images/about-gallery/dota2.jpg" width="800"/>
+         <div class="card-content card-body d-flex flex-column p-3 p-lg-4">
+          <h3 class="h5 mb-3 fw-bold card-title">
+           Dota 2
+          </h3>
+          <p class="game-genre mb-3 card-text text-info fw-semibold">
+           MOBA
+          </p>
+          <p class="mb-3 card-text">
+           A multiplayer strategy game featuring team-based battles.
+          </p>
+          <span class="price fw-bold text-info mb-3 d-block">
+           Free
+          </span>
+          <a aria-label="Browse the game catalogue after Dota 2" class="card-action btn btn-outline-info btn-sm mt-auto align-self-start" href="games.html">
+           View catalogue
+          </a>
+         </div>
+        </article>
+       </div>
+       <div class="col-12 col-md-6 col-lg-4">
+        <article class="game-card card h-100" id="cyberpunk-2077">
+         <img alt="Cyberpunk 2077 - official Steam cover artwork" class="card-img-top" height="215" src="images/games/cyberpunk-2077.jpg" width="460"/>
+         <div class="card-content card-body d-flex flex-column p-3 p-lg-4">
+          <h3 class="h5 mb-3 fw-bold card-title">
+           Cyberpunk 2077
+          </h3>
+          <p class="game-genre mb-3 card-text text-info fw-semibold">
+           RPG
+          </p>
+          <p class="mb-3 card-text">
+           A futuristic open-world RPG set in Night City.
+          </p>
+          <span class="price fw-bold text-info mb-3 d-block">
+           $59.99
+          </span>
+          <a aria-label="Browse the game catalogue after Cyberpunk 2077" class="card-action btn btn-outline-info btn-sm mt-auto align-self-start" href="games.html">
+           View catalogue
+          </a>
+         </div>
+        </article>
+       </div>
+       <div class="col-12 col-md-6 col-lg-4">
+        <article class="game-card card h-100" id="elden-ring">
+         <img alt="Elden Ring - official Steam cover artwork" class="card-img-top" height="215" src="images/games/elden-ring.jpg" width="460"/>
+         <div class="card-content card-body d-flex flex-column p-3 p-lg-4">
+          <h3 class="h5 mb-3 fw-bold card-title">
+           Elden Ring
+          </h3>
+          <p class="game-genre mb-3 card-text text-info fw-semibold">
+           Action RPG
+          </p>
+          <p class="mb-3 card-text">
+           Explore a vast fantasy world, defeat enemies, and discover secrets.
+          </p>
+          <span class="price fw-bold text-info mb-3 d-block">
+           $59.99
+          </span>
+          <a aria-label="Browse the game catalogue after Elden Ring" class="card-action btn btn-outline-info btn-sm mt-auto align-self-start" href="games.html">
+           View catalogue
+          </a>
+         </div>
+        </article>
+       </div>
+       <div class="col-12 col-md-6 col-lg-4">
+        <article class="game-card card h-100" id="red-dead-redemption-2">
+         <img alt="Red Dead Redemption 2 - official Steam cover artwork" class="card-img-top" height="215" src="images/games/red-dead-redemption-2.jpg" width="460"/>
+         <div class="card-content card-body d-flex flex-column p-3 p-lg-4">
+          <h3 class="h5 mb-3 fw-bold card-title">
+           Red Dead Redemption 2
+          </h3>
+          <p class="game-genre mb-3 card-text text-info fw-semibold">
+           Adventure
+          </p>
+          <p class="mb-3 card-text">
+           Experience an open-world western adventure with a detailed story.
+          </p>
+          <span class="price fw-bold text-info mb-3 d-block">
+           $59.99
+          </span>
+          <a aria-label="Browse the game catalogue after Red Dead Redemption 2" class="card-action btn btn-outline-info btn-sm mt-auto align-self-start" href="games.html">
+           View catalogue
+          </a>
+         </div>
+        </article>
+       </div>
+       <div class="col-12 col-md-6 col-lg-4">
+        <article class="game-card card h-100" id="hogwarts-legacy">
+         <img alt="Hogwarts Legacy - official Steam cover artwork" class="card-img-top" height="215" src="images/games/hogwarts-legacy.jpg" width="460"/>
+         <div class="card-content card-body d-flex flex-column p-3 p-lg-4">
+          <h3 class="h5 mb-3 fw-bold card-title">
+           Hogwarts Legacy
+          </h3>
+          <p class="game-genre mb-3 card-text text-info fw-semibold">
+           Adventure RPG
+          </p>
+          <p class="mb-3 card-text">
+           Explore a magical world and experience life as a student wizard.
+          </p>
+          <span class="price fw-bold text-info mb-3 d-block">
+           $49.99
+          </span>
+          <a aria-label="Browse the game catalogue after Hogwarts Legacy" class="card-action btn btn-outline-info btn-sm mt-auto align-self-start" href="games.html">
+           View catalogue
+          </a>
+         </div>
+        </article>
+       </div>
+       <div class="col-12 col-md-6 col-lg-4">
+        <article class="game-card card h-100" id="baldurs-gate-3">
+         <img alt="Baldur's Gate 3 - official Steam cover artwork" class="card-img-top" height="215" src="images/games/baldurs-gate-3.jpg" width="460"/>
+         <div class="card-content card-body d-flex flex-column p-3 p-lg-4">
+          <h3 class="h5 mb-3 fw-bold card-title">
+           Baldur's Gate 3
+          </h3>
+          <p class="game-genre mb-3 card-text text-info fw-semibold">
+           RPG
+          </p>
+          <p class="mb-3 card-text">
+           Build your character and explore an adventure-driven fantasy world.
+          </p>
+          <span class="price fw-bold text-info mb-3 d-block">
+           $59.99
+          </span>
+          <a aria-label="Browse the game catalogue after Baldur's Gate 3" class="card-action btn btn-outline-info btn-sm mt-auto align-self-start" href="games.html">
+           View catalogue
+          </a>
+         </div>
+        </article>
+       </div>
+      </div>
+      <!-- Task 6: a button group with real navigation destinations. -->
+      <nav aria-label="Browse games" class="mt-4 mt-lg-5">
+       <div aria-label="Game collections" class="btn-group" role="group">
+        <a class="btn btn-primary btn-sm" href="featured.html">
+         Featured
+        </a>
+        <a class="btn btn-outline-info btn-sm" href="games.html">
+         All games
+        </a>
+        <a class="btn btn-outline-info btn-sm" href="categories.html">
+         Genres
+        </a>
+       </div>
+      </nav>
+     </section>
+     <section class="content-section boxed-section rounded-3 p-3 p-md-4 my-4" id="popular-genres">
+      <h2 class="mb-4 fw-bold">
+       Popular Genres
+      </h2>
+      <ol class="genre-list ps-4 mb-0">
+       <li class="mb-2">
+        Action
+       </li>
+       <li class="mb-2">
+        RPG
+       </li>
+       <li class="mb-2">
+        Shooter
+       </li>
+       <li class="mb-2">
+        Adventure
+       </li>
+       <li class="mb-2">
+        Strategy
+       </li>
+      </ol>
+     </section>
     </main>
-    <footer><p>Steam Game Hub — Web Technologies I</p><p>Team Eggs | SE-2507</p><p>Team Members: Ташкенбаев Нурсултан, Бигали Абулхаир, Султанкулов Шынгыс, Лопаткин Артем</p></footer>
-</body>
+   </div>
+  </div>
+  <footer class="text-center border-top px-3 py-4 mt-4">
+   <p class="small mb-2">
+    Steam Game Hub — Web Technologies I
+   </p>
+   <p class="small mb-2">
+    Team Eggs | SE-2507
+   </p>
+   <p class="small mb-2">
+    Team Members: Ташкенбаев Нурсултан, Бигали Абулхаир, Султанкулов Шынгыс, Лопаткин Артем
+   </p>
+   <p class="small mb-0">
+    <a class="link-info" href="responsive.html">
+     Responsive showcase
+    </a>
+    · Academic demo; prices and news are sample content.
+   </p>
+  </footer>
+ </body>
 </html>

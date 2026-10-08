@@ -1,26 +1,381 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Team: Eggs | Group: SE-2507 -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About the Steam Game Hub student project and its team members.">
-    <title>Steam Game Hub - About Us</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171d25'/%3E%3Ctext x='18' y='44' fill='%2366c0f4' font-size='38' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header id="main-header"><nav class="navbar" aria-label="Main navigation"><a class="logo" href="index.html">STEAM GAME HUB</a><ul class="nav-menu"><li><a href="index.html">Home</a></li><li><a href="featured.html">Featured Games</a></li><li><a href="games.html">Games</a></li><li><a href="categories.html">Categories</a></li><li><a href="news.html">News</a></li><li><a href="community.html">Community</a></li><li><a class="active" href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
-    <main>
-        <section class="page-banner"><p class="subtitle">GET TO KNOW US</p><h1>About Steam Game Hub</h1><p>Learn more about our project and the team behind it.</p></section>
-        <section class="content-section"><h2>About Our Project</h2><p>Steam Game Hub is a student web project created for the Web Technologies I course.</p><p>Our website brings together information about popular games, genres, gaming news, and community experiences. It is a visual academic project and does not include a real store, user accounts, or a backend.</p></section>
-        <section class="content-section"><h2>Our Team</h2><div class="team-grid">
-            <article class="team-card"><img class="profile-img" src="images/member1.png" alt="Portrait of Nursultan Tashkenbayev"><h3>Nursultan Tashkenbayev</h3><p class="team-role">Developer 1</p></article>
-            <article class="team-card"><img class="profile-img" src="images/member2.png" alt="Portrait of Abulkhair Bigali"><h3>Abulkhair Bigali</h3><p class="team-role">Developer 2</p></article>
-            <article class="team-card"><img class="profile-img" src="images/member3.png" alt="Portrait of Shyngys Sultankulov"><h3>Shyngys Sultankulov</h3><p class="team-role">Developer 3</p></article>
-            <article class="team-card"><img class="profile-img" src="images/member4.png" alt="Portrait of Artem Lopatkin"><h3>Artem Lopatkin</h3><p class="team-role">Developer 4</p></article>
-        </div></section>
+<html data-bs-theme="dark" lang="en">
+ <head>
+  <!-- Team: Eggs | Group: SE-2507 -->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="About the Steam Game Hub student project and its team members." name="description"/>
+  <title>
+   Steam Game Hub - About Us
+  </title>
+  <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171d25'/%3E%3Ctext x='18' y='44' fill='%2366c0f4' font-size='38' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+  <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+  <link href="css/theme.css" rel="stylesheet"/>
+  <script defer="" src="vendor/bootstrap/bootstrap.bundle.min.js">
+  </script>
+  <script defer="" src="js/site.js">
+  </script>
+ </head>
+ <body class="d-flex flex-column min-vh-100">
+  <a class="visually-hidden-focusable btn btn-light position-absolute top-0 start-0 m-2 skip-link" href="#main-content">
+   Skip to main content
+  </a>
+  <header id="main-header">
+   <nav aria-label="Main navigation" class="navbar navbar-expand-xl bg-dark border-bottom py-3">
+    <!-- Tasks 4-5: Bootstrap spacing and Collapse navbar. -->
+    <div class="container-fluid px-3 px-sm-4">
+     <a class="navbar-brand fw-bold text-info me-2" href="index.html">
+      STEAM GAME HUB
+     </a>
+     <button aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#main-nav" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse" id="main-nav">
+      <ul class="navbar-nav ms-auto mb-0 mt-3 mt-xl-0">
+       <li class="nav-item">
+        <a class="nav-link px-2" href="index.html">
+         Home
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="featured.html">
+         Featured
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="games.html">
+         Games
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="categories.html">
+         Categories
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="news.html">
+         News
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="community.html">
+         Community
+        </a>
+       </li>
+       <li class="nav-item">
+        <a aria-current="page" class="nav-link px-2 active" href="about.html">
+         About
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link px-2" href="contact.html">
+         Contact
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <div class="container-fluid px-3 px-sm-4 py-4 flex-grow-1">
+   <div class="row g-4">
+    <aside aria-labelledby="sidebar-title" class="page-sidebar col-12 col-xl-2">
+     <div class="sidebar-panel rounded-3 p-3">
+      <h2 class="h6 text-info mb-3" id="sidebar-title">
+       About the hub
+      </h2>
+      <nav aria-label="Page sections">
+       <ul class="sidebar-links nav flex-row flex-xl-column gap-1">
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="#project">
+          Our project
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="#team">
+          Our team
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="#game-gallery">
+          Game gallery
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="contact.html">
+          Contact us
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="responsive.html">
+          Responsive showcase
+         </a>
+        </li>
+       </ul>
+      </nav>
+      <div class="sidebar-note border-top mt-3 pt-3 d-none d-xl-block">
+       <p class="subtitle mb-2 small">
+        TEAM EGGS
+       </p>
+       <p class="mb-2 small">
+        Web Technologies I
+        <br/>
+        SE-2507
+       </p>
+      </div>
+     </div>
+    </aside>
+    <main class="page-main col-12 col-xl-10" id="main-content" tabindex="-1">
+     <section class="page-banner text-center rounded-3 px-3 px-sm-4 py-5 mb-2">
+      <p class="subtitle mb-3 small text-info text-uppercase fw-bold mb-2">
+       GET TO KNOW US
+      </p>
+      <h1 class="mb-3 fw-bold">
+       About Steam Game Hub
+      </h1>
+      <p class="mb-3">
+       Learn more about our project and the team behind it.
+      </p>
+     </section>
+     <section class="content-section container-fluid px-0 py-4 py-lg-5" id="project">
+      <h2 class="mb-4 fw-bold">
+       About Our Project
+      </h2>
+      <p class="mb-3">
+       Steam Game Hub is a student web project created for the Web Technologies I course.
+      </p>
+      <p class="mb-3">
+       Our website brings together information about popular games, genres, gaming news, and community experiences. It is a visual academic project and does not include a real store, user accounts, or a backend.
+      </p>
+     </section>
+     <section class="content-section container-fluid px-0 py-4 py-lg-5" id="team">
+      <h2 class="mb-4 fw-bold">
+       Our Team
+      </h2>
+      <div class="team-grid row g-4">
+       <div class="col-12 col-sm-6 col-xxl-3">
+        <article class="team-card card h-100 text-center align-items-center p-4">
+         <img alt="Portrait of Nursultan Tashkenbayev" class="profile-img rounded-circle mb-3" src="images/member1.png"/>
+         <h3 class="h5 mb-3 fw-bold">
+          Nursultan Tashkenbayev
+         </h3>
+         <p class="team-role mb-3 text-info mt-auto mb-0">
+          Developer 1
+         </p>
+        </article>
+       </div>
+       <div class="col-12 col-sm-6 col-xxl-3">
+        <article class="team-card card h-100 text-center align-items-center p-4">
+         <img alt="Portrait of Abulkhair Bigali" class="profile-img rounded-circle mb-3" src="images/member2.png"/>
+         <h3 class="h5 mb-3 fw-bold">
+          Abulkhair Bigali
+         </h3>
+         <p class="team-role mb-3 text-info mt-auto mb-0">
+          Developer 2
+         </p>
+        </article>
+       </div>
+       <div class="col-12 col-sm-6 col-xxl-3">
+        <article class="team-card card h-100 text-center align-items-center p-4">
+         <img alt="Portrait of Shyngys Sultankulov" class="profile-img rounded-circle mb-3" src="images/member3.png"/>
+         <h3 class="h5 mb-3 fw-bold">
+          Shyngys Sultankulov
+         </h3>
+         <p class="team-role mb-3 text-info mt-auto mb-0">
+          Developer 3
+         </p>
+        </article>
+       </div>
+       <div class="col-12 col-sm-6 col-xxl-3">
+        <article class="team-card card h-100 text-center align-items-center p-4">
+         <img alt="Portrait of Artem Lopatkin" class="profile-img rounded-circle mb-3" src="images/member4.png"/>
+         <h3 class="h5 mb-3 fw-bold">
+          Artem Lopatkin
+         </h3>
+         <p class="team-role mb-3 text-info mt-auto mb-0">
+          Developer 4
+         </p>
+        </article>
+       </div>
+      </div>
+     </section>
+     <section aria-labelledby="gallery-title" class="content-section container-fluid px-0 py-4 py-lg-5" id="game-gallery">
+      <p class="subtitle mb-3 small text-info text-uppercase fw-bold mb-2">
+       OUR GAMING PICKS
+      </p>
+      <h2 class="mb-4 fw-bold" id="gallery-title">
+       Games That Inspire Us
+      </h2>
+      <p class="mb-3">
+       From familiar favourites to unusual simulators, these games show the variety of worlds we enjoy exploring.
+      </p>
+      <div class="row justify-content-center">
+       <div class="col-12 col-lg-10">
+        <div aria-label="Game gallery" aria-roledescription="carousel" class="carousel slide rounded-3 overflow-hidden border" data-bs-interval="false" id="games-carousel" role="region" tabindex="0">
+         <div class="carousel-indicators mb-2">
+          <button aria-current="true" aria-label="Slide 1: Minecraft" class="active" data-bs-slide-to="0" data-bs-target="#games-carousel" type="button">
+          </button>
+          <button aria-label="Slide 2: Dota 2" class="" data-bs-slide-to="1" data-bs-target="#games-carousel" type="button">
+          </button>
+          <button aria-label="Slide 3: Roblox" class="" data-bs-slide-to="2" data-bs-target="#games-carousel" type="button">
+          </button>
+          <button aria-label="Slide 4: Brawl Stars" class="" data-bs-slide-to="3" data-bs-target="#games-carousel" type="button">
+          </button>
+          <button aria-label="Slide 5: Angry Birds" class="" data-bs-slide-to="4" data-bs-target="#games-carousel" type="button">
+          </button>
+          <button aria-label="Slide 6: Rust" class="" data-bs-slide-to="5" data-bs-target="#games-carousel" type="button">
+          </button>
+          <button aria-label="Slide 7: Fishing Simulator" class="" data-bs-slide-to="6" data-bs-target="#games-carousel" type="button">
+          </button>
+          <button aria-label="Slide 8: I Am Bear" class="" data-bs-slide-to="7" data-bs-target="#games-carousel" type="button">
+          </button>
+          <button aria-label="Slide 9: Librarian Simulator" class="" data-bs-slide-to="8" data-bs-target="#games-carousel" type="button">
+          </button>
+         </div>
+         <div class="carousel-inner">
+          <div aria-label="1 of 9" aria-roledescription="slide" class="carousel-item active" role="group">
+           <img alt="Colourful Minecraft logo" class="d-block w-100 carousel-art" height="540" src="images/about-gallery/minecraft.jpg" width="960"/>
+           <div class="carousel-caption position-static px-3 pt-3 pb-5">
+            <h3 class="h5 mb-2">
+             Minecraft
+            </h3>
+            <p class="small mb-0">
+             1 / 9 · Our gaming picks
+            </p>
+           </div>
+          </div>
+          <div aria-label="2 of 9" aria-roledescription="slide" class="carousel-item" role="group">
+           <img alt="Red and black Dota 2 character artwork" class="d-block w-100 carousel-art" height="540" src="images/about-gallery/dota2.jpg" width="960"/>
+           <div class="carousel-caption position-static px-3 pt-3 pb-5">
+            <h3 class="h5 mb-2">
+             Dota 2
+            </h3>
+            <p class="small mb-0">
+             2 / 9 · Our gaming picks
+            </p>
+           </div>
+          </div>
+          <div aria-label="3 of 9" aria-roledescription="slide" class="carousel-item" role="group">
+           <img alt="Roblox character beside a car at night" class="d-block w-100 carousel-art" height="540" src="images/about-gallery/roblox.png" width="960"/>
+           <div class="carousel-caption position-static px-3 pt-3 pb-5">
+            <h3 class="h5 mb-2">
+             Roblox
+            </h3>
+            <p class="small mb-0">
+             3 / 9 · Our gaming picks
+            </p>
+           </div>
+          </div>
+          <div aria-label="4 of 9" aria-roledescription="slide" class="carousel-item" role="group">
+           <img alt="Brawl Stars character comparison" class="d-block w-100 carousel-art" height="540" src="images/about-gallery/brawlstars.jpg" width="960"/>
+           <div class="carousel-caption position-static px-3 pt-3 pb-5">
+            <h3 class="h5 mb-2">
+             Brawl Stars
+            </h3>
+            <p class="small mb-0">
+             4 / 9 · Our gaming picks
+            </p>
+           </div>
+          </div>
+          <div aria-label="5 of 9" aria-roledescription="slide" class="carousel-item" role="group">
+           <img alt="Red Angry Birds character with a bow" class="d-block w-100 carousel-art" height="540" src="images/about-gallery/angrybirds.jpg" width="960"/>
+           <div class="carousel-caption position-static px-3 pt-3 pb-5">
+            <h3 class="h5 mb-2">
+             Angry Birds
+            </h3>
+            <p class="small mb-0">
+             5 / 9 · Our gaming picks
+            </p>
+           </div>
+          </div>
+          <div aria-label="6 of 9" aria-roledescription="slide" class="carousel-item" role="group">
+           <img alt="Cartoon character in a Rust landscape" class="d-block w-100 carousel-art" height="540" src="images/about-gallery/rust.jpeg" width="960"/>
+           <div class="carousel-caption position-static px-3 pt-3 pb-5">
+            <h3 class="h5 mb-2">
+             Rust
+            </h3>
+            <p class="small mb-0">
+             6 / 9 · Our gaming picks
+            </p>
+           </div>
+          </div>
+          <div aria-label="7 of 9" aria-roledescription="slide" class="carousel-item" role="group">
+           <img alt="Fishing gameplay showing a caught fish" class="d-block w-100 carousel-art" height="540" src="images/about-gallery/fishingsim.avif" width="960"/>
+           <div class="carousel-caption position-static px-3 pt-3 pb-5">
+            <h3 class="h5 mb-2">
+             Fishing Simulator
+            </h3>
+            <p class="small mb-0">
+             7 / 9 · Our gaming picks
+            </p>
+           </div>
+          </div>
+          <div aria-label="8 of 9" aria-roledescription="slide" class="carousel-item" role="group">
+           <img alt="I Am Bear cover artwork" class="d-block w-100 carousel-art" height="540" src="images/about-gallery/iambear.webp" width="960"/>
+           <div class="carousel-caption position-static px-3 pt-3 pb-5">
+            <h3 class="h5 mb-2">
+             I Am Bear
+            </h3>
+            <p class="small mb-0">
+             8 / 9 · Our gaming picks
+            </p>
+           </div>
+          </div>
+          <div aria-label="9 of 9" aria-roledescription="slide" class="carousel-item" role="group">
+           <img alt="First-person view of books in a library" class="d-block w-100 carousel-art" height="540" src="images/about-gallery/librariansimulator.webp" width="960"/>
+           <div class="carousel-caption position-static px-3 pt-3 pb-5">
+            <h3 class="h5 mb-2">
+             Librarian Simulator
+            </h3>
+            <p class="small mb-0">
+             9 / 9 · Our gaming picks
+            </p>
+           </div>
+          </div>
+         </div>
+         <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#games-carousel" type="button">
+          <span aria-hidden="true" class="carousel-control-prev-icon">
+          </span>
+          <span class="visually-hidden">
+           Previous image
+          </span>
+         </button>
+         <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#games-carousel" type="button">
+          <span aria-hidden="true" class="carousel-control-next-icon">
+          </span>
+          <span class="visually-hidden">
+           Next image
+          </span>
+         </button>
+        </div>
+        <p class="small text-body-secondary mt-3 mb-0">
+         Use the arrows, indicators or your keyboard to explore all nine images. Slides advance only when you choose.
+        </p>
+        <p aria-live="polite" class="visually-hidden carousel-status" role="status">
+        </p>
+       </div>
+      </div>
+     </section>
     </main>
-    <footer><p>Steam Game Hub — Web Technologies I</p><p>Team Eggs | SE-2507</p><p>Team Members: Ташкенбаев Нурсултан, Бигали Абулхаир, Султанкулов Шынгыс, Лопаткин Артем</p></footer>
-</body>
+   </div>
+  </div>
+  <footer class="text-center border-top px-3 py-4 mt-4">
+   <p class="small mb-2">
+    Steam Game Hub — Web Technologies I
+   </p>
+   <p class="small mb-2">
+    Team Eggs | SE-2507
+   </p>
+   <p class="small mb-2">
+    Team Members: Ташкенбаев Нурсултан, Бигали Абулхаир, Султанкулов Шынгыс, Лопаткин Артем
+   </p>
+   <p class="small mb-0">
+    <a class="link-info" href="responsive.html">
+     Responsive showcase
+    </a>
+    · Academic demo; prices and news are sample content.
+   </p>
+  </footer>
+ </body>
 </html>
