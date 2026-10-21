@@ -1,0 +1,42 @@
+{
+  "url": "https://abilkhayrbigali-design.github.io/",
+  "checked_at": "2026-10-21T09:30:37.642939+00:00",
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "fc4febf1f0cc5075624fe622c3f66984d109896e88f277b98feaed50c973f7dc"
+    },
+    {
+      "path": "community.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "d0a4fb10038e56bdc5a42c5a6b6433b5727b1ccc023a3ce4ff7bbb70ae232270"
+    },
+    {
+      "path": "contact.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "e4643221da6df70c843e1de172dbc55c5d508dbeb94be8c9ae0361bee268e547"
+    },
+    {
+      "path": "news.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "af50e9a8fb761beb946dbf24e54db81c4e3a7cec0e4471beb197e4f11a36eb03"
+    },
+    {
+      "path": "js/site.js",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "40a51956286531805675f7d87e2bbd9aba6c19c8c936832639ef3ac78532a8f7"
+    },
+    {
+      "path": "css/theme.css",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "6a4acf3b8e941c0b213a0e683237753982ef834952555235adfbd0acf9fd2d64"
+    }
+  ]
+}
