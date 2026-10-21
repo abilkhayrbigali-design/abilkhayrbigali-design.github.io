@@ -1,0 +1,212 @@
+{
+  "engine": "firefox",
+  "version": "153.0",
+  "checkedAt": "2026-10-21T09:21:05.246Z",
+  "results": [
+    {
+      "name": "375px: index.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "375px: featured.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "375px: games.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "375px: categories.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "375px: news.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "375px: community.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "375px: about.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "375px: contact.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "375px: responsive.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "375px: clock updates and all four background colours cycle",
+      "passed": true
+    },
+    {
+      "name": "375px: existing mobile navigation still opens and closes",
+      "passed": true
+    },
+    {
+      "name": "375px: registration rejects invalid fields and accepts valid details",
+      "passed": true
+    },
+    {
+      "name": "375px: existing carousel still advances with its announcement",
+      "passed": true
+    },
+    {
+      "name": "375px: FAQ starts hidden and toggles by mouse and keyboard",
+      "passed": true
+    },
+    {
+      "name": "375px: contact form checks required fields, email and checkbox",
+      "passed": true
+    },
+    {
+      "name": "375px: subscription popup validates, contains focus and closes three ways",
+      "passed": true
+    },
+    {
+      "name": "768px: index.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "768px: featured.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "768px: games.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "768px: categories.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "768px: news.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "768px: community.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "768px: about.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "768px: contact.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "768px: responsive.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "768px: clock updates and all four background colours cycle",
+      "passed": true
+    },
+    {
+      "name": "768px: existing mobile navigation still opens and closes",
+      "passed": true
+    },
+    {
+      "name": "768px: registration rejects invalid fields and accepts valid details",
+      "passed": true
+    },
+    {
+      "name": "768px: existing carousel still advances with its announcement",
+      "passed": true
+    },
+    {
+      "name": "768px: FAQ starts hidden and toggles by mouse and keyboard",
+      "passed": true
+    },
+    {
+      "name": "768px: contact form checks required fields, email and checkbox",
+      "passed": true
+    },
+    {
+      "name": "768px: subscription popup validates, contains focus and closes three ways",
+      "passed": true
+    },
+    {
+      "name": "1440px: index.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "1440px: featured.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "1440px: games.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "1440px: categories.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "1440px: news.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "1440px: community.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "1440px: about.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "1440px: contact.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "1440px: responsive.html loads with no overflow or broken images",
+      "passed": true
+    },
+    {
+      "name": "1440px: clock updates and all four background colours cycle",
+      "passed": true
+    },
+    {
+      "name": "1440px: registration rejects invalid fields and accepts valid details",
+      "passed": true
+    },
+    {
+      "name": "1440px: existing carousel still advances with its announcement",
+      "passed": true
+    },
+    {
+      "name": "1440px: FAQ starts hidden and toggles by mouse and keyboard",
+      "passed": true
+    },
+    {
+      "name": "1440px: contact form checks required fields, email and checkbox",
+      "passed": true
+    },
+    {
+      "name": "1440px: subscription popup validates, contains focus and closes three ways",
+      "passed": true
+    },
+    {
+      "name": "Clock handles a year boundary in the device timezone",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion disables FAQ and background animations",
+      "passed": true
+    },
+    {
+      "name": "Local file opening works without a server",
+      "passed": true
+    },
+    {
+      "name": "No browser errors or form submissions",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

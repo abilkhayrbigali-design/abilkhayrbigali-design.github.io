@@ -1,5 +1,5 @@
 /* Assignment 3: Bootstrap supplies layouts, components and spacing.
-   This file only supplies the existing Steam-inspired theme and image treatment.
+   This file supplies the Steam-inspired theme and Assignment 4 interactions.
    Tasks 1-2 live in responsive.css, without Bootstrap. */
 :root, [data-bs-theme="dark"] {
   --bs-body-bg: #101820;
@@ -13,7 +13,7 @@
   --bs-body-font-family: Arial, Helvetica, sans-serif;
 }
 html { scroll-behavior: smooth; }
-body { line-height: 1.6; }
+body { line-height: 1.6; transition: background-color .3s ease; }
 main, .row > *, .card, .input-group { min-width: 0; }
 main { overflow-wrap: anywhere; }
 h1, h2, h3 { line-height: 1.2; }
@@ -56,6 +56,21 @@ h2 { font-size: 1.5rem; }
 .form-control::placeholder { color: #a5b3c0; opacity: 1; }
 .form-control:focus, .form-select:focus { border-color: #83d0fc; }
 .form-status:empty { display: none; }
+.field-error, .form-status[data-state="error"] { color: #ffb4b4 !important; }
+.form-control.is-invalid, .form-select.is-invalid, .form-check-input.is-invalid { border-color: #ffb4b4; }
+.live-clock { font-variant-numeric: tabular-nums; }
+.background-swatch { display: inline-block; width: 1rem; height: 1rem; border: 1px solid currentColor; border-radius: 50%; background: #101820; vertical-align: middle; }
+.faq-item { border: 1px solid var(--bs-border-color); background: #171d25; }
+.faq-question { display: flex; justify-content: space-between; align-items: center; gap: 1rem; width: 100%; border: 0; color: #e6edf3; background: transparent; text-align: left; font: inherit; }
+.faq-question:hover { color: #83d0fc; }
+.faq-icon { flex: 0 0 auto; transition: transform .25s ease; }
+.faq-question[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+.faq-panel { display: grid; grid-template-rows: 0fr; visibility: hidden; transition: grid-template-rows .25s ease, visibility .25s; }
+.faq-panel.is-open { grid-template-rows: 1fr; visibility: visible; }
+.faq-panel > div { min-height: 0; overflow: hidden; }
+.subscription-dialog { width: calc(100% - 2rem); max-width: 520px; max-height: calc(100dvh - 2rem); margin: auto; overflow-y: auto; color: #e6edf3; background: #171d25; border: 1px solid #56718a; box-shadow: 0 24px 80px #0008; }
+.subscription-dialog::backdrop { background: #050b13cc; }
+.dialog-open { overflow: hidden; }
 .games-table { min-width: 620px; }
 .carousel { background: #0b1118; }
 .carousel-art { height: clamp(190px,38vw,440px); object-fit: contain; }

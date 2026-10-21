@@ -330,21 +330,31 @@
          Never Miss a Gaming Update
         </h3>
         <p class="mb-3">
-         This sample form demonstrates HTML form styling; it does not send data anywhere.
+         Try our newsletter subscription demo. Enter an email to preview the signup; no subscription is created.
         </p>
        </div>
-       <form class="newsletter-form col-12 col-lg-6 px-0" data-demo-form="">
-        <label class="visually-hidden form-label" for="subscriber-email">
-         Email address
-        </label>
-        <input class="form-control mb-3" id="subscriber-email" name="subscriber_email" placeholder="Enter your email address" required="" type="email"/>
-        <button class="btn btn-primary" type="submit">
-         Try subscription
+       <div class="col-12 col-lg-6 px-0 d-flex align-items-center">
+        <button aria-controls="subscription-dialog" aria-haspopup="dialog" class="btn btn-primary" data-open-dialog="subscription-dialog" type="button">
+         Subscribe to updates
         </button>
-        <p aria-live="polite" class="form-status mb-3 text-info mt-3 mb-0" role="status">
-        </p>
-       </form>
+       </div>
       </section>
+      <!-- Assignment 4, Task 3: hidden until opened; close with X, backdrop or Escape. -->
+      <dialog aria-describedby="subscription-note" aria-labelledby="subscription-title" class="subscription-dialog rounded-3 p-4" data-subscription-dialog="" id="subscription-dialog">
+       <div class="d-flex align-items-start justify-content-between gap-3 mb-3">
+        <h2 class="h4 mb-0" id="subscription-title">Gaming updates, in your inbox</h2>
+        <button aria-label="Close subscription form" class="btn-close flex-shrink-0" data-close-dialog="" type="button"></button>
+       </div>
+       <p class="small text-body-secondary" id="subscription-note">Preview a newsletter signup. This demo checks your email locally and does not send or store it.</p>
+       <form class="newsletter-form" data-demo-form="" id="subscription-form">
+        <div class="mb-4">
+         <label class="form-label" for="subscriber-email">Email address</label>
+         <input autocomplete="email" autofocus="" class="form-control" id="subscriber-email" name="subscriber_email" placeholder="player@example.com" required="" type="email"/>
+        </div>
+        <button class="btn btn-primary" type="submit">Try subscription</button>
+        <p aria-live="polite" class="form-status text-info mt-3 mb-0" role="status"></p>
+       </form>
+      </dialog>
      </section>
     </main>
    </div>

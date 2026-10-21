@@ -1,0 +1,12 @@
+{
+  "name": "steam-game-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static student website; development dependency is only for browser checks.",
+  "scripts": {
+    "test": "node tests/assignment4.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

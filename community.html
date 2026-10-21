@@ -425,20 +425,40 @@
         </div>
        </aside>
       </div>
-      <section class="community-cta text-center rounded-3 border p-4 p-md-5" id="join-community">
-       <h2 class="mb-4 fw-bold">
-        Join the Global Gaming Community
-       </h2>
-       <p class="mb-3">
-        Participate in seasonal tournaments, share your clips, and build squads with other players.
-       </p>
-       <div class="cta-buttons d-flex flex-wrap justify-content-center gap-3">
-        <a class="btn btn-primary btn-lg" href="contact.html">
-         Join Official Discord
-        </a>
-        <a class="btn btn-outline-info btn-lg" href="contact.html">
-         Start New Discussion
-        </a>
+      <!-- Assignment 4, Task 1: required fields, email and matching passwords. -->
+      <section aria-labelledby="join-title" class="community-cta rounded-3 border p-4 p-md-5" id="join-community">
+       <div class="row g-4">
+        <div class="col-12 col-lg-5">
+         <p class="subtitle small text-info text-uppercase fw-bold">FIND YOUR PEOPLE</p>
+         <h2 class="mb-4 fw-bold" id="join-title">Join the gaming community</h2>
+         <p>Meet players who share your favourite worlds, genres and adventures.</p>
+         <p class="small text-body-secondary" id="registration-note">Try our registration demo. All fields are required. No account is created and nothing is sent or stored. Use a sample password.</p>
+         <a href="contact.html">Have a question? Contact us</a>
+        </div>
+        <form aria-describedby="registration-note" class="registration-form col-12 col-lg-7" data-demo-form="" data-success-message="Your registration details are valid. This is a demo; no account has been created." id="registration-form">
+         <div class="mb-3">
+          <label class="form-label" for="register-name">Display name</label>
+          <input autocomplete="nickname" class="form-control" id="register-name" name="display_name" placeholder="Your player name" required="" type="text"/>
+         </div>
+         <div class="mb-3">
+          <label class="form-label" for="register-email">Email address</label>
+          <input autocomplete="email" class="form-control" id="register-email" name="email" placeholder="player@example.com" required="" type="email"/>
+         </div>
+         <div class="mb-3">
+          <label class="form-label" for="register-password">Password</label>
+          <input aria-describedby="password-hint" autocomplete="new-password" class="form-control" id="register-password" minlength="8" name="password" required="" type="password"/>
+          <p class="small text-body-secondary mt-2 mb-0" id="password-hint">Use at least 8 characters.</p>
+         </div>
+         <div class="mb-4">
+          <label class="form-label" for="register-confirm">Confirm password</label>
+          <input autocomplete="new-password" class="form-control" data-matches="password" id="register-confirm" name="password_confirmation" required="" type="password"/>
+         </div>
+         <div class="d-flex flex-wrap gap-3">
+          <button class="btn btn-primary" type="submit">Check registration</button>
+          <button class="btn btn-outline-info" type="reset">Clear form</button>
+         </div>
+         <p aria-live="polite" class="form-status text-info mt-3 mb-0" role="status"></p>
+        </form>
        </div>
       </section>
      </section>
