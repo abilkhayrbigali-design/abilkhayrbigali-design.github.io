@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-29T07:59:19.189Z",
+  "url": "https://abilkhayrbigali-design.github.io/",
+  "sourceCommit": "5de31cbcd61b5de704b98b7f2b288d617f042395",
+  "results": [
+    {
+      "name": "Published rating works",
+      "passed": true
+    },
+    {
+      "name": "Published Read more works",
+      "passed": true
+    },
+    {
+      "name": "Published keyboard navigation works",
+      "passed": true
+    },
+    {
+      "name": "Published audio loads and plays",
+      "passed": true
+    },
+    {
+      "name": "Published catalogue returns two free games",
+      "passed": true
+    },
+    {
+      "name": "Published three-step form creates a local player card",
+      "passed": true
+    },
+    {
+      "name": "No browser console errors during published checks",
+      "passed": true
+    }
+  ]
+}

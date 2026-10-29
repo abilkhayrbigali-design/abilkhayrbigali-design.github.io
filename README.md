@@ -75,6 +75,9 @@ FAQ, подписка и карусель. Горизонтального пер
 Это отдельная проверка Assignment 5; `npm test` ниже относится к Assignment 4.
 Доказательства и скриншоты находятся в `report/assignment5/verification.json`
 и `report/assignment5/`.
+Публикация на GitHub Pages подтверждена: 41 файл сайта совпал с локальными
+копиями по SHA-256; ещё 7 проверок пройдены на публичном сайте. Доказательства:
+`deployment-verification.json` и `live-browser-verification.json` в той же папке.
 
 - PDF: `output/pdf/Assignment_5_Report.pdf`.
 - Архив для LMS: `output/Assignment_5_Project.zip` (формируется локально; Git его игнорирует).

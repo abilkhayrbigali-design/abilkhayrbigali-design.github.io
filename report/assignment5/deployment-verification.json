@@ -1,0 +1,254 @@
+{
+  "checkedAt": "2026-10-29T07:58:44.220740+00:00",
+  "url": "https://abilkhayrbigali-design.github.io/",
+  "status": "built",
+  "commit": "5de31cbcd61b5de704b98b7f2b288d617f042395",
+  "files": [
+    {
+      "path": "about.html",
+      "status": 200,
+      "sha256": "4764d3e34af951da79dd54d70dfd093fafc167de01ed1275a7d735f510f4aa2d",
+      "matches": true
+    },
+    {
+      "path": "audio/notification.wav",
+      "status": 200,
+      "sha256": "5771f7b9f8d120105f10af43ae59cede3993c99c86c8d8eac38823424f26b682",
+      "matches": true
+    },
+    {
+      "path": "categories.html",
+      "status": 200,
+      "sha256": "48076a325765026fcec9395d07c77aeaabaf6cf3eb9446d58cdbd1c81037aed5",
+      "matches": true
+    },
+    {
+      "path": "community.html",
+      "status": 200,
+      "sha256": "b940ad302cc0b0f52e6f8a6adf43748be3cdc4f87fc1515b4a25df6cb85054e4",
+      "matches": true
+    },
+    {
+      "path": "contact.html",
+      "status": 200,
+      "sha256": "7e8773975d2a233b4fd72bdba0660cf843069850743a5df5ddda9128bddc974f",
+      "matches": true
+    },
+    {
+      "path": "css/responsive.css",
+      "status": 200,
+      "sha256": "0f92fc5474fcf2c5566175a6a53626442e5487dde56effa49ff0fb6ebd62badb",
+      "matches": true
+    },
+    {
+      "path": "css/theme.css",
+      "status": 200,
+      "sha256": "778f03fc8885b8533212904e0e980be865914fdd8469408ef50726fd9ac58706",
+      "matches": true
+    },
+    {
+      "path": "featured.html",
+      "status": 200,
+      "sha256": "3f0c251903fd94cb653089ce0d029029e0ec1f6c198f2516ec718f1176071739",
+      "matches": true
+    },
+    {
+      "path": "games.html",
+      "status": 200,
+      "sha256": "08a0f8d311665faf5c88f9ec398dbd1ae59bee8738f5284917c741c9e860303f",
+      "matches": true
+    },
+    {
+      "path": "images/about-gallery/angrybirds.jpg",
+      "status": 200,
+      "sha256": "fd8dcb784d3a68539ec550ff63fb77dc9033b834101795ea07cb101980212c52",
+      "matches": true
+    },
+    {
+      "path": "images/about-gallery/brawlstars.jpg",
+      "status": 200,
+      "sha256": "c57eeefbfc7514f60f5612611473293dbd9f23208723304af78cb3cac5438f84",
+      "matches": true
+    },
+    {
+      "path": "images/about-gallery/dota2.jpg",
+      "status": 200,
+      "sha256": "4d1b694e7d28fabdcb583d0336dec98ea6a02f7c4bedfda8978807b345ee864e",
+      "matches": true
+    },
+    {
+      "path": "images/about-gallery/fishingsim.avif",
+      "status": 200,
+      "sha256": "b21739ba6fd52e36ac272a5329ce6118a21c328448a091f2f6ba0169090d6962",
+      "matches": true
+    },
+    {
+      "path": "images/about-gallery/iambear.webp",
+      "status": 200,
+      "sha256": "dafc49739867aa4b347aeefc9d7c0b0dc37dab801d4af94bb7e8d4928ceba759",
+      "matches": true
+    },
+    {
+      "path": "images/about-gallery/librariansimulator.webp",
+      "status": 200,
+      "sha256": "144cff8b82ef799b69b45b266aeaabfab84ebd0005a14c7d7642fed535f88d40",
+      "matches": true
+    },
+    {
+      "path": "images/about-gallery/minecraft.jpg",
+      "status": 200,
+      "sha256": "5ad4f1605d465ad0059d3ec28b89c228189e391d1cc5a10c100ea3f4a540099b",
+      "matches": true
+    },
+    {
+      "path": "images/about-gallery/roblox.png",
+      "status": 200,
+      "sha256": "77d7744d834adf8dcca0b491a91e48af731308f4c814225c7e18ab0904452296",
+      "matches": true
+    },
+    {
+      "path": "images/about-gallery/rust.jpeg",
+      "status": 200,
+      "sha256": "d2b3ce15dc5a5338a13b87ea65a4075ae8193d932bf29057379f107a01256407",
+      "matches": true
+    },
+    {
+      "path": "images/games/baldurs-gate-3.jpg",
+      "status": 200,
+      "sha256": "70f099749ece31e4ff2d017cbfafc47fd8cbe52e23eb26daec8dde4549576ccb",
+      "matches": true
+    },
+    {
+      "path": "images/games/counter-strike-2-screenshot.jpg",
+      "status": 200,
+      "sha256": "2cab42e06f2878d31cd0bec1c1262d7b06c44a37822b453b553c4ed0ddd8ecba",
+      "matches": true
+    },
+    {
+      "path": "images/games/counter-strike-2.jpg",
+      "status": 200,
+      "sha256": "747527645619ecf6fbbec78aa543ab0c9a5be12f0bd7c17ccf559e1522678ded",
+      "matches": true
+    },
+    {
+      "path": "images/games/cyberpunk-2077-screenshot.jpg",
+      "status": 200,
+      "sha256": "ec7f40415a114235c549a8ec94020e4fe29af61b128c3a1ae4ed8e85287f6f72",
+      "matches": true
+    },
+    {
+      "path": "images/games/cyberpunk-2077.jpg",
+      "status": 200,
+      "sha256": "b93e64874b844e41a3269e9be00c9fad8037e8a79d00535a8344542bd02c81e6",
+      "matches": true
+    },
+    {
+      "path": "images/games/elden-ring-screenshot.jpg",
+      "status": 200,
+      "sha256": "a36496ede706be315339f1ab0d4aacbb7269ec29870fbc9902af0d36ed06ee42",
+      "matches": true
+    },
+    {
+      "path": "images/games/elden-ring.jpg",
+      "status": 200,
+      "sha256": "c6b1f5c4a6a44a5f1a37962b42426a55f4db7788a40cd9d80b56fdc289016f6e",
+      "matches": true
+    },
+    {
+      "path": "images/games/grand-theft-auto-v.jpg",
+      "status": 200,
+      "sha256": "e1ee8ed03ef2926d224e331a1bc61711822bbe7261cf847624089c1e95207a9a",
+      "matches": true
+    },
+    {
+      "path": "images/games/hogwarts-legacy.jpg",
+      "status": 200,
+      "sha256": "5d406f44f7725e2249ddb63a40c15d05531bbf504837c4374bb2586fe3c07b79",
+      "matches": true
+    },
+    {
+      "path": "images/games/red-dead-redemption-2.jpg",
+      "status": 200,
+      "sha256": "27aa89c336b381083a1b3e8de84ffbcb842219dabca97aabfcf707b1dd8c135c",
+      "matches": true
+    },
+    {
+      "path": "images/games/steam-deck.jpg",
+      "status": 200,
+      "sha256": "504d43bedbb5cc6afb2ff5119f3044afb92bbecf705a0b083cdd4eb2ffe37ea9",
+      "matches": true
+    },
+    {
+      "path": "images/member1.png",
+      "status": 200,
+      "sha256": "b087d0dae5b7ea120856687f65f0a210e321b380965ed68a19f4183e756a906b",
+      "matches": true
+    },
+    {
+      "path": "images/member2.png",
+      "status": 200,
+      "sha256": "c4b7c710f1ee9e1a210666e00cffe5e44f432683239b48d4aea020aa20d2c39b",
+      "matches": true
+    },
+    {
+      "path": "images/member3.png",
+      "status": 200,
+      "sha256": "4dc1eeb907180df25607b01e2a76444513e8e877f201906bf97925a45829edf2",
+      "matches": true
+    },
+    {
+      "path": "images/member4.png",
+      "status": 200,
+      "sha256": "f68bbe4ed75a44e45c5e17226b86b6e81bb479cc5ac6dfff872fdcf4cbe2ae79",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "336d74bcfe9b58a4abfacd88542f4b152d86067f9f726c93d55ab26b0cc05789",
+      "matches": true
+    },
+    {
+      "path": "js/assignment5.js",
+      "status": 200,
+      "sha256": "ee9f5456f73192b9de4f5cc9098e21db095f0f4ed3cec08e1dc3c43298c7e236",
+      "matches": true
+    },
+    {
+      "path": "js/site.js",
+      "status": 200,
+      "sha256": "40a51956286531805675f7d87e2bbd9aba6c19c8c936832639ef3ac78532a8f7",
+      "matches": true
+    },
+    {
+      "path": "news.html",
+      "status": 200,
+      "sha256": "211f5949a1fefb034b2469a62ce8a4264df5aa9893bd0d8f7b0761f2ebbe054f",
+      "matches": true
+    },
+    {
+      "path": "responsive.html",
+      "status": 200,
+      "sha256": "2dd816ab3d0dcf33abd8d839610142ec6e616341b759ce240b50135e7e8022b6",
+      "matches": true
+    },
+    {
+      "path": "vendor/bootstrap/LICENSE",
+      "status": 200,
+      "sha256": "4620c84ad5ce8602ff65640ed6b7c8b78ebb9e036584f0ebc1ccc88206a4bb51",
+      "matches": true
+    },
+    {
+      "path": "vendor/bootstrap/bootstrap.bundle.min.js",
+      "status": 200,
+      "sha256": "e4fd49181388c48ec5040bd3fe66f57c29c8e67fcd8502b3354b96ec7ab47cc7",
+      "matches": true
+    },
+    {
+      "path": "vendor/bootstrap/bootstrap.min.css",
+      "status": 200,
+      "sha256": "d85327d99c7a3ee1f9b5d0500d1370acea3ad2db39c163c2f51f232baedbdede",
+      "matches": true
+    }
+  ]
+}
