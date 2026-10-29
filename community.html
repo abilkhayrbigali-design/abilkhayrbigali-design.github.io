@@ -15,7 +15,8 @@
   </script>
   <script defer="" src="js/site.js">
   </script>
- </head>
+   <script defer src="js/assignment5.js"></script>
+</head>
  <body class="d-flex flex-column min-vh-100">
   <a class="visually-hidden-focusable btn btn-light position-absolute top-0 start-0 m-2 skip-link" href="#main-content">
    Skip to main content
@@ -425,6 +426,47 @@
         </div>
        </aside>
       </div>
+      <!-- Assignment 5: callbacks change steps while input elements keep their values. -->
+      <section aria-labelledby="profile-title" class="surface-panel rounded-3 border p-3 p-md-4 my-4" id="player-profile">
+       <p class="subtitle small text-info text-uppercase fw-bold">YOUR PLAYER CARD</p>
+       <h2 id="profile-title">Find your play style</h2>
+       <p class="text-body-secondary">Build a quick player card in three steps. Your details stay on this page.</p>
+       <noscript><p>Enable JavaScript to try the player card builder.</p></noscript>
+       <form data-profile-form="" hidden>
+        <p class="text-info fw-semibold" data-profile-progress="" role="status"></p>
+        <div data-profile-step="Player name">
+         <h3 class="h5 mb-3" tabindex="-1">What should we call you?</h3>
+         <label class="form-label" for="player-name">Player name</label>
+         <input aria-describedby="profile-error" autocomplete="nickname" class="form-control mb-3" id="player-name" maxlength="40" name="player_name" placeholder="Your nickname" required="" type="text"/>
+        </div>
+        <div data-profile-step="Preferences" hidden>
+         <h3 class="h5 mb-3" tabindex="-1">Choose your favourites</h3>
+         <div class="row g-3 mb-3">
+          <div class="col-12 col-md-6">
+           <label class="form-label" for="player-genre">Favourite genre</label>
+           <select aria-describedby="profile-error" class="form-select" id="player-genre" name="player_genre" required=""><option value="">Choose a genre</option><option>RPG</option><option>Shooter</option><option>Strategy</option><option>Adventure</option><option>Sandbox</option></select>
+          </div>
+          <div class="col-12 col-md-6">
+           <label class="form-label" for="player-style">Play style</label>
+           <select aria-describedby="profile-error" class="form-select" id="player-style" name="player_style" required=""><option value="">Choose a play style</option><option>Solo</option><option>Co-op</option><option>Competitive</option></select>
+          </div>
+         </div>
+        </div>
+        <div data-profile-step="Review" hidden>
+         <h3 class="h5 mb-3" tabindex="-1">Review your player card</h3>
+         <p data-profile-summary=""></p>
+         <p class="small text-body-secondary">Use Back to change your preferences before creating the preview.</p>
+        </div>
+        <p class="field-error" data-profile-error="" id="profile-error" role="alert"></p>
+        <div class="d-flex flex-wrap gap-2">
+         <button class="btn btn-outline-info" data-profile-back="" hidden type="button">Back</button>
+         <button class="btn btn-primary" data-profile-next="" type="button">Next</button>
+         <button class="btn btn-primary" hidden type="submit">Create player card</button>
+         <button class="btn btn-outline-info" data-profile-restart="" type="button">Start over</button>
+        </div>
+        <p class="profile-result rounded-3 p-3 mt-3 mb-0" data-profile-result="" hidden role="status" tabindex="-1"></p>
+       </form>
+      </section>
       <!-- Assignment 4, Task 1: required fields, email and matching passwords. -->
       <section aria-labelledby="join-title" class="community-cta rounded-3 border p-4 p-md-5" id="join-community">
        <div class="row g-4">

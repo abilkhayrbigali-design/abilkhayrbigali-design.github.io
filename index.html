@@ -15,6 +15,8 @@
   </script>
   <script defer="" src="js/site.js">
   </script>
+  <script defer="" src="js/assignment5.js">
+  </script>
  </head>
  <body class="d-flex flex-column min-vh-100">
   <a class="visually-hidden-focusable btn btn-light position-absolute top-0 start-0 m-2 skip-link" href="#main-content">
@@ -93,6 +95,11 @@
          </a>
         </li>
         <li class="nav-item">
+         <a class="nav-link px-2 py-2" href="#game-spotlight">
+          Rate a game
+         </a>
+        </li>
+        <li class="nav-item">
          <a class="nav-link px-2 py-2" href="#featured-games">
           Featured games
          </a>
@@ -159,10 +166,59 @@
        </div>
       </div>
       <nav aria-label="Explore the hub" class="d-flex flex-wrap gap-3 border-top mt-4 pt-3">
+       <a href="games.html#catalogue">Filter games</a>
+       <a href="community.html#player-profile">Build your player card</a>
        <a href="community.html#join-community">Join the community</a>
        <a href="news.html#newsletter">Try our newsletter</a>
        <a href="contact.html#faq">Frequently asked questions</a>
       </nav>
+      <div class="border-top mt-3 pt-3">
+       <h3 class="h6">A little sound for your hub</h3>
+       <div class="d-flex align-items-center gap-3">
+        <button class="btn btn-outline-info btn-sm" data-play-sound="" hidden type="button">Play notification</button>
+        <span aria-hidden="true" class="sound-visual" data-sound-visual=""><span></span><span></span><span></span></span>
+       </div>
+       <p class="small text-body-secondary mt-2 mb-0" data-sound-status="" role="status">Play a short chime when you want to hear it.</p>
+       <audio id="notification-sound" preload="none" src="audio/notification.wav"></audio>
+      </div>
+     </section>
+     <!-- Assignment 5, Section 1: select elements, update content and toggle details. -->
+     <section aria-labelledby="spotlight-title" class="surface-panel rounded-3 mt-4 overflow-hidden" id="game-spotlight">
+      <div class="row g-0">
+       <div class="col-12 col-lg-5">
+        <img alt="Elden Ring landscape with a golden tree above distant ruins" class="spotlight-image" height="600" loading="lazy" src="images/games/elden-ring-screenshot.jpg" width="1067"/>
+       </div>
+       <div class="col-12 col-lg-7 p-3 p-md-4">
+        <p class="subtitle small text-info text-uppercase fw-bold mb-2">Game spotlight</p>
+        <h2 class="mb-2" id="spotlight-title">Elden Ring</h2>
+        <p class="text-body-secondary small mb-3">Action RPG · Open world · Adventure</p>
+        <p class="mb-3">An adventure for players who enjoy exploring, experimenting and overcoming a challenge. What is your verdict?</p>
+        <div id="spotlight-details">
+         <p class="text-body-secondary mb-3">Explore at your own pace, try different weapons and discover a play style that suits you. Share your personal impression with the stars below.</p>
+         <a class="d-inline-block mb-3" href="featured.html#elden-ring">Explore Elden Ring</a>
+        </div>
+        <button aria-controls="spotlight-details" aria-expanded="true" class="btn btn-outline-info btn-sm mb-4" data-read-more="" hidden type="button">Read less</button>
+        <div class="border-top pt-3" data-game-rating="Elden Ring" hidden>
+         <fieldset>
+          <legend class="h6 mb-2">Your rating</legend>
+          <div class="rating-stars d-flex gap-1" aria-describedby="spotlight-rating-status">
+           <input class="visually-hidden rating-input" id="rating-1" name="spotlight-rating" type="radio" value="1"/>
+           <label class="rating-star" data-rating-star="1" for="rating-1"><span aria-hidden="true">★</span><span class="visually-hidden">1 star</span></label>
+           <input class="visually-hidden rating-input" id="rating-2" name="spotlight-rating" type="radio" value="2"/>
+           <label class="rating-star" data-rating-star="2" for="rating-2"><span aria-hidden="true">★</span><span class="visually-hidden">2 stars</span></label>
+           <input class="visually-hidden rating-input" id="rating-3" name="spotlight-rating" type="radio" value="3"/>
+           <label class="rating-star" data-rating-star="3" for="rating-3"><span aria-hidden="true">★</span><span class="visually-hidden">3 stars</span></label>
+           <input class="visually-hidden rating-input" id="rating-4" name="spotlight-rating" type="radio" value="4"/>
+           <label class="rating-star" data-rating-star="4" for="rating-4"><span aria-hidden="true">★</span><span class="visually-hidden">4 stars</span></label>
+           <input class="visually-hidden rating-input" id="rating-5" name="spotlight-rating" type="radio" value="5"/>
+           <label class="rating-star" data-rating-star="5" for="rating-5"><span aria-hidden="true">★</span><span class="visually-hidden">5 stars</span></label>
+          </div>
+         </fieldset>
+         <p class="small mt-2 mb-2" id="spotlight-rating-status" role="status">Choose a star to rate this game.</p>
+         <button class="btn btn-outline-info btn-sm" data-reset-rating="" disabled type="button">Clear rating</button>
+        </div>
+       </div>
+      </div>
      </section>
      <div class="row g-4 my-4" id="hub-overview">
       <div class="col-12 col-lg-6">

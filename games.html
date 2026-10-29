@@ -17,7 +17,8 @@
   </script>
   <script defer="" src="js/site.js">
   </script>
- </head>
+   <script defer src="js/assignment5.js"></script>
+</head>
  <body class="d-flex flex-column min-vh-100">
   <a class="visually-hidden-focusable btn btn-light position-absolute top-0 start-0 m-2 skip-link" href="#main-content">
    Skip to main content
@@ -136,7 +137,7 @@
                     for different moods and play styles.
       </p>
      </section>
-     <section class="content-section container-fluid px-0 py-4 py-lg-5" id="catalogue">
+     <section class="content-section container-fluid px-0 py-4 py-lg-5" data-catalogue="" id="catalogue">
       <div class="catalog-intro d-flex flex-column flex-lg-row justify-content-between gap-3 mb-4">
        <div>
         <h2 class="mb-4 fw-bold">
@@ -152,6 +153,29 @@
         Browse Genres
        </a>
       </div>
+      <div class="surface-panel rounded-3 p-3 p-md-4 mb-4" data-catalogue-controls="" hidden>
+       <div class="row g-3 align-items-end">
+        <div class="col-12 col-md-4">
+         <label class="form-label" for="game-search">Search games</label>
+         <input class="form-control" id="game-search" name="search" placeholder="Try Cyberpunk" type="search"/>
+        </div>
+        <div class="col-6 col-md-3">
+         <label class="form-label" for="game-genre">Genre</label>
+         <select class="form-select" id="game-genre" name="genre">
+          <option value="all">All genres</option><option>Shooter</option><option>Action</option><option>MOBA</option><option>RPG</option><option>Sandbox</option><option>Adventure</option>
+         </select>
+        </div>
+        <div class="col-6 col-md-3">
+         <label class="form-label" for="game-budget">Price</label>
+         <select class="form-select" id="game-budget" name="budget">
+          <option value="all">All prices</option><option value="free">Free</option><option value="under30">Under $30 (paid)</option><option value="premium">$30 and above</option>
+         </select>
+        </div>
+        <div class="col-12 col-md-2"><button class="btn btn-outline-info w-100" data-reset-filters="" type="button">Reset filters</button></div>
+       </div>
+       <p class="small mt-3 mb-0" data-catalogue-status="" role="status"></p>
+      </div>
+      <p class="surface-panel rounded-3 p-4" data-catalogue-empty="" hidden>No games match these filters. Try another genre or reset the filters.</p>
       <div class="card-row catalogue-cards row g-4">
        <div class="col-12 col-md-6 col-lg-4">
         <article class="game-card card h-100" id="counter-strike-2">

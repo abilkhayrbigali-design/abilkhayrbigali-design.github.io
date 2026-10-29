@@ -1,0 +1,366 @@
+{
+  "checkedAt": "2026-10-29T07:50:11.001Z",
+  "environment": "Codex in-app Chromium browser",
+  "widths": [
+    375,
+    768,
+    1440
+  ],
+  "results": [
+    {
+      "name": "Rating selects four stars and updates text",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Native radio keyboard changes rating",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Read more expands details and accessibility state",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Read less hides details",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Clear rating removes checked values and disables reset",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Right arrow focuses next navigation link",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "End focuses last navigation link",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Navigation wraps to first link",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Existing background control updates content and style",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Local sound plays with one disabled trigger and animation",
+      "passed": true,
+      "details": "{\"animated\":true,\"disabled\":true,\"duration\":1.2,\"playing\":true}"
+    },
+    {
+      "name": "Sound finishes and re-enables its button",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Catalogue initially shows six games",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Free filter shows CS2 and Dota 2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Filtering starts entrance animations",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Paid under $30 excludes free games",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Premium filter uses upper price range",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Genre and price filters combine",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Search ignores case and surrounding whitespace",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Empty results are clearly explained",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Reset filters restores every game",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Wizard rejects empty name and focuses field",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Wizard rejects whitespace-only name",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Enter advances first step without submitting data",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Wizard validates both required preferences",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Back preserves player name",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Next preserves both preferences",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Review displays object state through callback",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Profile preview succeeds without navigation",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Start over clears state, feedback and all inputs",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375px: index loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Home\"}"
+    },
+    {
+      "name": "375px: featured loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Featured Games\"}"
+    },
+    {
+      "name": "375px: games loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Games\"}"
+    },
+    {
+      "name": "375px: categories loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Categories\"}"
+    },
+    {
+      "name": "375px: news loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Gaming News\"}"
+    },
+    {
+      "name": "375px: community loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Community\"}"
+    },
+    {
+      "name": "375px: about loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - About Us\"}"
+    },
+    {
+      "name": "375px: contact loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Contact\"}"
+    },
+    {
+      "name": "375px: responsive loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Responsive Showcase\"}"
+    },
+    {
+      "name": "768px: index loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Home\"}"
+    },
+    {
+      "name": "768px: featured loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Featured Games\"}"
+    },
+    {
+      "name": "768px: games loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Games\"}"
+    },
+    {
+      "name": "768px: categories loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Categories\"}"
+    },
+    {
+      "name": "768px: news loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Gaming News\"}"
+    },
+    {
+      "name": "768px: community loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Community\"}"
+    },
+    {
+      "name": "768px: about loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - About Us\"}"
+    },
+    {
+      "name": "768px: contact loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Contact\"}"
+    },
+    {
+      "name": "768px: responsive loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Responsive Showcase\"}"
+    },
+    {
+      "name": "1440px: index loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Home\"}"
+    },
+    {
+      "name": "1440px: featured loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Featured Games\"}"
+    },
+    {
+      "name": "1440px: games loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Games\"}"
+    },
+    {
+      "name": "1440px: categories loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Categories\"}"
+    },
+    {
+      "name": "1440px: news loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Gaming News\"}"
+    },
+    {
+      "name": "1440px: community loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Community\"}"
+    },
+    {
+      "name": "1440px: about loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - About Us\"}"
+    },
+    {
+      "name": "1440px: contact loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Contact\"}"
+    },
+    {
+      "name": "1440px: responsive loads without overflow, broken images or duplicate IDs",
+      "passed": true,
+      "details": "{\"brokenImages\":[],\"duplicateIds\":false,\"footer\":true,\"overflow\":false,\"title\":\"Steam Game Hub - Responsive Showcase\"}"
+    },
+    {
+      "name": "Mobile menu opens",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Mobile menu supports keyboard focus",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Rating works on mobile",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Mobile catalogue filters correctly",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "User input is rendered as text, not HTML",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Mobile wizard completes without overflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Existing registration still validates four required fields",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Existing registration accepts valid sample values",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Existing registration reset removes errors",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Existing FAQ still opens",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Existing FAQ closes with keyboard",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Existing newsletter dialog opens",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Newsletter dialog closes with Escape",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Existing carousel still advances",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Browser console reports no errors",
+      "passed": true,
+      "details": ""
+    }
+  ]
+}
