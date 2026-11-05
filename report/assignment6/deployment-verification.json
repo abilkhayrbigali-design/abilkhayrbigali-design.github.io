@@ -1,8 +1,8 @@
 {
   "date": "2026-11-05",
   "url": "https://abilkhayrbigali-design.github.io/",
-  "commit": "ecd3dba4b18f4e41e6236cc0d6531d106d5e9a5e",
-  "github_workflow": "https://github.com/abilkhayrbigali-design/abilkhayrbigali-design.github.io/actions/runs/41990407076",
+  "commit": "e6290f7bf445735ef55cc36a4d693e1ac10e104d",
+  "github_workflow": "https://github.com/abilkhayrbigali-design/abilkhayrbigali-design.github.io/actions/runs/41991510845",
   "workflow_conclusion": "success",
   "files": [
     {
@@ -39,7 +39,7 @@
       "file": "community.html",
       "status": 200,
       "matches_local": true,
-      "sha256": "ae924580a96be7441bc2106a1fd41ef588a821fb7ec7c5b219aa443f87793b3a"
+      "sha256": "1c460c68b5af71af9cecd48c3d02264bad78e80b0e4fa8fdb255d5b5ea350525"
     },
     {
       "file": "news.html",
@@ -63,13 +63,13 @@
       "file": "script.js",
       "status": 200,
       "matches_local": true,
-      "sha256": "3a348559cb6f084370184fb75ab57d6bfab9c522315f74f37dec824f775d2e28"
+      "sha256": "eb1041a85f755724fa45f29c39c5558e871023b8a45a2b99a76cd35f8631c507"
     },
     {
       "file": "css/store.css",
       "status": 200,
       "matches_local": true,
-      "sha256": "f022e4d26c4d827ded36386416bf549bcf1588c259e1bd0ad954db3c41346084"
+      "sha256": "46d30b385fae52ebc1807894d01a76273f7cc126134fe65d64cc402602dbcd51"
     },
     {
       "file": "js/games-data.js",
@@ -88,6 +88,18 @@
       "status": 200,
       "matches_local": true,
       "sha256": "39a546ea9ad97f8bfaf5d3e0e8f8556adb415e470e59007ada9759dce472adaa"
+    },
+    {
+      "file": "output/pdf/Assignment_6_Report.pdf",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "062bd8e1f467b2a3bb6d22a47bdff572173cb2b28deaab43203cf6e863d6df1f"
+    },
+    {
+      "file": "report/assignment6/verification.json",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "94cd674feaac1218038cdba1696b5f5e6b779b7e54e94706be71df9b63393680"
     }
   ]
 }
