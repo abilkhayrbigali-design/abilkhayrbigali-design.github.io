@@ -2,9 +2,10 @@
   "name": "steam-game-hub",
   "version": "1.0.0",
   "private": true,
-  "description": "Static student website; development dependency is only for browser checks.",
+  "description": "Frontend-only jQuery game store with local profiles, virtual wallets, purchases, returns and personal ratings.",
   "scripts": {
-    "test": "node tests/assignment4.cjs"
+    "test": "node tests/assignment6.cjs",
+    "test:assignment4": "node tests/assignment4.cjs"
   },
   "devDependencies": {
     "playwright": "1.62.1"

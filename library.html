@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Steam Game Hub — Library</title>
+<meta name="description" content="Discover, rate and collect your next favourite game. A frontend student game store.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23171d25'/%3E%3Ctext x='5' y='30' fill='%2366c0f4' font-size='32'%3E◉%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/store.css">
+<script defer src="vendor/bootstrap/bootstrap.bundle.min.js">
+</script>
+<script src="https://code.jquery.com/jquery-4.0.0.min.js">
+</script>
+<script>window.jQuery || document.write('<script src="vendor/jquery/jquery-4.0.0.min.js"><\/script>');</script>
+<script defer src="js/games-data.js">
+</script>
+<script defer src="js/site.js">
+</script>
+<script defer src="js/assignment5.js">
+</script>
+<script defer src="script.js">
+</script>
+</head>
+<body class="store-page">
+<a href="#main-content" class="visually-hidden-focusable skip-link btn btn-light">Skip to content</a>
+<header id="main-header" class="store-header">
+ <div class="client-strip">
+<div class="store-shell">
+<span class="client-label">◉ &nbsp;Steam Game Hub</span>
+<span>Team Eggs <span class="strip-divider">/</span> SE-2507</span>
+</div>
+</div>
+ <nav class="navbar navbar-expand-xl" aria-label="Main navigation">
+<div class="store-shell nav-inner">
+ <a class="navbar-brand" href="index.html">
+<span class="hub-symbol" aria-hidden="true">◉</span>
+<span>STEAM<span class="brand-sub">GAME HUB</span>
+</span>
+</a>
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon">
+</span>
+</button>
+ <div class="collapse navbar-collapse" id="main-nav">
+<div class="navbar-nav">
+<a class="nav-link "  href="index.html">Store</a>
+<a class="nav-link active" aria-current="page" href="library.html">Library</a>
+<a class="nav-link "  href="games.html">All games</a>
+<a class="nav-link "  href="featured.html">Featured</a>
+<a class="nav-link "  href="community.html">Community</a>
+<a class="nav-link "  href="news.html">News</a>
+<a class="nav-link "  href="about.html">About</a>
+<a class="nav-link "  href="contact.html">Support</a>
+</div>
+</div>
+ <div class="account-tools">
+<button class="profile-button" data-open-profiles type="button" aria-haspopup="dialog">
+<span class="avatar" aria-hidden="true">P</span>
+<span data-profile-name>Player 1</span>
+<span aria-hidden="true">⌄</span>
+</button>
+<div class="wallet">
+<span class="wallet-label">DEMO WALLET</span>
+<strong data-wallet>$100.00</strong>
+</div>
+</div>
+ </div>
+</nav>
+ </header>
+ <div class="store-shell shop-bar">
+<nav aria-label="Store collections">
+<a href="games.html">Browse games</a>
+<a href="categories.html">Categories</a>
+<a href="games.html?price=free">Free to play</a>
+</nav>
+ <form class="store-search" action="games.html" role="search" autocomplete="off">
+<label class="visually-hidden" for="store-search">Search the store</label>
+<input id="store-search" name="q" type="search" placeholder="Search the store" role="combobox" aria-autocomplete="list" aria-controls="search-suggestions" aria-expanded="false">
+<button type="submit" aria-label="Search games">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="10" cy="10" r="6"/>
+<path d="m15 15 5 5"/>
+</svg>
+</button>
+<ul id="search-suggestions" class="search-suggestions" role="listbox" hidden>
+</ul>
+</form>
+ <a class="library-shortcut" href="library.html">▣ &nbsp; Your library <span data-owned-count>0</span>
+</a>
+</div>
+<main id="main-content" class="store-shell store-main" tabindex="-1">
+<section class="catalogue-heading">
+<p class="eyebrow">YOUR PERSONAL LIBRARY</p>
+<h1>Your collection</h1>
+<p>All your adventures, in one place. Rate your games or return one to your wallet.</p>
+</section>
+<section data-store-catalogue data-library id="catalogue">
+<div class="catalogue-toolbar" data-catalogue-controls>
+<div>
+<label for="game-search">Search games</label>
+<input id="game-search" name="search" type="search" class="form-control" placeholder="Name or genre…">
+</div>
+<div>
+<label for="game-genre">Genre</label>
+<select id="game-genre" name="genre" class="form-select">
+<option value="all">All genres</option>
+<option>Shooter</option>
+<option>Action</option>
+<option>MOBA</option>
+<option>RPG</option>
+<option>Sandbox</option>
+<option>Adventure</option>
+</select>
+</div>
+<div>
+<label for="game-budget">Price</label>
+<select class="form-select" id="game-budget" name="budget">
+<option value="all">All prices</option>
+<option value="free">Free to play</option>
+<option value="under30">Under $30 (paid)</option>
+<option value="premium">$30 and above</option>
+<option value="affordable">Within my balance</option>
+</select>
+</div>
+<button data-reset-filters type="button" class="text-button">Reset filters ↺</button>
+</div>
+<div class="results-line">
+<p data-catalogue-status role="status">
+</p>
+<span>Virtual wallet · $100 on refresh</span>
+</div>
+<div class="store-grid catalogue-cards">
+<article class="game-card store-card" id="counter-strike-2" data-game="counter-strike-2">
+<a class="game-art" href="games.html#counter-strike-2">
+<img data-src="images/games/counter-strike-2.jpg" src="images/placeholder.svg" alt="Counter-Strike 2 cover artwork" width="460" height="215" loading="lazy" data-lazy-image>
+</a>
+<div class="game-copy">
+<p class="game-genre">Shooter</p>
+<h3>Counter-Strike 2</h3>
+<p class="game-description">Precision. Teamwork. One more round. The definitive competitive tactical shooter.</p>
+<div class="game-purchase-row">
+<span class="price">Free to play</span>
+<button type="button" class="buy-button" data-buy="counter-strike-2">Add to library</button>
+</div>
+<div data-rating-for="counter-strike-2" class="personal-rating">
+</div>
+</div>
+</article>
+<article class="game-card store-card" id="grand-theft-auto-v" data-game="grand-theft-auto-v">
+<a class="game-art" href="games.html#grand-theft-auto-v">
+<img data-src="images/games/grand-theft-auto-v.jpg" src="images/placeholder.svg" alt="Grand Theft Auto V cover artwork" width="460" height="215" loading="lazy" data-lazy-image>
+</a>
+<div class="game-copy">
+<p class="game-genre">Action</p>
+<h3>Grand Theft Auto V</h3>
+<p class="game-description">Three lives collide in Los Santos. Make the city your playground.</p>
+<div class="game-purchase-row">
+<span class="price">$29.99</span>
+<button type="button" class="buy-button" data-buy="grand-theft-auto-v">Buy game</button>
+</div>
+<div data-rating-for="grand-theft-auto-v" class="personal-rating">
+</div>
+</div>
+</article>
+<article class="game-card store-card" id="dota-2" data-game="dota-2">
+<a class="game-art" href="games.html#dota-2">
+<img data-src="images/about-gallery/dota2.jpg" src="images/placeholder.svg" alt="Dota 2 cover artwork" width="460" height="215" loading="lazy" data-lazy-image>
+</a>
+<div class="game-copy">
+<p class="game-genre">MOBA</p>
+<h3>Dota 2</h3>
+<p class="game-description">Choose your hero. Find your team. Every match is a new story.</p>
+<div class="game-purchase-row">
+<span class="price">Free to play</span>
+<button type="button" class="buy-button" data-buy="dota-2">Add to library</button>
+</div>
+<div data-rating-for="dota-2" class="personal-rating">
+</div>
+</div>
+</article>
+<article class="game-card store-card" id="cyberpunk-2077" data-game="cyberpunk-2077">
+<a class="game-art" href="games.html#cyberpunk-2077">
+<img data-src="images/games/cyberpunk-2077.jpg" src="images/placeholder.svg" alt="Cyberpunk 2077 cover artwork" width="460" height="215" loading="lazy" data-lazy-image>
+</a>
+<div class="game-copy">
+<p class="game-genre">RPG</p>
+<h3>Cyberpunk 2077</h3>
+<p class="game-description">Become an urban mercenary in the neon-lit streets of Night City.</p>
+<div class="game-purchase-row">
+<span class="price">$59.99</span>
+<button type="button" class="buy-button" data-buy="cyberpunk-2077">Buy game</button>
+</div>
+<div data-rating-for="cyberpunk-2077" class="personal-rating">
+</div>
+</div>
+</article>
+<article class="game-card store-card" id="minecraft" data-game="minecraft">
+<a class="game-art" href="games.html#minecraft">
+<img data-src="images/about-gallery/minecraft.jpg" src="images/placeholder.svg" alt="Minecraft cover artwork" width="460" height="215" loading="lazy" data-lazy-image>
+</a>
+<div class="game-copy">
+<p class="game-genre">Sandbox</p>
+<h3>Minecraft</h3>
+<p class="game-description">A world of possibilities, built one block at a time.</p>
+<div class="game-purchase-row">
+<span class="price">$29.99</span>
+<button type="button" class="buy-button" data-buy="minecraft">Buy game</button>
+</div>
+<div data-rating-for="minecraft" class="personal-rating">
+</div>
+</div>
+</article>
+<article class="game-card store-card" id="red-dead-redemption-2" data-game="red-dead-redemption-2">
+<a class="game-art" href="games.html#red-dead-redemption-2">
+<img data-src="images/games/red-dead-redemption-2.jpg" src="images/placeholder.svg" alt="Red Dead Redemption 2 cover artwork" width="460" height="215" loading="lazy" data-lazy-image>
+</a>
+<div class="game-copy">
+<p class="game-genre">Adventure</p>
+<h3>Red Dead Redemption 2</h3>
+<p class="game-description">An epic tale of life, loyalty and survival in the American frontier.</p>
+<div class="game-purchase-row">
+<span class="price">$59.99</span>
+<button type="button" class="buy-button" data-buy="red-dead-redemption-2">Buy game</button>
+</div>
+<div data-rating-for="red-dead-redemption-2" class="personal-rating">
+</div>
+</div>
+</article>
+<article class="game-card store-card" id="elden-ring" data-game="elden-ring">
+<a class="game-art" href="games.html#elden-ring">
+<img data-src="images/games/elden-ring.jpg" src="images/placeholder.svg" alt="Elden Ring cover artwork" width="460" height="215" loading="lazy" data-lazy-image>
+</a>
+<div class="game-copy">
+<p class="game-genre">RPG</p>
+<h3>Elden Ring</h3>
+<p class="game-description">Rise, Tarnished. Explore the Lands Between and forge your own path.</p>
+<div class="game-purchase-row">
+<span class="price">$59.99</span>
+<button type="button" class="buy-button" data-buy="elden-ring">Buy game</button>
+</div>
+<div data-rating-for="elden-ring" class="personal-rating">
+</div>
+</div>
+</article>
+<article class="game-card store-card" id="baldurs-gate-3" data-game="baldurs-gate-3">
+<a class="game-art" href="games.html#baldurs-gate-3">
+<img data-src="images/games/baldurs-gate-3.jpg" src="images/placeholder.svg" alt="Baldur’s Gate 3 cover artwork" width="460" height="215" loading="lazy" data-lazy-image>
+</a>
+<div class="game-copy">
+<p class="game-genre">RPG</p>
+<h3>Baldur’s Gate 3</h3>
+<p class="game-description">Gather your party for a story shaped by your choices.</p>
+<div class="game-purchase-row">
+<span class="price">$59.99</span>
+<button type="button" class="buy-button" data-buy="baldurs-gate-3">Buy game</button>
+</div>
+<div data-rating-for="baldurs-gate-3" class="personal-rating">
+</div>
+</div>
+</article>
+<article class="game-card store-card" id="hogwarts-legacy" data-game="hogwarts-legacy">
+<a class="game-art" href="games.html#hogwarts-legacy">
+<img data-src="images/games/hogwarts-legacy.jpg" src="images/placeholder.svg" alt="Hogwarts Legacy cover artwork" width="460" height="215" loading="lazy" data-lazy-image>
+</a>
+<div class="game-copy">
+<p class="game-genre">Adventure</p>
+<h3>Hogwarts Legacy</h3>
+<p class="game-description">Discover an open-world adventure in the wizarding world.</p>
+<div class="game-purchase-row">
+<span class="price">$39.99</span>
+<button type="button" class="buy-button" data-buy="hogwarts-legacy">Buy game</button>
+</div>
+<div data-rating-for="hogwarts-legacy" class="personal-rating">
+</div>
+</div>
+</article>
+</div>
+<div class="catalogue-empty" data-catalogue-empty hidden>
+<span aria-hidden="true">⌕</span>
+<h2>No games here yet</h2>
+<p data-empty-message>Try a different search or reset your filters.</p>
+<a class="text-button" href="games.html">Explore all games →</a>
+</div>
+</section>
+</main>
+<footer class="store-footer">
+<div class="store-shell">
+<a class="footer-brand" href="index.html">◉ &nbsp;STEAM GAME HUB</a>
+<p>A little discovery. A new favourite. Your next adventure.</p>
+<p class="team-credit">Team Members: Ташкенбаев Нурсултан · Бигали Абулхаир · Султанкулов Шынгыс · Лопаткин Артем</p>
+<div class="footer-bottom">
+<span>Team Eggs · SE-2507 · Web Technologies I</span>
+<span>Student project · Virtual purchases only · <a href="responsive.html">Responsive showcase</a>
+</span>
+</div>
+</div>
+</footer>
+</body>
+</html>

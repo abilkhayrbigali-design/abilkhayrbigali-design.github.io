@@ -1,157 +1,273 @@
 <!DOCTYPE html>
-<html data-bs-theme="dark" lang="en">
- <head>
-  <!-- Team: Eggs | Group: SE-2507 -->
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <meta content="Steam Game Hub student website for discovering games and genres." name="description"/>
-  <title>
-   Steam Game Hub - Home
-  </title>
-  <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171d25'/%3E%3Ctext x='18' y='44' fill='%2366c0f4' font-size='38' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
-  <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
-  <link href="css/theme.css" rel="stylesheet"/>
-  <script defer="" src="vendor/bootstrap/bootstrap.bundle.min.js">
-  </script>
-  <script defer="" src="js/site.js">
-  </script>
-  <script defer="" src="js/assignment5.js">
-  </script>
- </head>
- <body class="d-flex flex-column min-vh-100">
-  <a class="visually-hidden-focusable btn btn-light position-absolute top-0 start-0 m-2 skip-link" href="#main-content">
-   Skip to main content
-  </a>
-  <header id="main-header">
-   <nav aria-label="Main navigation" class="navbar navbar-expand-xl bg-dark border-bottom py-3">
-    <!-- Tasks 4-5: Bootstrap spacing and Collapse navbar. -->
-    <div class="container-fluid px-3 px-sm-4">
-     <a class="navbar-brand fw-bold text-info me-2" href="index.html">
-      STEAM GAME HUB
-     </a>
-     <button aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#main-nav" data-bs-toggle="collapse" type="button">
-      <span class="navbar-toggler-icon">
-      </span>
-     </button>
-     <div class="collapse navbar-collapse" id="main-nav">
-      <ul class="navbar-nav ms-auto mb-0 mt-3 mt-xl-0">
-       <li class="nav-item">
-        <a aria-current="page" class="nav-link px-2 active" href="index.html">
-         Home
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link px-2" href="featured.html">
-         Featured
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link px-2" href="games.html">
-         Games
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link px-2" href="categories.html">
-         Categories
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link px-2" href="news.html">
-         News
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link px-2" href="community.html">
-         Community
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link px-2" href="about.html">
-         About
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link px-2" href="contact.html">
-         Contact
-        </a>
-       </li>
-      </ul>
-     </div>
-    </div>
-   </nav>
-  </header>
-  <div class="container-fluid px-3 px-sm-4 py-4 flex-grow-1">
-   <div class="row g-4">
-    <aside aria-labelledby="sidebar-title" class="page-sidebar col-12 col-xl-2">
-     <div class="sidebar-panel rounded-3 p-3">
-      <h2 class="h6 text-info mb-3" id="sidebar-title">
-       Explore the hub
-      </h2>
-      <nav aria-label="Page sections">
-       <ul class="sidebar-links nav flex-row flex-xl-column gap-1">
-        <li class="nav-item">
-         <a class="nav-link px-2 py-2" href="#welcome">
-          Welcome
-         </a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link px-2 py-2" href="#game-spotlight">
-          Rate a game
-         </a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link px-2 py-2" href="#featured-games">
-          Featured games
-         </a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link px-2 py-2" href="#why-visit">
-          Why visit?
-         </a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link px-2 py-2" href="about.html#game-gallery">
-          Discover the gallery
-         </a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link px-2 py-2" href="responsive.html">
-          Responsive showcase
-         </a>
-        </li>
-       </ul>
-      </nav>
-      <div class="sidebar-note border-top mt-3 pt-3 d-none d-xl-block">
-       <p class="subtitle mb-2 small">
-        TEAM EGGS
-       </p>
-       <p class="mb-2 small">
-        Web Technologies I
-        <br/>
-        SE-2507
-       </p>
-      </div>
-     </div>
-    </aside>
-    <main class="page-main col-12 col-xl-10" id="main-content" tabindex="-1">
-     <section class="hero d-flex align-items-center rounded-3 px-4 px-lg-5 py-5">
-      <div class="hero-content">
-       <p class="subtitle mb-3 small text-info text-uppercase fw-bold mb-2">
-        WELCOME TO STEAM GAME HUB
-       </p>
-       <h1 class="mb-3 fw-bold">
-        Discover Your Next Game
-       </h1>
-       <p class="mb-3">
-        Explore popular games, exciting adventures, and new experiences for every type of gamer.
-       </p>
-       <a class="btn btn-primary btn-lg" href="featured.html">
-        Explore Games
-       </a>
-      </div>
-     </section>
-     <!-- Assignment 4, Tasks 4-5: a live clock and a background palette. -->
-     <section aria-labelledby="hub-tools-title" class="surface-panel rounded-3 p-3 p-md-4 mt-4" id="hub-tools">
+<html lang="en" data-bs-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Steam Game Hub — Store</title>
+<meta name="description" content="Discover, rate and collect your next favourite game. A frontend student game store.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23171d25'/%3E%3Ctext x='5' y='30' fill='%2366c0f4' font-size='32'%3E◉%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/store.css">
+<script defer src="vendor/bootstrap/bootstrap.bundle.min.js">
+</script>
+<script src="https://code.jquery.com/jquery-4.0.0.min.js">
+</script>
+<script>window.jQuery || document.write('<script src="vendor/jquery/jquery-4.0.0.min.js"><\/script>');</script>
+<script defer src="js/games-data.js">
+</script>
+<script defer src="js/site.js">
+</script>
+<script defer src="js/assignment5.js">
+</script>
+<script defer src="script.js">
+</script>
+</head>
+<body class="store-page">
+<a href="#main-content" class="visually-hidden-focusable skip-link btn btn-light">Skip to content</a>
+<header id="main-header" class="store-header">
+ <div class="client-strip">
+<div class="store-shell">
+<span class="client-label">◉ &nbsp;Steam Game Hub</span>
+<span>Team Eggs <span class="strip-divider">/</span> SE-2507</span>
+</div>
+</div>
+ <nav class="navbar navbar-expand-xl" aria-label="Main navigation">
+<div class="store-shell nav-inner">
+ <a class="navbar-brand" href="index.html">
+<span class="hub-symbol" aria-hidden="true">◉</span>
+<span>STEAM<span class="brand-sub">GAME HUB</span>
+</span>
+</a>
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon">
+</span>
+</button>
+ <div class="collapse navbar-collapse" id="main-nav">
+<div class="navbar-nav">
+<a class="nav-link active" aria-current="page" href="index.html">Store</a>
+<a class="nav-link "  href="library.html">Library</a>
+<a class="nav-link "  href="games.html">All games</a>
+<a class="nav-link "  href="featured.html">Featured</a>
+<a class="nav-link "  href="community.html">Community</a>
+<a class="nav-link "  href="news.html">News</a>
+<a class="nav-link "  href="about.html">About</a>
+<a class="nav-link "  href="contact.html">Support</a>
+</div>
+</div>
+ <div class="account-tools">
+<button class="profile-button" data-open-profiles type="button" aria-haspopup="dialog">
+<span class="avatar" aria-hidden="true">P</span>
+<span data-profile-name>Player 1</span>
+<span aria-hidden="true">⌄</span>
+</button>
+<div class="wallet">
+<span class="wallet-label">DEMO WALLET</span>
+<strong data-wallet>$100.00</strong>
+</div>
+</div>
+ </div>
+</nav>
+ </header>
+ <div class="store-shell shop-bar">
+<nav aria-label="Store collections">
+<a href="games.html">Browse games</a>
+<a href="categories.html">Categories</a>
+<a href="games.html?price=free">Free to play</a>
+</nav>
+ <form class="store-search" action="games.html" role="search" autocomplete="off">
+<label class="visually-hidden" for="store-search">Search the store</label>
+<input id="store-search" name="q" type="search" placeholder="Search the store" role="combobox" aria-autocomplete="list" aria-controls="search-suggestions" aria-expanded="false">
+<button type="submit" aria-label="Search games">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="10" cy="10" r="6"/>
+<path d="m15 15 5 5"/>
+</svg>
+</button>
+<ul id="search-suggestions" class="search-suggestions" role="listbox" hidden>
+</ul>
+</form>
+ <a class="library-shortcut" href="library.html">▣ &nbsp; Your library <span data-owned-count>0</span>
+</a>
+</div>
+<main id="main-content" class="store-shell store-main" tabindex="-1">
+<section class="featured-section" aria-labelledby="featured-heading">
+<div class="section-top">
+<div>
+<p class="eyebrow">YOUR NEXT GREAT ADVENTURE</p>
+<h1 id="featured-heading">Featured &amp; Recommended</h1>
+</div>
+<span class="curated-label">
+<span class="live-dot">
+</span> Handpicked for you</span>
+</div>
+<div class="feature-stage" data-feature-stage>
+<div class="feature-art">
+<img data-feature-image src="images/about-gallery/dota2.jpg" alt="Dota 2 featured artwork" width="800" height="500">
+<div class="feature-overlay">
+<span class="feature-kicker" data-feature-kicker>FREE TO PLAY · MOBA</span>
+<h2 data-feature-title>Dota 2</h2>
+<p data-feature-tagline>One battlefield. Infinite possibilities.</p>
+</div>
+</div>
+<div class="feature-info">
+<div>
+<span class="feature-label">IN THE SPOTLIGHT</span>
+<h3 data-feature-name>Dota 2</h3>
+<p class="review-line">Very Positive <span>· Community favourite</span>
+</p>
+</div>
+<div class="feature-mosaic">
+<img data-feature-preview src="images/about-gallery/dota2.jpg" alt="Featured game artwork detail" width="800" height="500">
+<div>
+<span aria-hidden="true">↗</span>
+<strong>Worth your<br>next session.</strong>
+</div>
+</div>
+<p data-feature-description>Choose your hero. Find your team. Every match is a new story.</p>
+<div class="feature-tags" data-feature-tags>
+<span>MOBA</span>
+<span>Multiplayer</span>
+<span>Strategy</span>
+</div>
+<div class="feature-bottom">
+<div>
+<span class="feature-label">JUMP INTO SOMETHING GREAT</span>
+<strong data-feature-price>Free to play</strong>
+</div>
+<button class="buy-button" type="button" data-feature-buy data-buy="dota-2">Add to library</button>
+</div>
+</div>
+<button class="feature-arrow previous" data-feature-step="-1" aria-label="Previous featured game" type="button">‹</button>
+<button class="feature-arrow next" data-feature-step="1" aria-label="Next featured game" type="button">›</button>
+</div>
+<div class="feature-pagination" aria-label="Choose featured game">
+<button type="button" data-feature-index="0" aria-label="Feature Dota 2" aria-pressed="true">
+</button>
+<button type="button" data-feature-index="1" aria-label="Feature Cyberpunk 2077" aria-pressed="false">
+</button>
+<button type="button" data-feature-index="2" aria-label="Feature Elden Ring" aria-pressed="false">
+</button>
+</div>
+</section>
+<section class="discovery-section" aria-labelledby="discover-heading">
+<div class="section-top">
+<div>
+<p class="eyebrow">GOOD GAMES. GREAT TIMES.</p>
+<h2 id="discover-heading">Discover something you’ll love</h2>
+</div>
+<a class="text-button" href="games.html">Browse all games <span aria-hidden="true">→</span>
+</a>
+</div>
+<div class="store-grid home-grid">
+<article class="game-card store-card" id="cyberpunk-2077" data-game="cyberpunk-2077">
+<a class="game-art" href="games.html#cyberpunk-2077">
+<img data-src="images/games/cyberpunk-2077.jpg" src="images/placeholder.svg" alt="Cyberpunk 2077 cover artwork" width="460" height="215" loading="lazy" data-lazy-image>
+</a>
+<div class="game-copy">
+<p class="game-genre">RPG</p>
+<h3>Cyberpunk 2077</h3>
+<p class="game-description">Become an urban mercenary in the neon-lit streets of Night City.</p>
+<div class="game-purchase-row">
+<span class="price">$59.99</span>
+<button type="button" class="buy-button" data-buy="cyberpunk-2077">Buy game</button>
+</div>
+<div data-rating-for="cyberpunk-2077" class="personal-rating">
+</div>
+</div>
+</article>
+<article class="game-card store-card" id="counter-strike-2" data-game="counter-strike-2">
+<a class="game-art" href="games.html#counter-strike-2">
+<img data-src="images/games/counter-strike-2.jpg" src="images/placeholder.svg" alt="Counter-Strike 2 cover artwork" width="460" height="215" loading="lazy" data-lazy-image>
+</a>
+<div class="game-copy">
+<p class="game-genre">Shooter</p>
+<h3>Counter-Strike 2</h3>
+<p class="game-description">Precision. Teamwork. One more round. The definitive competitive tactical shooter.</p>
+<div class="game-purchase-row">
+<span class="price">Free to play</span>
+<button type="button" class="buy-button" data-buy="counter-strike-2">Add to library</button>
+</div>
+<div data-rating-for="counter-strike-2" class="personal-rating">
+</div>
+</div>
+</article>
+<article class="game-card store-card" id="red-dead-redemption-2" data-game="red-dead-redemption-2">
+<a class="game-art" href="games.html#red-dead-redemption-2">
+<img data-src="images/games/red-dead-redemption-2.jpg" src="images/placeholder.svg" alt="Red Dead Redemption 2 cover artwork" width="460" height="215" loading="lazy" data-lazy-image>
+</a>
+<div class="game-copy">
+<p class="game-genre">Adventure</p>
+<h3>Red Dead Redemption 2</h3>
+<p class="game-description">An epic tale of life, loyalty and survival in the American frontier.</p>
+<div class="game-purchase-row">
+<span class="price">$59.99</span>
+<button type="button" class="buy-button" data-buy="red-dead-redemption-2">Buy game</button>
+</div>
+<div data-rating-for="red-dead-redemption-2" class="personal-rating">
+</div>
+</div>
+</article>
+<article class="game-card store-card" id="elden-ring" data-game="elden-ring">
+<a class="game-art" href="games.html#elden-ring">
+<img data-src="images/games/elden-ring.jpg" src="images/placeholder.svg" alt="Elden Ring cover artwork" width="460" height="215" loading="lazy" data-lazy-image>
+</a>
+<div class="game-copy">
+<p class="game-genre">RPG</p>
+<h3>Elden Ring</h3>
+<p class="game-description">Rise, Tarnished. Explore the Lands Between and forge your own path.</p>
+<div class="game-purchase-row">
+<span class="price">$59.99</span>
+<button type="button" class="buy-button" data-buy="elden-ring">Buy game</button>
+</div>
+<div data-rating-for="elden-ring" class="personal-rating">
+</div>
+</div>
+</article>
+</div>
+</section>
+<section class="wallet-banner">
+<div class="wallet-banner-icon" aria-hidden="true">$</div>
+<div>
+<p class="eyebrow">YOUR PLAYGROUND, YOUR COLLECTION</p>
+<h2>Your next game starts with $100.</h2>
+<p>Every profile gets a virtual wallet. Try a game, leave a rating, make it yours.<br>Your balance refills to $100 when you refresh. Your collection stays.</p>
+</div>
+<a class="buy-button" href="games.html">Explore the store →</a>
+</section>
+<section class="store-stats" aria-label="The hub in numbers">
+<div>
+<strong data-counter="9">0</strong>
+<span>games to discover</span>
+</div>
+<div>
+<strong data-counter="100" data-counter-prefix="$">$0</strong>
+<span>starting demo balance</span>
+</div>
+<div>
+<strong data-counter="2">0</strong>
+<span>free-to-play favourites</span>
+</div>
+<div>
+<strong data-counter="6">0</strong>
+<span>genres to explore</span>
+</div>
+</section>
+<section class="share-hub">
+<div>
+<h2>Better games. Better together.</h2>
+<p>Share the hub with your party.</p>
+</div>
+<div class="copy-link">
+<code data-share-url>https://abilkhayrbigali-design.github.io/</code>
+<button type="button" data-copy-link class="text-button">Copy link</button>
+<span data-copy-status role="status">
+</span>
+</div>
+</section>
+<details class="legacy-tools">
+<summary>More hub tools · Clock, themes &amp; sound</summary>
+<section aria-labelledby="hub-tools-title" class="surface-panel rounded-3 p-3 p-md-4 mt-4" id="hub-tools">
       <div class="row g-4 align-items-center">
        <div class="col-12 col-lg-7">
         <h2 class="h4 mb-3" id="hub-tools-title">Make yourself at home</h2>
@@ -160,9 +276,11 @@
        </div>
        <div class="col-12 col-lg-5">
         <button class="btn btn-outline-info" data-change-background="" type="button">
-         <span aria-hidden="true" class="background-swatch me-2"></span>Change background
+         <span aria-hidden="true" class="background-swatch me-2">
+</span>Change background
         </button>
-        <p class="small mt-2 mb-0" role="status">Current background: <span data-background-name="">Midnight</span></p>
+        <p class="small mt-2 mb-0" role="status">Current background: <span data-background-name="">Midnight</span>
+</p>
        </div>
       </div>
       <nav aria-label="Explore the hub" class="d-flex flex-wrap gap-3 border-top mt-4 pt-3">
@@ -176,250 +294,33 @@
        <h3 class="h6">A little sound for your hub</h3>
        <div class="d-flex align-items-center gap-3">
         <button class="btn btn-outline-info btn-sm" data-play-sound="" hidden type="button">Play notification</button>
-        <span aria-hidden="true" class="sound-visual" data-sound-visual=""><span></span><span></span><span></span></span>
+        <span aria-hidden="true" class="sound-visual" data-sound-visual="">
+<span>
+</span>
+<span>
+</span>
+<span>
+</span>
+</span>
        </div>
        <p class="small text-body-secondary mt-2 mb-0" data-sound-status="" role="status">Play a short chime when you want to hear it.</p>
-       <audio id="notification-sound" preload="none" src="audio/notification.wav"></audio>
+       <audio id="notification-sound" preload="none" src="audio/notification.wav">
+</audio>
       </div>
      </section>
-     <!-- Assignment 5, Section 1: select elements, update content and toggle details. -->
-     <section aria-labelledby="spotlight-title" class="surface-panel rounded-3 mt-4 overflow-hidden" id="game-spotlight">
-      <div class="row g-0">
-       <div class="col-12 col-lg-5">
-        <img alt="Elden Ring landscape with a golden tree above distant ruins" class="spotlight-image" height="600" loading="lazy" src="images/games/elden-ring-screenshot.jpg" width="1067"/>
-       </div>
-       <div class="col-12 col-lg-7 p-3 p-md-4">
-        <p class="subtitle small text-info text-uppercase fw-bold mb-2">Game spotlight</p>
-        <h2 class="mb-2" id="spotlight-title">Elden Ring</h2>
-        <p class="text-body-secondary small mb-3">Action RPG · Open world · Adventure</p>
-        <p class="mb-3">An adventure for players who enjoy exploring, experimenting and overcoming a challenge. What is your verdict?</p>
-        <div id="spotlight-details">
-         <p class="text-body-secondary mb-3">Explore at your own pace, try different weapons and discover a play style that suits you. Share your personal impression with the stars below.</p>
-         <a class="d-inline-block mb-3" href="featured.html#elden-ring">Explore Elden Ring</a>
-        </div>
-        <button aria-controls="spotlight-details" aria-expanded="true" class="btn btn-outline-info btn-sm mb-4" data-read-more="" hidden type="button">Read less</button>
-        <div class="border-top pt-3" data-game-rating="Elden Ring" hidden>
-         <fieldset>
-          <legend class="h6 mb-2">Your rating</legend>
-          <div class="rating-stars d-flex gap-1" aria-describedby="spotlight-rating-status">
-           <input class="visually-hidden rating-input" id="rating-1" name="spotlight-rating" type="radio" value="1"/>
-           <label class="rating-star" data-rating-star="1" for="rating-1"><span aria-hidden="true">★</span><span class="visually-hidden">1 star</span></label>
-           <input class="visually-hidden rating-input" id="rating-2" name="spotlight-rating" type="radio" value="2"/>
-           <label class="rating-star" data-rating-star="2" for="rating-2"><span aria-hidden="true">★</span><span class="visually-hidden">2 stars</span></label>
-           <input class="visually-hidden rating-input" id="rating-3" name="spotlight-rating" type="radio" value="3"/>
-           <label class="rating-star" data-rating-star="3" for="rating-3"><span aria-hidden="true">★</span><span class="visually-hidden">3 stars</span></label>
-           <input class="visually-hidden rating-input" id="rating-4" name="spotlight-rating" type="radio" value="4"/>
-           <label class="rating-star" data-rating-star="4" for="rating-4"><span aria-hidden="true">★</span><span class="visually-hidden">4 stars</span></label>
-           <input class="visually-hidden rating-input" id="rating-5" name="spotlight-rating" type="radio" value="5"/>
-           <label class="rating-star" data-rating-star="5" for="rating-5"><span aria-hidden="true">★</span><span class="visually-hidden">5 stars</span></label>
-          </div>
-         </fieldset>
-         <p class="small mt-2 mb-2" id="spotlight-rating-status" role="status">Choose a star to rate this game.</p>
-         <button class="btn btn-outline-info btn-sm" data-reset-rating="" disabled type="button">Clear rating</button>
-        </div>
-       </div>
-      </div>
-     </section>
-     <div class="row g-4 my-4" id="hub-overview">
-      <div class="col-12 col-lg-6">
-       <section class="h-100 rounded-3 p-3 p-md-4 surface-panel" id="welcome">
-        <h2 class="mb-4 fw-bold">
-         Welcome to Steam Game Hub
-        </h2>
-        <p class="mb-3">
-         Steam Game Hub is a student web project created for the Web Technologies I course.
-        </p>
-        <p class="mb-3">
-         Our website brings together a selection of popular games and information about different genres and gaming experiences.
-        </p>
-       </section>
-      </div>
-      <div class="col-12 col-lg-6">
-       <section class="h-100 rounded-3 p-3 p-md-4 surface-panel" id="why-visit">
-        <h2 class="mb-4 fw-bold">
-         Why Visit Our Game Hub?
-        </h2>
-        <ul class="feature-list ps-4 mb-0">
-         <li class="mb-2">
-          Discover popular games
-         </li>
-         <li class="mb-2">
-          Explore different game genres
-         </li>
-         <li class="mb-2">
-          Find interesting gaming experiences
-         </li>
-         <li class="mb-2">
-          Learn about upcoming games
-         </li>
-        </ul>
-       </section>
-      </div>
-     </div>
-     <section class="content-section container-fluid px-0 py-4 py-lg-5" id="featured-games">
-      <h2 class="mb-4 fw-bold">
-       Featured Games
-      </h2>
-      <div class="card-row row g-4">
-       <div class="col-12 col-sm-6 col-xxl-3">
-        <article class="game-card card h-100">
-         <img alt="Counter-Strike 2 - official Steam cover artwork" class="card-img-top" height="215" src="images/games/counter-strike-2.jpg" width="460"/>
-         <div class="card-content card-body d-flex flex-column p-3 p-lg-4">
-          <h3 class="h5 mb-3 fw-bold card-title">
-           Counter-Strike 2
-          </h3>
-          <p class="game-genre mb-3 card-text text-info fw-semibold">
-           Shooter
-          </p>
-          <p class="mb-3 card-text">
-           A competitive multiplayer first-person shooter focused on teamwork and strategy.
-          </p>
-          <span class="price fw-bold text-info mb-3 d-block">
-           Free
-          </span>
-          <a aria-label="Explore Counter-Strike 2" class="card-action btn btn-outline-info btn-sm mt-auto align-self-start" href="featured.html#counter-strike-2">
-           Explore game
-          </a>
-         </div>
-        </article>
-       </div>
-       <div class="col-12 col-sm-6 col-xxl-3">
-        <article class="game-card card h-100">
-         <img alt="Grand Theft Auto V - official Steam cover artwork" class="card-img-top" height="215" src="images/games/grand-theft-auto-v.jpg" width="460"/>
-         <div class="card-content card-body d-flex flex-column p-3 p-lg-4">
-          <h3 class="h5 mb-3 fw-bold card-title">
-           Grand Theft Auto V
-          </h3>
-          <p class="game-genre mb-3 card-text text-info fw-semibold">
-           Action
-          </p>
-          <p class="mb-3 card-text">
-           Explore a large open world filled with missions, vehicles, and activities.
-          </p>
-          <span class="price fw-bold text-info mb-3 d-block">
-           $29.99
-          </span>
-          <a aria-label="Explore Grand Theft Auto V" class="card-action btn btn-outline-info btn-sm mt-auto align-self-start" href="featured.html#grand-theft-auto-v">
-           Explore game
-          </a>
-         </div>
-        </article>
-       </div>
-       <div class="col-12 col-sm-6 col-xxl-3">
-        <article class="game-card card h-100">
-         <img alt="Dota 2 game artwork" class="original-dota-art card-img-top" height="500" src="images/about-gallery/dota2.jpg" width="800"/>
-         <div class="card-content card-body d-flex flex-column p-3 p-lg-4">
-          <h3 class="h5 mb-3 fw-bold card-title">
-           Dota 2
-          </h3>
-          <p class="game-genre mb-3 card-text text-info fw-semibold">
-           MOBA
-          </p>
-          <p class="mb-3 card-text">
-           A competitive strategy game where teams fight to destroy the enemy base.
-          </p>
-          <span class="price fw-bold text-info mb-3 d-block">
-           Free
-          </span>
-          <a aria-label="Explore Dota 2" class="card-action btn btn-outline-info btn-sm mt-auto align-self-start" href="featured.html#dota-2">
-           Explore game
-          </a>
-         </div>
-        </article>
-       </div>
-       <div class="col-12 col-sm-6 col-xxl-3">
-        <article class="game-card card h-100">
-         <img alt="Cyberpunk 2077 - official Steam cover artwork" class="card-img-top" height="215" src="images/games/cyberpunk-2077.jpg" width="460"/>
-         <div class="card-content card-body d-flex flex-column p-3 p-lg-4">
-          <h3 class="h5 mb-3 fw-bold card-title">
-           Cyberpunk 2077
-          </h3>
-          <p class="game-genre mb-3 card-text text-info fw-semibold">
-           RPG
-          </p>
-          <p class="mb-3 card-text">
-           Experience a futuristic open-world adventure in Night City.
-          </p>
-          <span class="price fw-bold text-info mb-3 d-block">
-           $59.99
-          </span>
-          <a aria-label="Explore Cyberpunk 2077" class="card-action btn btn-outline-info btn-sm mt-auto align-self-start" href="featured.html#cyberpunk-2077">
-           Explore game
-          </a>
-         </div>
-        </article>
-       </div>
-      </div>
-     </section>
-     <section class="container-fluid px-0 py-4" id="discover-more">
-      <h2 class="mb-4 fw-bold">
-       Find your next adventure
-      </h2>
-      <!-- Task 8: three Bootstrap cards in a card-group. -->
-      <div class="card-group">
-       <article class="card">
-        <img alt="Elden Ring official cover" class="card-img-top game-cover" src="images/games/elden-ring.jpg"/>
-        <div class="card-body p-3 p-lg-4 d-flex flex-column">
-         <h3 class="card-title h5">
-          Explore new worlds
-         </h3>
-         <p class="card-text">
-          From fantasy kingdoms to futuristic cities, find a world worth exploring.
-         </p>
-         <a class="btn btn-outline-info btn-sm mt-auto align-self-start" href="featured.html#elden-ring">
-          Discover RPGs
-         </a>
-        </div>
-       </article>
-       <article class="card">
-        <img alt="Counter-Strike 2 official cover" class="card-img-top game-cover" src="images/games/counter-strike-2.jpg"/>
-        <div class="card-body p-3 p-lg-4 d-flex flex-column">
-         <h3 class="card-title h5">
-          Play together
-         </h3>
-         <p class="card-text">
-          Explore team games where communication and strategy make the difference.
-         </p>
-         <a class="btn btn-outline-info btn-sm mt-auto align-self-start" href="community.html">
-          Meet the community
-         </a>
-        </div>
-       </article>
-       <article class="card">
-        <img alt="Red Dead Redemption 2 official cover" class="card-img-top game-cover" src="images/games/red-dead-redemption-2.jpg"/>
-        <div class="card-body p-3 p-lg-4 d-flex flex-column">
-         <h3 class="card-title h5">
-          Choose your story
-         </h3>
-         <p class="card-text">
-          Compare genres and find an adventure that fits the way you like to play.
-         </p>
-         <a class="btn btn-outline-info btn-sm mt-auto align-self-start" href="categories.html">
-          Browse genres
-         </a>
-        </div>
-       </article>
-      </div>
-     </section>
-    </main>
-   </div>
-  </div>
-  <footer class="text-center border-top px-3 py-4 mt-4">
-   <p class="small mb-2">
-    Steam Game Hub — Web Technologies I
-   </p>
-   <p class="small mb-2">
-    Team Eggs | SE-2507
-   </p>
-   <p class="small mb-2">
-    Team Members: Ташкенбаев Нурсултан, Бигали Абулхаир, Султанкулов Шынгыс, Лопаткин Артем
-   </p>
-   <p class="small mb-0">
-    <a class="link-info" href="responsive.html">
-     Responsive showcase
-    </a>
-    · Academic demo; prices and news are sample content.
-   </p>
-  </footer>
- </body>
+</details>
+</main>
+<footer class="store-footer">
+<div class="store-shell">
+<a class="footer-brand" href="index.html">◉ &nbsp;STEAM GAME HUB</a>
+<p>A little discovery. A new favourite. Your next adventure.</p>
+<p class="team-credit">Team Members: Ташкенбаев Нурсултан · Бигали Абулхаир · Султанкулов Шынгыс · Лопаткин Артем</p>
+<div class="footer-bottom">
+<span>Team Eggs · SE-2507 · Web Technologies I</span>
+<span>Student project · Virtual purchases only · <a href="responsive.html">Responsive showcase</a>
+</span>
+</div>
+</div>
+</footer>
+</body>
 </html>

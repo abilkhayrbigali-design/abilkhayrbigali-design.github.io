@@ -1,0 +1,211 @@
+{
+  "date": "2026-11-05",
+  "browser": "154.0.8037.97",
+  "results": [
+    {
+      "name": "jQuery 4 and all 9 games initialize",
+      "passed": true
+    },
+    {
+      "name": "Live search and case-insensitive highlighting",
+      "passed": true
+    },
+    {
+      "name": "Regex and HTML search inputs stay literal and safe",
+      "passed": true
+    },
+    {
+      "name": "Combined genre / price filters and empty state",
+      "passed": true
+    },
+    {
+      "name": "Autocomplete is keyboard accessible and selects a game",
+      "passed": true
+    },
+    {
+      "name": "Ratings save for each game",
+      "passed": true
+    },
+    {
+      "name": "Purchase spinner blocks duplicates and charges exactly once",
+      "passed": true
+    },
+    {
+      "name": "Navigation keeps balance; refresh refills and preserves games and ratings",
+      "passed": true
+    },
+    {
+      "name": "Full refund removes the game and cannot run twice",
+      "passed": true
+    },
+    {
+      "name": "New profile starts at $100, with independent library and ratings",
+      "passed": true
+    },
+    {
+      "name": "Insufficient balance prevents checkout and affordable filter updates",
+      "passed": true
+    },
+    {
+      "name": "Free game adds without charge; removal refunds zero",
+      "passed": true
+    },
+    {
+      "name": "Profile switching restores the original personal data",
+      "passed": true
+    },
+    {
+      "name": "Duplicate and whitespace profile names are rejected",
+      "passed": true
+    },
+    {
+      "name": "Featured carousel updates artwork and purchase target",
+      "passed": true
+    },
+    {
+      "name": "Lazy images are deferred until near the viewport",
+      "passed": true
+    },
+    {
+      "name": "Counters animate on scroll and progress bar reaches the bottom",
+      "passed": true
+    },
+    {
+      "name": "Clipboard copy gives a checkmark and success tooltip",
+      "passed": true
+    },
+    {
+      "name": "Contact form validates before showing the submit spinner",
+      "passed": true
+    },
+    {
+      "name": "375px: index.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "375px: games.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "375px: library.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "375px: featured.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "375px: categories.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "375px: community.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "375px: news.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "375px: about.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "375px: contact.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "375px: responsive.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "768px: index.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "768px: games.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "768px: library.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "768px: featured.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "768px: categories.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "768px: community.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "768px: news.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "768px: about.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "768px: contact.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "768px: responsive.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "1440px: index.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "1440px: games.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "1440px: library.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "1440px: featured.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "1440px: categories.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "1440px: community.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "1440px: news.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "1440px: about.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "1440px: contact.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "1440px: responsive.html loads, has unique IDs and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Offline CDN fallback still runs the entire frontend",
+      "passed": true
+    },
+    {
+      "name": "No JavaScript errors or backend submissions",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

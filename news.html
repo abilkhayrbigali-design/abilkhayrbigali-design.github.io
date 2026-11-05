@@ -11,74 +11,29 @@
   <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171d25'/%3E%3Ctext x='18' y='44' fill='%2366c0f4' font-size='38' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
   <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
   <link href="css/theme.css" rel="stylesheet"/>
+<link href="css/store.css" rel="stylesheet"/>
   <script defer="" src="vendor/bootstrap/bootstrap.bundle.min.js">
   </script>
   <script defer="" src="js/site.js">
   </script>
    <script defer src="js/assignment5.js"></script>
-</head>
- <body class="d-flex flex-column min-vh-100">
+<script src="https://code.jquery.com/jquery-4.0.0.min.js"></script><script>window.jQuery || document.write('<script src="vendor/jquery/jquery-4.0.0.min.js"><\/script>');</script><script defer src="js/games-data.js"></script><script defer src="script.js"></script></head>
+ <body class="d-flex flex-column min-vh-100 store-page info-page">
   <a class="visually-hidden-focusable btn btn-light position-absolute top-0 start-0 m-2 skip-link" href="#main-content">
    Skip to main content
   </a>
-  <header id="main-header">
-   <nav aria-label="Main navigation" class="navbar navbar-expand-xl bg-dark border-bottom py-3">
-    <!-- Tasks 4-5: Bootstrap spacing and Collapse navbar. -->
-    <div class="container-fluid px-3 px-sm-4">
-     <a class="navbar-brand fw-bold text-info me-2" href="index.html">
-      STEAM GAME HUB
-     </a>
-     <button aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#main-nav" data-bs-toggle="collapse" type="button">
-      <span class="navbar-toggler-icon">
-      </span>
-     </button>
-     <div class="collapse navbar-collapse" id="main-nav">
-      <ul class="navbar-nav ms-auto mb-0 mt-3 mt-xl-0">
-       <li class="nav-item">
-        <a class="nav-link px-2" href="index.html">
-         Home
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link px-2" href="featured.html">
-         Featured
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link px-2" href="games.html">
-         Games
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link px-2" href="categories.html">
-         Categories
-        </a>
-       </li>
-       <li class="nav-item">
-        <a aria-current="page" class="nav-link px-2 active" href="news.html">
-         News
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link px-2" href="community.html">
-         Community
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link px-2" href="about.html">
-         About
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link px-2" href="contact.html">
-         Contact
-        </a>
-       </li>
-      </ul>
-     </div>
-    </div>
-   </nav>
-  </header>
+  <header id="main-header" class="store-header">
+ <div class="client-strip"><div class="store-shell"><span class="client-label">◉ &nbsp;Steam Game Hub</span><span>Team Eggs <span class="strip-divider">/</span> SE-2507</span></div></div>
+ <nav class="navbar navbar-expand-xl" aria-label="Main navigation"><div class="store-shell nav-inner">
+ <a class="navbar-brand" href="index.html"><span class="hub-symbol" aria-hidden="true">◉</span><span>STEAM<span class="brand-sub">GAME HUB</span></span></a>
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+ <div class="collapse navbar-collapse" id="main-nav"><div class="navbar-nav"><a class="nav-link "  href="index.html">Store</a><a class="nav-link "  href="library.html">Library</a><a class="nav-link "  href="games.html">All games</a><a class="nav-link "  href="featured.html">Featured</a><a class="nav-link "  href="community.html">Community</a><a class="nav-link active" aria-current="page" href="news.html">News</a><a class="nav-link "  href="about.html">About</a><a class="nav-link "  href="contact.html">Support</a></div></div>
+ <div class="account-tools"><button class="profile-button" data-open-profiles type="button" aria-haspopup="dialog"><span class="avatar" aria-hidden="true">P</span><span data-profile-name>Player 1</span><span aria-hidden="true">⌄</span></button><div class="wallet"><span class="wallet-label">DEMO WALLET</span><strong data-wallet>$100.00</strong></div></div>
+ </div></nav>
+ </header>
+ <div class="store-shell shop-bar"><nav aria-label="Store collections"><a href="games.html">Browse games</a><a href="categories.html">Categories</a><a href="games.html?price=free">Free to play</a></nav>
+ <form class="store-search" action="games.html" role="search" autocomplete="off"><label class="visually-hidden" for="store-search">Search the store</label><input id="store-search" name="q" type="search" placeholder="Search the store" role="combobox" aria-autocomplete="list" aria-controls="search-suggestions" aria-expanded="false"><button type="submit" aria-label="Search games"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg></button><ul id="search-suggestions" class="search-suggestions" role="listbox" hidden></ul></form>
+ <a class="library-shortcut" href="library.html">▣ &nbsp; Your library <span data-owned-count>0</span></a></div>
   <div class="container-fluid px-3 px-sm-4 py-4 flex-grow-1">
    <div class="row g-4">
     <aside aria-labelledby="sidebar-title" class="page-sidebar col-12 col-xl-2">
@@ -360,22 +315,6 @@
     </main>
    </div>
   </div>
-  <footer class="text-center border-top px-3 py-4 mt-4">
-   <p class="small mb-2">
-    Steam Game Hub — Web Technologies I
-   </p>
-   <p class="small mb-2">
-    Team Eggs | SE-2507
-   </p>
-   <p class="small mb-2">
-    Team Members: Ташкенбаев Нурсултан, Бигали Абулхаир, Султанкулов Шынгыс, Лопаткин Артем
-   </p>
-   <p class="small mb-0">
-    <a class="link-info" href="responsive.html">
-     Responsive showcase
-    </a>
-    · Academic demo; prices and news are sample content.
-   </p>
-  </footer>
+  <footer class="store-footer"><div class="store-shell"><a class="footer-brand" href="index.html">◉ &nbsp;STEAM GAME HUB</a><p>A little discovery. A new favourite. Your next adventure.</p><p class="team-credit">Team Members: Ташкенбаев Нурсултан · Бигали Абулхаир · Султанкулов Шынгыс · Лопаткин Артем</p><div class="footer-bottom"><span>Team Eggs · SE-2507 · Web Technologies I</span><span>Student project · Virtual purchases only · <a href="responsive.html">Responsive showcase</a></span></div></div></footer>
  </body>
 </html>
