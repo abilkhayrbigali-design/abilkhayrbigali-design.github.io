@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-05",
+  "url": "https://abilkhayrbigali-design.github.io/",
+  "commit": "ecd3dba4b18f4e41e6236cc0d6531d106d5e9a5e",
+  "github_workflow": "https://github.com/abilkhayrbigali-design/abilkhayrbigali-design.github.io/actions/runs/41990407076",
+  "workflow_conclusion": "success",
+  "files": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "9d990e66ec5d168f1558e22b161a4dbb07c327fb473fd0f3b44209faf44101f8"
+    },
+    {
+      "file": "games.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "7604e00a11ac07be0feaa21e0d01ef50e43845c8145e7fe47e55ff1d90479524"
+    },
+    {
+      "file": "library.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "3088c46e7f3b4006ee1c26edd93c06e8dfb498cd3d7c9615663eb1cbe8c33f87"
+    },
+    {
+      "file": "featured.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "e4ee606471960cbb558bbadf42753ee1ce12890baef9777d2f04f1773ee5562c"
+    },
+    {
+      "file": "categories.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "68f44a7cc713af821e80462855b57b637defe84e1202d0b4175afd03f0796664"
+    },
+    {
+      "file": "community.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "ae924580a96be7441bc2106a1fd41ef588a821fb7ec7c5b219aa443f87793b3a"
+    },
+    {
+      "file": "news.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "d4a60339d64c95bcad81c97c3b702d2a7e0e0a2a6d078281a86c532fdf45a0f7"
+    },
+    {
+      "file": "about.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "d58679e54c73abd1bd97adb8473598887e58527f4b66b40bb053d040b4fbc5e1"
+    },
+    {
+      "file": "contact.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "2dad8f944189924124bddf870c50bce356c7f71ad52884752ebbffe6d0545f0d"
+    },
+    {
+      "file": "script.js",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "3a348559cb6f084370184fb75ab57d6bfab9c522315f74f37dec824f775d2e28"
+    },
+    {
+      "file": "css/store.css",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "f022e4d26c4d827ded36386416bf549bcf1588c259e1bd0ad954db3c41346084"
+    },
+    {
+      "file": "js/games-data.js",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "bf7dc88ccfb2bd76990cfe4991c2c91d3e4b4655a2ca008ffba8f5263bd99445"
+    },
+    {
+      "file": "images/placeholder.svg",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "2803bdc90bef2035399ba09f6405711a1276714b8c7449ad2ea84d29b9e9e16b"
+    },
+    {
+      "file": "vendor/jquery/jquery-4.0.0.min.js",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "39a546ea9ad97f8bfaf5d3e0e8f8556adb415e470e59007ada9759dce472adaa"
+    }
+  ]
+}

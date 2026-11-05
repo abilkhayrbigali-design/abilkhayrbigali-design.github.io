@@ -165,6 +165,114 @@ $(document).ready(function () {
     }
   });
 
+  // Community registration: name -> email -> password; create a local player only.
+  const $registration = $('[data-registration-form]');
+  if ($registration.length) {
+    let registrationStep = 0;
+    let registrationBusy = false;
+    const registrationLabels = ['Your player name', 'Your email address', 'Your demo password'];
+    const $panels = $registration.find('[data-registration-step]');
+    const $name = $('#register-name');
+    const $email = $('#register-email');
+    const $password = $('#register-password');
+    const $confirm = $('#register-confirm');
+    function registrationError($field, message) {
+      $field.toggleClass('is-invalid', Boolean(message));
+      if (message) $field.attr('aria-invalid', 'true');
+      else $field.removeAttr('aria-invalid');
+      $('#' + $field.attr('id') + '-error').text(message).prop('hidden', !message);
+      return !message;
+    }
+    function validateRegistrationField(field) {
+      const $field = $(field);
+      let error = '';
+      if (!field.value.trim()) error = 'Please complete this field.';
+      else if (field === $name[0]) {
+        state = readState();
+        if (state.profiles.some(p => p.name.toLowerCase() === field.value.trim().toLowerCase())) error = 'This player name already exists. Choose another name or switch profiles in the header.';
+        else if (state.profiles.length >= 20) error = 'This browser already has 20 player profiles.';
+      } else if (field === $email[0] && (field.validity.typeMismatch || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value.trim()))) error = 'Enter a valid email address, such as player@example.com.';
+      else if (field === $password[0] && field.value.length < 8) error = 'Use at least 8 characters.';
+      else if (field === $confirm[0] && field.value !== $password.val()) error = 'Passwords do not match.';
+      return registrationError($field, error);
+    }
+    function showRegistrationStep(step, moveFocus = true) {
+      registrationStep = step;
+      $panels.each(function (index) { $(this).prop('hidden', index !== step); });
+      $registration.find('[data-registration-progress]').text(`Step ${step + 1} of 3 · ${registrationLabels[step]}`);
+      $registration.find('[data-registration-indicator]').each(function (index) {
+        $(this).toggleClass('is-complete', index < step);
+        if (index === step) $(this).attr('aria-current', 'step');
+        else $(this).removeAttr('aria-current');
+      });
+      $registration.find('[data-registration-back]').prop('hidden', step === 0);
+      $registration.find('[data-registration-next]').text(step === 2 ? 'Create player profile' : 'Continue →');
+      $registration.find('[data-registration-status]').empty();
+      if (moveFocus) $panels.eq(step).find('input').first().trigger('focus');
+    }
+    function resetRegistration() {
+      if (registrationBusy) return;
+      $registration[0].reset();
+      $registration.find('input').each(function () { registrationError($(this), ''); });
+      $registration.find('[data-registration-success]').prop('hidden', true);
+      $registration.find('[data-registration-actions], [data-registration-progress]').prop('hidden', false);
+      showRegistrationStep(0);
+    }
+    $registration.on('input', 'input', function () {
+      if ($(this).attr('aria-invalid') === 'true') validateRegistrationField(this);
+      if (this === $password[0] && $confirm.attr('aria-invalid') === 'true') validateRegistrationField($confirm[0]);
+      $registration.find('[data-registration-status]').empty();
+    });
+    $registration.find('[data-registration-back]').on('click', function () {
+      if (!registrationBusy) showRegistrationStep(Math.max(0, registrationStep - 1));
+    });
+    $registration.find('[data-registration-clear], [data-registration-restart]').on('click', resetRegistration);
+    $registration.on('submit', function (event) {
+      event.preventDefault();
+      if (registrationBusy) return;
+      const invalid = $panels.eq(registrationStep).find('input').toArray().filter(field => !validateRegistrationField(field));
+      if (invalid.length) { invalid[0].focus(); return; }
+      if (registrationStep < 2) { showRegistrationStep(registrationStep + 1); return; }
+      // Recheck the name as another tab may have created it while steps were filled.
+      if (!validateRegistrationField($name[0])) { showRegistrationStep(0); return; }
+      registrationBusy = true;
+      const playerName = $name.val().trim();
+      const $submit = $registration.find('[data-registration-next]');
+      $registration.attr('aria-busy', 'true').find('button, input').prop('disabled', true);
+      $submit.html('<span class="spinner" aria-hidden="true"></span>Please wait…');
+      setTimeout(function () {
+        state = readState();
+        let saved = false;
+        const duplicate = state.profiles.some(p => p.name.toLowerCase() === playerName.toLowerCase());
+        if (!duplicate && state.profiles.length < 20) {
+          const id = 'player-' + (window.crypto?.randomUUID?.() || Date.now() + '-' + Math.random().toString(16).slice(2));
+          state.profiles.push(newProfile(playerName, id));
+          state.active = id;
+          saved = saveState(state);
+        }
+        registrationBusy = false;
+        $registration.removeAttr('aria-busy').find('button, input').prop('disabled', false);
+        $submit.text('Create player profile');
+        if (!saved) {
+          state = readState();
+          showRegistrationStep(0);
+          registrationError($name, duplicate ? 'This player name was just taken. Choose another name.' : 'Could not create the profile. Check browser storage or choose an existing player.');
+          return;
+        }
+        // Only the public name is saved. Email and passwords never enter localStorage.
+        $registration[0].reset();
+        $panels.prop('hidden', true);
+        $registration.find('[data-registration-actions], [data-registration-progress]').prop('hidden', true);
+        $registration.find('[data-registration-indicator]').removeAttr('aria-current').addClass('is-complete');
+        $registration.find('[data-registration-welcome]').text(`Welcome, ${playerName}! Your local player profile and $100 demo wallet are ready.`);
+        $registration.find('[data-registration-success]').prop('hidden', false).trigger('focus');
+        renderState();
+        toast(`Welcome, ${playerName}. Your $100 wallet is ready.`);
+      }, 700);
+    });
+    showRegistrationStep(0, false);
+  }
+
   function startTransaction(id, kind, trigger) {
     state = readState();
     const game = byId.get(id);

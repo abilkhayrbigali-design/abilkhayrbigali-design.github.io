@@ -186,3 +186,22 @@ mark { background:#b1d65d; color:#152318; padding:0 1px; border-radius:1px; }
 .legacy-tools summary { cursor:pointer; }
 .legacy-tools .surface-panel { background:#152a3b; }
 .team-credit { font-size:10px; line-height:1.8; color:#94a9b9; }
+/* The registration block advances in place through name, email and password. */
+.registration-form { background:#152b3de8; border:1px solid #40627b; border-radius:3px; padding:26px; }
+.registration-stepper { display:flex; justify-content:space-between; gap:12px; padding:0 0 22px; margin:0 0 20px; list-style:none; border-bottom:1px solid #ffffff18; }
+.registration-stepper li { display:flex; align-items:center; gap:8px; font-size:11px; color:#97adbd; }
+.registration-stepper li>span { display:grid; place-items:center; width:25px; height:25px; background:#102333; border:1px solid #537086; border-radius:50%; font-size:10px; }
+.registration-stepper li[aria-current=step] { color:#e1f0fa; }
+.registration-stepper li[aria-current=step]>span { background:#1879b5; border-color:#58b2e7; }
+.registration-stepper li.is-complete>span { background:#405c30; border-color:#8ba96a; color:#dcf6bd; }
+.registration-progress { font-size:10px; letter-spacing:.07em; color:#72c1ef; margin-bottom:19px; }
+.registration-form legend { font-size:21px; }
+.registration-form .form-control { min-height:43px; border-radius:2px; font-size:13px; }
+.registration-actions { display:flex; align-items:center; gap:10px; margin-top:26px; flex-wrap:wrap; }
+.registration-actions [data-registration-clear] { margin-left:auto; border-color:transparent; }
+.registration-success { padding:8px 0; }
+.registration-check { display:grid; place-items:center; width:44px; height:44px; margin-bottom:17px; border-radius:50%; background:#3e5f34; color:#d5f5a5; font-size:23px; }
+.registration-success h3 { font-size:21px; }
+.registration-success p { color:#b4cad9; margin-bottom:22px; }
+.registration-success .text-button { margin:10px 0; }
+@media(max-width:520px) { .registration-form { padding:20px; } .registration-stepper { gap:7px; } .registration-stepper li { font-size:10px; gap:5px; } .registration-stepper li>span { width:23px; height:23px; } }

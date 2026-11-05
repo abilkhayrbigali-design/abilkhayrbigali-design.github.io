@@ -217,6 +217,79 @@ async function check(name, action) {
       await expect(form.locator('[type=submit]')).toBeEnabled();
       await expect(form.locator('.form-status')).toContainText('Submitted successfully');
     });
+    await check('Registration opens with only the name field and rejects an empty name', async () => {
+      await visit('community.html#join-community');
+      await expect(page.locator('#register-name')).toBeVisible();
+      await expect(page.locator('#register-email')).not.toBeVisible();
+      await expect(page.locator('#register-password')).not.toBeVisible();
+      await page.locator('[data-registration-next]').click();
+      await expect(page.locator('#register-name-error')).toContainText('complete');
+      await page.locator('#join-community').screenshot({path:path.join(output,'registration-name.png')});
+    });
+    await check('Registration validates email and Back keeps the entered name', async () => {
+      await page.locator('#register-name').fill('New Gamer');
+      await page.locator('#register-name').press('Enter');
+      await expect(page.locator('#register-email')).toBeFocused();
+      await page.locator('#register-email').fill('invalid');
+      await page.locator('[data-registration-next]').click();
+      await expect(page.locator('#register-email-error')).toContainText('valid email');
+      await page.locator('#register-email').fill('new-gamer@example.com');
+      await page.locator('[data-registration-back]').click();
+      await expect(page.locator('#register-name')).toHaveValue('New Gamer');
+      await page.locator('[data-registration-next]').click();
+      await expect(page.locator('#register-email')).toHaveValue('new-gamer@example.com');
+      await page.locator('#join-community').screenshot({path:path.join(output,'registration-email.png')});
+      await page.locator('[data-registration-next]').click();
+    });
+    await check('Registration checks password length and confirmation before submission', async () => {
+      await expect(page.locator('#register-password')).toBeFocused();
+      await page.locator('#register-password').fill('short');
+      await page.locator('#register-confirm').fill('different');
+      await page.locator('[data-registration-next]').click();
+      await expect(page.locator('#register-password-error')).toContainText('8 characters');
+      await expect(page.locator('#register-confirm-error')).toContainText('do not match');
+      await page.locator('#register-password').fill('SampleOnly123!');
+      await page.locator('#register-confirm').fill('SampleOnly123!');
+      await page.locator('#join-community').screenshot({path:path.join(output,'registration-password.png')});
+    });
+    await check('Final registration creates one $100 local profile and discards email/password', async () => {
+      await page.locator('[data-registration-next]').click();
+      await expect(page.locator('[data-registration-next]')).toBeDisabled();
+      await expect(page.locator('[data-registration-next]')).toContainText('Please wait');
+      await expect(page.locator('[data-registration-success]')).toBeVisible();
+      await expect(page.locator('[data-profile-name]')).toHaveText('New Gamer');
+      await wallet('$100.00');
+      await expect(page.locator('#register-password')).toHaveValue('');
+      const saved = await page.evaluate(() => localStorage.getItem('eggs-game-hub-v6'));
+      assert.equal(saved.includes('SampleOnly123!'),false);
+      assert.equal(saved.includes('new-gamer@example.com'),false);
+      assert.equal(JSON.parse(saved).profiles.filter(p=>p.name==='New Gamer').length,1);
+      await page.locator('#join-community').screenshot({path:path.join(output,'registration-success.png')});
+    });
+    await check('Registration restart clears steps and duplicate names are rejected', async () => {
+      await page.locator('[data-registration-restart]').click();
+      await expect(page.locator('#register-name')).toHaveValue('');
+      await page.locator('#register-name').fill('new gamer');
+      await page.locator('[data-registration-next]').click();
+      await expect(page.locator('#register-name-error')).toContainText('already exists');
+      await expect(page.locator('#register-email')).not.toBeVisible();
+      await page.locator('[data-registration-clear]').click();
+      await expect(page.locator('#register-name-error')).not.toBeVisible();
+    });
+    await check('Three-step registration also completes on a 375px screen', async () => {
+      await page.setViewportSize({width:375,height:950});
+      await page.locator('#register-name').fill('Mobile Gamer');
+      await page.locator('[data-registration-next]').click();
+      await page.locator('#register-email').fill('mobile-gamer@example.com');
+      await page.locator('[data-registration-next]').click();
+      await page.locator('#register-password').fill('MobileSample123!');
+      await page.locator('#register-confirm').fill('MobileSample123!');
+      await page.locator('#join-community').screenshot({path:path.join(output,'registration-mobile.png')});
+      await page.locator('[data-registration-next]').click();
+      await expect(page.locator('[data-registration-success]')).toBeVisible();
+      await expect(page.locator('[data-profile-name]')).toHaveText('Mobile Gamer');
+      await wallet('$100.00');
+    });
     for (const width of [375, 768, 1440]) {
       await page.setViewportSize({ width, height: 950 });
       for (const file of ['index.html','games.html','library.html','featured.html','categories.html','community.html','news.html','about.html','contact.html','responsive.html']) {

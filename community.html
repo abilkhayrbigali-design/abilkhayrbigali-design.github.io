@@ -429,32 +429,54 @@
          <p class="subtitle small text-info text-uppercase fw-bold">FIND YOUR PEOPLE</p>
          <h2 class="mb-4 fw-bold" id="join-title">Join the gaming community</h2>
          <p>Meet players who share your favourite worlds, genres and adventures.</p>
-         <p class="small text-body-secondary" id="registration-note">Try our registration demo. All fields are required. No account is created and nothing is sent or stored. Use a sample password.</p>
+         <p class="small text-body-secondary" id="registration-note">Three small steps to your local player profile and a $100 demo wallet. Your email and sample password are checked here, then discarded. Use a demo password.</p>
          <a href="contact.html">Have a question? Contact us</a>
         </div>
-        <form aria-describedby="registration-note" class="registration-form col-12 col-lg-7" data-demo-form="" data-success-message="Your registration details are valid. This is a demo; no account has been created." id="registration-form">
-         <div class="mb-3">
+        <form aria-describedby="registration-note" class="registration-form col-12 col-lg-7" data-registration-form id="registration-form" novalidate>
+         <ol class="registration-stepper" aria-label="Registration steps">
+          <li data-registration-indicator="0" aria-current="step"><span>1</span>Name</li>
+          <li data-registration-indicator="1"><span>2</span>Email</li>
+          <li data-registration-indicator="2"><span>3</span>Password</li>
+         </ol>
+         <p class="registration-progress" data-registration-progress role="status">Step 1 of 3 · Your player name</p>
+         <fieldset data-registration-step="0">
+          <legend class="h4 mb-2">What should we call you?</legend>
+          <p class="text-body-secondary small mb-4">Choose the name that appears on your player profile.</p>
           <label class="form-label" for="register-name">Display name</label>
-          <input autocomplete="nickname" class="form-control" id="register-name" name="display_name" placeholder="Your player name" required="" type="text"/>
-         </div>
-         <div class="mb-3">
+          <input aria-describedby="register-name-error" autocomplete="nickname" class="form-control" id="register-name" maxlength="24" name="display_name" placeholder="Your player name" required type="text">
+          <p class="field-error small mt-2" id="register-name-error" hidden></p>
+         </fieldset>
+         <fieldset data-registration-step="1" hidden>
+          <legend class="h4 mb-2">Your email address</legend>
+          <p class="text-body-secondary small mb-4">One more step towards your next adventure.</p>
           <label class="form-label" for="register-email">Email address</label>
-          <input autocomplete="email" class="form-control" id="register-email" name="email" placeholder="player@example.com" required="" type="email"/>
-         </div>
-         <div class="mb-3">
+          <input aria-describedby="register-email-error" autocomplete="email" class="form-control" id="register-email" name="email" placeholder="player@example.com" required type="email">
+          <p class="field-error small mt-2" id="register-email-error" hidden></p>
+         </fieldset>
+         <fieldset data-registration-step="2" hidden>
+          <legend class="h4 mb-2">Finish your player profile</legend>
+          <p class="text-body-secondary small mb-4">Use a sample password for this frontend demo.</p>
           <label class="form-label" for="register-password">Password</label>
-          <input aria-describedby="password-hint" autocomplete="new-password" class="form-control" id="register-password" minlength="8" name="password" required="" type="password"/>
-          <p class="small text-body-secondary mt-2 mb-0" id="password-hint">Use at least 8 characters.</p>
+          <input aria-describedby="password-hint register-password-error" autocomplete="new-password" class="form-control" id="register-password" minlength="8" name="password" required type="password">
+          <p class="small text-body-secondary mt-2 mb-0" id="password-hint">At least 8 characters. Not saved or sent anywhere.</p>
+          <p class="field-error small mt-2" id="register-password-error" hidden></p>
+          <label class="form-label mt-3" for="register-confirm">Confirm password</label>
+          <input aria-describedby="register-confirm-error" autocomplete="new-password" class="form-control" id="register-confirm" name="password_confirmation" required type="password">
+          <p class="field-error small mt-2" id="register-confirm-error" hidden></p>
+         </fieldset>
+         <div class="registration-actions" data-registration-actions>
+          <button class="text-button" data-registration-back type="button" hidden>← Back</button>
+          <button class="buy-button" data-registration-next type="submit">Continue →</button>
+          <button class="text-button" data-registration-clear type="button">Start over</button>
          </div>
-         <div class="mb-4">
-          <label class="form-label" for="register-confirm">Confirm password</label>
-          <input autocomplete="new-password" class="form-control" data-matches="password" id="register-confirm" name="password_confirmation" required="" type="password"/>
+         <p class="form-status mt-3 mb-0" data-registration-status role="status"></p>
+         <div class="registration-success" data-registration-success hidden tabindex="-1">
+          <span class="registration-check" aria-hidden="true">✓</span>
+          <h3>You're in. Let’s find your next game.</h3>
+          <p data-registration-welcome></p>
+          <a class="buy-button" href="games.html">Explore the store →</a>
+          <button class="text-button" data-registration-restart type="button">Add another player</button>
          </div>
-         <div class="d-flex flex-wrap gap-3">
-          <button class="btn btn-primary" type="submit">Check registration</button>
-          <button class="btn btn-outline-info" type="reset">Clear form</button>
-         </div>
-         <p aria-live="polite" class="form-status text-info mt-3 mb-0" role="status"></p>
         </form>
        </div>
       </section>

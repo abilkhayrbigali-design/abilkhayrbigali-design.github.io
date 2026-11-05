@@ -79,6 +79,30 @@
       "passed": true
     },
     {
+      "name": "Registration opens with only the name field and rejects an empty name",
+      "passed": true
+    },
+    {
+      "name": "Registration validates email and Back keeps the entered name",
+      "passed": true
+    },
+    {
+      "name": "Registration checks password length and confirmation before submission",
+      "passed": true
+    },
+    {
+      "name": "Final registration creates one $100 local profile and discards email/password",
+      "passed": true
+    },
+    {
+      "name": "Registration restart clears steps and duplicate names are rejected",
+      "passed": true
+    },
+    {
+      "name": "Three-step registration also completes on a 375px screen",
+      "passed": true
+    },
+    {
       "name": "375px: index.html loads, has unique IDs and no horizontal overflow",
       "passed": true
     },
