@@ -106,7 +106,7 @@ if (catalogueSection) {
       return this.games.filter((game) =>
         (selectedGenre === 'all' || game.genre === selectedGenre) &&
         matchesBudget(game.price, selectedBudget) &&
-        game.title.toLowerCase().includes(query.trim().toLowerCase())
+        (game.title + ' ' + game.genre + ' ' + (window.HUB_I18N?.t(game.genre) || game.genre)).toLowerCase().includes(query.trim().toLowerCase())
       );
     },
   };
@@ -176,7 +176,8 @@ if (profileForm) {
 
   function showStep(index, moveFocus = true) {
     panels.forEach((panel, panelIndex) => { panel.hidden = panelIndex !== index; });
-    progress.textContent = `Step ${index + 1} of ${panels.length}: ${panels[index].dataset.profileStep}`;
+    const stepName = window.HUB_I18N?.source(panels[index].dataset.profileStep) || panels[index].dataset.profileStep;
+    progress.textContent = `Step ${index + 1} of ${panels.length}: ${stepName}`;
     back.hidden = index === 0;
     next.hidden = index === panels.length - 1;
     submit.hidden = index !== panels.length - 1;

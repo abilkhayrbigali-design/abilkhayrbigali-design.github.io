@@ -73,9 +73,29 @@ $(document).ready(function () {
     $(this).attr('data-game', game.id);
     const $body = $(this).find('.card-body');
     $body.find('.price, .rating').remove();
-    $body.append($('<div class="game-purchase-row">').append($('<span class="price">').text(game.cents ? money(game.cents) : 'Free to play'), $('<button type="button" class="buy-button">').attr('data-buy', game.id)));
+    $body.append($('<div class="game-purchase-row">').append($('<span class="price">').text(game.cents ? money(game.cents) : 'Free'), $('<button type="button" class="buy-button">').attr('data-buy', game.id)));
     $body.append($('<div class="personal-rating">').attr('data-rating-for', game.id));
   });
+
+  function ensureDetailsLinks() {
+    $('[data-game]').each(function () {
+      const $card = $(this);
+      const id = $card.attr('data-game');
+      if (!byId.has(id) || $card.find('.detail-button').length) return;
+      const $link = $('<a class="detail-button" target="_blank" rel="noopener noreferrer">')
+        .attr('href', 'game-details.html?game=' + encodeURIComponent(id))
+        .text('More details');
+      const $rating = $card.find('.personal-rating').first();
+      const $purchase = $card.find('.game-purchase-row').first();
+      if ($rating.length) $link.insertBefore($rating);
+      else if ($purchase.length) $link.insertAfter($purchase);
+      else {
+        const $body = $card.find('.game-copy, .card-body').first();
+        $link.appendTo($body.length ? $body : $card);
+      }
+    });
+  }
+  ensureDetailsLinks();
 
   let ratingIndex = 0;
   $('[data-rating-for]').each(function () {
@@ -412,7 +432,7 @@ $(document).ready(function () {
       const game = byId.get($(this).attr('data-game'));
       return (!isLibrary || profile().owned.includes(game.id)) &&
         (genre === 'all' || genre === game.genre) && matchesPrice(game, budget) &&
-        (game.title + ' ' + game.genre).toLowerCase().includes(query.toLowerCase());
+        (game.title + ' ' + game.genre + ' ' + (window.HUB_I18N?.t(game.genre) || game.genre)).toLowerCase().includes(query.toLowerCase());
     });
     $cards.prop('hidden', true);
     $matches.prop('hidden', false);
@@ -447,7 +467,7 @@ $(document).ready(function () {
     selectedSuggestion = -1;
     $search.removeAttr('aria-activedescendant');
     if (!query) { closeSuggestions(); return; }
-    const matches = games.filter(g => (g.title + ' ' + g.genre).toLowerCase().includes(query.toLowerCase())).slice(0, 5);
+    const matches = games.filter(g => (g.title + ' ' + g.genre + ' ' + (window.HUB_I18N?.t(g.genre) || g.genre)).toLowerCase().includes(query.toLowerCase())).slice(0, 5);
     matches.forEach((game, index) => {
       const $option = $('<button type="button" role="option" aria-selected="false">').attr({ id: 'suggestion-' + index, 'data-suggest': game.id, tabindex: '-1' });
       $option.append($('<img alt="">').attr('src', game.image), $('<span>').html(highlighted(game.title, query)), $('<small>').text(game.cents ? money(game.cents) : 'Free'));
@@ -558,9 +578,10 @@ $(document).ready(function () {
     $('[data-feature-tagline]').text(slide.tagline);
     $('[data-feature-kicker]').text((game.cents ? 'FEATURED' : 'FREE TO PLAY') + ' · ' + game.genre);
     $('[data-feature-description]').text(game.description);
-    $('[data-feature-price]').text(game.cents ? money(game.cents) : 'Free to play');
+    $('[data-feature-price]').text(game.cents ? money(game.cents) : 'Free');
     $('[data-feature-tags]').empty().append(slide.tags.map(tag => $('<span>').text(tag)[0]));
     $('[data-feature-buy]').attr('data-buy', slide.id);
+    $('[data-feature-details]').attr('href', 'game-details.html?game=' + encodeURIComponent(slide.id));
     $('[data-feature-index]').each(function () { $(this).attr('aria-pressed', String(Number($(this).attr('data-feature-index')) === featureIndex)); });
     renderState();
   }
